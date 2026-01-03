@@ -1,20 +1,27 @@
+:root {
+  --red: #8b0000;
+  --gray: #444;
+  --bg: #ffffff;
+  --card: #f9f9f9;
+}
+
 * {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-  font-family: 'Inter', sans-serif;
-  color: #111;
-  background: #fff;
+  font-family: "Inter", "Helvetica Neue", Arial, sans-serif;
+  background: var(--bg);
+  color: #222;
   line-height: 1.6;
 }
 
 /* HERO */
 .hero {
   text-align: center;
-  padding: 100px 20px;
+  padding: 120px 20px;
 }
 
 .hero-logo {
@@ -23,154 +30,161 @@ body {
 }
 
 .hero h1 {
-  font-size: 2.2rem;
-  font-weight: 600;
+  font-size: 2.6rem;
   margin-bottom: 15px;
 }
 
 .hero p {
   font-size: 1.1rem;
+  color: var(--gray);
   margin-bottom: 30px;
 }
 
-/* BOTÃO */
+/* BUTTON */
 .btn-primary {
-  background: #8B0000;
+  background: var(--red);
   color: #fff;
-  padding: 14px 26px;
-  border-radius: 8px;
+  padding: 14px 28px;
+  border-radius: 10px;
   text-decoration: none;
   font-weight: 600;
   display: inline-block;
 }
 
-/* SEÇÕES */
+/* SECTIONS */
 .section {
-  padding: 80px 20px;
-  max-width: 1100px;
-  margin: auto;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 100px 20px;
 }
 
 .section h2 {
-  text-align: center;
-  font-size: 2rem;
-  color: #8B0000;
-  margin-bottom: 40px;
+  color: var(--red);
+  font-size: 2.1rem;
+  margin-bottom: 20px;
 }
 
 .section-subtitle {
-  text-align: center;
   margin-bottom: 40px;
+  color: var(--gray);
 }
 
 /* CARDS */
 .cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 20px;
+  gap: 25px;
 }
 
 .card {
-  background: #fff;
-  padding: 25px;
+  background: var(--card);
+  padding: 30px;
   border-radius: 14px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+  text-align: center;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.05);
+}
+
+/* CENTER */
+.center {
+  margin-top: 50px;
   text-align: center;
 }
 
-/* SPLIT */
-.split {
-  display: flex;
-  gap: 40px;
+/* TWO COLUMNS */
+.two-columns {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 80px;
   align-items: center;
 }
 
-.photo {
+/* DESLOCAMENTO PARA DIREITA */
+.right-shift {
+  padding-left: 80px;
+}
+
+/* IMAGES */
+.image-box img {
   width: 100%;
-  max-width: 420px;
-  border-radius: 18px;
+  border-radius: 20px;
   object-fit: contain;
 }
 
-/* BLOCO DE TEXTO */
-.text-block {
-  max-width: 460px;
+/* TEXT */
+.text-box p {
+  margin-bottom: 18px;
+  text-align: justify;
 }
 
-/* AJUSTE ESPECÍFICO DO "ONDE ESTAMOS" */
-.text-right-shift {
-  margin-left: 40px;
-}
-
-/* MAPA */
+/* MAP */
 .map {
   width: 100%;
-  height: 300px;
+  height: 280px;
   border-radius: 18px;
   border: none;
   margin-top: 20px;
 }
 
-/* CENTRALIZAR */
-.center {
-  text-align: center;
-  margin-top: 40px;
-}
-
 /* FOOTER */
-footer {
+.footer {
   background: #111;
-  color: #fff;
+  color: #eee;
+  padding: 60px 20px;
   text-align: center;
-  padding: 40px 20px;
 }
 
-footer .icon {
-  width: 28px;
-  margin-top: 10px;
+.footer-logo {
+  width: 110px;
+  margin-bottom: 20px;
 }
 
-/* WHATSAPP */
+.social img {
+  width: 32px;
+  margin: 10px;
+}
+
+.footer p {
+  font-size: 0.85rem;
+  opacity: 0.7;
+}
+
+/* WHATSAPP FLOAT */
 .whatsapp-float {
   position: fixed;
-  bottom: 20px;
   right: 20px;
-  width: 60px;
+  bottom: 20px;
+  z-index: 1000;
 }
 
 .whatsapp-float img {
-  width: 100%;
+  width: 60px;
 }
 
 /* MOBILE */
-@media (max-width: 768px) {
+@media (max-width: 900px) {
 
   .hero {
-    padding: 70px 20px;
+    padding: 80px 20px;
   }
 
   .hero h1 {
-    font-size: 1.8rem;
+    font-size: 2rem;
   }
 
-  .split {
-    flex-direction: column;
-    text-align: center;
+  .two-columns {
+    grid-template-columns: 1fr;
+    gap: 40px;
   }
 
-  .photo {
-    max-width: 300px;
+  .right-shift {
+    padding-left: 0;
+  }
+
+  .text-box {
+    text-align: left;
   }
 
   .map {
-    height: 250px;
-  }
-
-  .text-right-shift {
-    margin-left: 0;
-  }
-
-  .text-block {
-    max-width: 100%;
+    height: 240px;
   }
 }
