@@ -54,7 +54,7 @@ body {
 }
 
 .hero-logo {
-  width: 160px;
+  width: 250px;
   margin-bottom: 28px;
 }
 
@@ -146,7 +146,7 @@ footer {
 }
 
 .social-icon {
-  width: 40px;
+  width: 140px;
   margin-bottom: 16px;
 }
 
@@ -163,7 +163,7 @@ footer p {
 }
 
 .whatsapp-float img {
-  width: 64px;
+  width: 150px;
   height: auto;
   display: block;
   border: none;
@@ -187,7 +187,7 @@ footer p {
   }
 
   .hero-logo {
-    width: 140px;
+    width: 200px;
   }
 
   .section {
@@ -215,6 +215,7 @@ footer p {
 
   /* Instagram um pouco maior no mobile */
   .social-icon {
-    width: 48px;
+    width: 60px;
   }
 }
+
