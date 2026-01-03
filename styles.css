@@ -64,11 +64,12 @@ body {
 }
 
 
-/* LOGO GIF */
 .logo-gif {
-  width: 140px;
-  margin-bottom: 28px;
+  width: 80px;
+  margin-bottom: 16px;
+  opacity: 0.9;
 }
+
 
 /* HERO TEXT */
 .hero h1 {
@@ -207,4 +208,5 @@ body {
     padding: 60px 16px;
   }
 }
+
 
