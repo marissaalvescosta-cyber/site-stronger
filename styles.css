@@ -211,7 +211,21 @@ footer {
   .whatsapp-float img {
     width: 56px;
   }
+
+  /* WhatsApp maior no mobile */
+@media (max-width: 768px) {
+  .whatsapp-float img {
+    width: 72px;
+    height: auto;
+  }
+
+  .whatsapp-float {
+    bottom: 20px;
+    right: 20px;
+  }
 }
+}
+
 
 
 
