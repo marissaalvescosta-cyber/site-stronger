@@ -150,13 +150,13 @@ footer {
 }
 
 .footer-logo {
-  width: 120px;
+  width: 150px;
   height: auto;
   margin-bottom: 16px;
 }
 
 .social-icon {
-  width: 45px;
+  width: 120px;
   height: auto;
   margin: 16px 0;
 }
@@ -212,4 +212,5 @@ footer {
     width: 56px;
   }
 }
+
 
