@@ -5,28 +5,30 @@
 }
 
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", Arial, sans-serif;
   color: #111;
   background: #fff;
-  line-height: 1.6;
 }
 
 /* HERO */
 .hero {
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   text-align: center;
-  padding: 120px 20px;
+  padding: 40px 20px;
 }
 
-.logo-hero {
-  width: 160px; /* LOGO MAIOR */
-  margin-bottom: 40px;
+.hero-logo {
+  width: 160px; /* 🔴 CONTROLE DO TAMANHO DO LOGO */
+  margin-bottom: 30px;
 }
 
 .hero h1 {
   font-size: 42px;
-  font-weight: 600;
-  max-width: 900px;
-  margin: 0 auto 20px;
+  margin-bottom: 12px;
 }
 
 .hero p {
@@ -34,67 +36,57 @@ body {
   margin-bottom: 30px;
 }
 
-/* BUTTON */
+/* BOTÃO */
 .btn-primary {
-  display: inline-block;
-  background: #8b0000;
+  background-color: #8b0000;
   color: #fff;
-  padding: 18px 36px;
-  border-radius: 10px;
+  padding: 18px 40px;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 600;
   text-decoration: none;
-  font-weight: 500;
-  transition: transform 0.2s ease;
+  display: inline-block;
 }
 
-.btn-primary:hover {
-  transform: scale(1.04);
-}
-
-/* BOTÃO MAIOR */
-.btn-large {
-  font-size: 18px;
-  padding: 20px 44px;
-}
-
-/* CENTRALIZADOR */
-.cta-center {
-  display: flex;
-  justify-content: center;
-  margin-top: 50px;
-}
-
-/* SECTIONS */
 .section {
-  padding: 100px 8%;
+  padding: 80px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-.section h2 {
-  font-size: 32px;
+.section-title {
   color: #8b0000;
-  margin-bottom: 30px;
+  font-size: 32px;
+  margin-bottom: 20px;
 }
 
 .section-subtitle {
-  max-width: 600px;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
 
 /* CARDS */
 .cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 24px;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
 }
 
 .card {
-  background: #fafafa;
-  padding: 30px;
-  border-radius: 16px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+  background: #fff;
+  padding: 25px;
+  border-radius: 14px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.06);
 }
 
-/* SPLIT */
-.split {
+/* CTA */
+.section-cta {
+  display: flex;
+  justify-content: center;
+  margin: 40px 0;
+}
+
+/* DUAS COLUNAS */
+.two-columns {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 60px;
@@ -106,67 +98,56 @@ body {
   border-radius: 20px;
 }
 
-.text {
+.text-block {
   max-width: 520px;
 }
 
-/* MAP */
+/* MAPA */
 .map {
   width: 100%;
   height: 300px;
   border: none;
   border-radius: 16px;
-  margin-top: 30px;
+  margin-top: 20px;
 }
 
 /* FOOTER */
 footer {
-  background: #0f0f0f;
-  color: #ccc;
+  background: #111;
+  color: #aaa;
   text-align: center;
-  padding: 60px 20px;
+  padding: 50px 20px;
 }
 
-.logo-footer {
-  width: 130px;
+.footer-logo {
+  width: 120px;
   margin-bottom: 20px;
 }
 
 .social img {
-  width: 40px;
-  margin-bottom: 20px;
+  width: 34px;
+  margin: 10px;
 }
 
-/* WHATSAPP FLUTUANTE */
+/* WHATSAPP FLOAT */
 .whatsapp-float {
   position: fixed;
-  right: 28px;
-  bottom: 28px;
-  z-index: 999;
+  right: 25px;
+  bottom: 25px;
+  z-index: 100;
 }
 
 .whatsapp-float img {
-  width: 180px;   /* BEM MAIOR */
-  height: auto;
+  width: 72px; /* 🔴 TAMANHO DO ÍCONE WHATSAPP */
 }
 
 /* MOBILE */
 @media (max-width: 768px) {
-  .hero h1 {
-    font-size: 30px;
-  }
-
-  .split {
+  .two-columns {
     grid-template-columns: 1fr;
   }
 
-  .logo-hero {
-    width: 130px;
-  }
-
-  .whatsapp-float img {
-    width: 70px;
+  .hero h1 {
+    font-size: 30px;
   }
 }
-
-
