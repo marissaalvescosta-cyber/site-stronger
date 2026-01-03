@@ -146,7 +146,7 @@ footer {
 }
 
 .whatsapp-float img {
-  width: 120px;   /* BEM MAIOR */
+  width: 180px;   /* BEM MAIOR */
   height: auto;
 }
 
@@ -168,4 +168,5 @@ footer {
     width: 70px;
   }
 }
+
 
