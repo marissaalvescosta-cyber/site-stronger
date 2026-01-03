@@ -22,7 +22,7 @@ body {
 }
 
 .hero-logo {
-  width: 160px; /* 🔴 CONTROLE DO TAMANHO DO LOGO */
+  width: 200px; /* 🔴 CONTROLE DO TAMANHO DO LOGO */
   margin-bottom: 30px;
 }
 
@@ -138,7 +138,7 @@ footer {
 }
 
 .whatsapp-float img {
-  width: 72px; /* 🔴 TAMANHO DO ÍCONE WHATSAPP */
+  width: 180px; /* 🔴 TAMANHO DO ÍCONE WHATSAPP */
 }
 
 /* MOBILE */
@@ -151,3 +151,4 @@ footer {
     font-size: 30px;
   }
 }
+
