@@ -13,18 +13,18 @@ body {
 
 /* HERO */
 .hero {
+  padding: 120px 20px;
   text-align: center;
-  padding: 100px 20px;
 }
 
 .hero-logo {
-  width: 110px;
-  margin-bottom: 30px;
+  width: 90px;
+  margin-bottom: 20px;
 }
 
 .hero h1 {
-  font-size: 2.6rem;
-  margin-bottom: 15px;
+  font-size: 2.5rem;
+  margin-bottom: 10px;
 }
 
 .hero p {
@@ -32,88 +32,89 @@ body {
   margin-bottom: 30px;
 }
 
+/* BOTÃO */
 .btn-primary {
   background: #8b0000;
   color: #fff;
   padding: 14px 28px;
-  border-radius: 8px;
+  border-radius: 6px;
   text-decoration: none;
-  font-weight: bold;
   display: inline-block;
 }
 
-.btn-primary:hover {
-  opacity: 0.9;
+.btn-primary.center {
+  margin-top: 40px;
 }
 
-/* SECTIONS */
+/* SEÇÕES */
 .section {
-  padding: 90px 10%;
+  padding: 100px 12%;
+}
+
+.section-light {
+  background: #f7f7f7;
 }
 
 .section-title {
   text-align: center;
-  font-size: 2.2rem;
   color: #8b0000;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
+  font-size: 2rem;
 }
 
 .section-subtitle {
   text-align: center;
-  margin-bottom: 40px;
+  max-width: 600px;
+  margin: 0 auto 50px;
 }
 
 /* CARDS */
-.cards-grid {
+.cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 25px;
 }
 
 .card {
-  background: #f7f7f7;
+  background: #fff;
   padding: 25px;
-  border-radius: 12px;
+  border-radius: 10px;
   text-align: center;
-  font-weight: 500;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
 }
 
-/* CENTER BUTTON */
-.center {
-  display: block;
-  margin: 50px auto 0;
-  width: fit-content;
-}
-
-/* SPLIT SECTIONS */
+/* SPLIT */
 .split {
   display: flex;
-  gap: 50px;
+  gap: 80px;
   align-items: center;
 }
 
 .split-image img {
-  width: 100%;
-  max-width: 420px;
-  border-radius: 16px;
+  width: 420px;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.12);
+}
+
+.split-text {
+  max-width: 480px;
 }
 
 .split-text h2 {
   color: #8b0000;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 
-/* WHATSAPP FLOAT */
-.whatsapp-float {
+/* WHATSAPP */
+.whatsapp {
   position: fixed;
-  right: 20px;
   bottom: 20px;
+  right: 20px;
   width: 60px;
-  height: 60px;
-  z-index: 999;
+  z-index: 100;
 }
 
-.whatsapp-float img {
+.whatsapp img {
   width: 100%;
 }
 
@@ -121,9 +122,10 @@ body {
 @media (max-width: 900px) {
   .split {
     flex-direction: column;
+    text-align: center;
   }
 
-  .hero h1 {
-    font-size: 2rem;
+  .split-image img {
+    width: 100%;
   }
 }
