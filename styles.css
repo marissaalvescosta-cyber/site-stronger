@@ -92,6 +92,16 @@ body {
   object-fit: contain;
 }
 
+/* BLOCO DE TEXTO */
+.text-block {
+  max-width: 460px;
+}
+
+/* AJUSTE ESPECÍFICO DO "ONDE ESTAMOS" */
+.text-right-shift {
+  margin-left: 40px;
+}
+
 /* MAPA */
 .map {
   width: 100%;
@@ -155,5 +165,12 @@ footer .icon {
   .map {
     height: 250px;
   }
-}
 
+  .text-right-shift {
+    margin-left: 0;
+  }
+
+  .text-block {
+    max-width: 100%;
+  }
+}
