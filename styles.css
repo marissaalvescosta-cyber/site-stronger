@@ -49,6 +49,35 @@ body {
   font-weight: bold;
 }
 
+/* PARA QUEM É */
+.publico {
+  padding: 80px 20px;
+  background: #fafafa;
+  text-align: center;
+}
+
+.publico h2 {
+  font-size: 2.2rem;
+  margin-bottom: 40px;
+  color: #8b0000;
+}
+
+.publico-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.publico-item {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  font-weight: 600;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
 /* AVALIAÇÃO */
 .avaliacao {
   padding: 80px 20px;
@@ -83,7 +112,7 @@ body {
 /* SOBRE */
 .sobre {
   padding: 80px 20px;
-  background: #fafafa;
+  background: #fdfdfd;
 }
 
 .sobre-container {
@@ -127,4 +156,12 @@ body {
 
 .whatsapp-float img {
   width: 28px;
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+  .sobre-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
 }
