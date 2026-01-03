@@ -156,7 +156,7 @@ footer {
 }
 
 .social-icon {
-  width: 32px;
+  width: 45px;
   height: auto;
   margin: 16px 0;
 }
@@ -174,7 +174,7 @@ footer {
 }
 
 .whatsapp-float img {
-  width: 64px;
+  width: 150px;
   height: auto;
   display: block;
 }
@@ -212,3 +212,4 @@ footer {
     width: 56px;
   }
 }
+
