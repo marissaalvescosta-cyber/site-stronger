@@ -17,7 +17,7 @@ body {
 }
 
 .hero-logo {
-  width: 160px;
+  width: 180px;
   margin-bottom: 30px;
 }
 
@@ -103,7 +103,7 @@ footer {
 }
 
 .footer-logo {
-  width: 120px;
+  width: 150px;
   margin-bottom: 15px;
 }
 
@@ -119,8 +119,8 @@ footer {
   z-index: 999;
 }
 
-.whatsapp-float img {
-  width: 70px;
+.whatsapp-float img {0
+  width: 14px;
 }
 
 @media (max-width: 768px) {
@@ -132,3 +132,4 @@ footer {
     font-size: 1.8rem;
   }
 }
+
