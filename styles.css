@@ -23,7 +23,7 @@ body {
 
 .hero-logo {
   width: 200px; /* 🔴 CONTROLE DO TAMANHO DO LOGO */
-  margin-bottom: -30px;
+  margin-bottom: -40px;
 }
 
 .hero h1 {
@@ -151,5 +151,6 @@ footer {
     font-size: 30px;
   }
 }
+
 
 
