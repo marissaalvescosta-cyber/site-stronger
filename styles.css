@@ -85,6 +85,7 @@ body {
   text-decoration: none;
   color: var(--text);
   font-weight: 500;
+  padding: 12px 0; /* melhora toque mobile */
 }
 
 /* BOTÕES */
@@ -236,6 +237,15 @@ footer {
 
 @media (max-width: 768px) {
 
+  /* HEADER COMPACTO */
+  .header-container {
+    padding: 10px 16px;
+  }
+
+  .header-logo {
+    width: 95px;
+  }
+
   .nav {
     display: none;
   }
@@ -248,12 +258,23 @@ footer {
     display: flex;
   }
 
+  /* HERO OTIMIZADO */
+  .hero {
+    min-height: auto;
+    padding: 120px 20px 40px;
+  }
+
   .hero h1 {
     font-size: 1.9rem;
   }
 
   .hero-logo {
     width: 200px;
+  }
+
+  /* LEITURA MELHOR MOBILE */
+  .text p {
+    text-align: left;
   }
 
   .two-columns {
@@ -265,8 +286,9 @@ footer {
     grid-template-columns: 1fr;
   }
 
+  /* WHATSAPP MENOR */
   .whatsapp-float img {
-    width: 120px;
+    width: 70px;
   }
 
   .social-icon {
