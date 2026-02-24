@@ -85,7 +85,7 @@ body {
   text-decoration: none;
   color: var(--text);
   font-weight: 500;
-  padding: 12px 0; /* melhora toque mobile */
+  padding: 12px 0;
 }
 
 /* BOTÕES */
@@ -225,7 +225,7 @@ footer {
 }
 
 .whatsapp-float img {
-  width: 250px;
+  width: 200px;
 }
 
 /* RESPONSIVO */
@@ -272,7 +272,7 @@ footer {
     width: 200px;
   }
 
-  /* LEITURA MELHOR MOBILE */
+  /* TEXTO MOBILE */
   .text p {
     text-align: left;
   }
@@ -286,13 +286,17 @@ footer {
     grid-template-columns: 1fr;
   }
 
-  /* WHATSAPP MENOR */
+  /* WHATSAPP AJUSTADO MOBILE */
+  .whatsapp-float {
+    right: 18px;
+    bottom: 18px;
+  }
+
   .whatsapp-float img {
-    width: 70px;
+    width: 95px;
   }
 
   .social-icon {
     width: 100px;
   }
 }
-
