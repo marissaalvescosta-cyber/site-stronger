@@ -288,7 +288,7 @@ footer {
 
   /* WHATSAPP AJUSTADO MOBILE */
   .whatsapp-float {
-    right: 12px;
+    right: 10px;
     bottom: 18px;
   }
 
@@ -300,5 +300,6 @@ footer {
     width: 100px;
   }
 }
+
 
 
