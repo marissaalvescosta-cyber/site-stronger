@@ -70,6 +70,7 @@ body {
   font-size: 26px;
   background: none;
   border: none;
+  cursor: pointer;
 }
 
 .mobile-menu {
@@ -126,6 +127,15 @@ body {
   border-radius: 12px;
   text-decoration: none;
   font-weight: 600;
+}
+
+/* CENTRALIZAÇÃO */
+.center {
+  display: flex;
+  justify-content: center;
+  margin-top: 32px;
+  flex-wrap: wrap;
+  gap: 16px;
 }
 
 /* SEÇÕES */
@@ -200,6 +210,12 @@ body {
   font-style: italic;
 }
 
+.testimonial-card span {
+  display: block;
+  font-size: 0.9rem;
+  color: var(--gray);
+}
+
 /* REEMBOLSO */
 .reembolso-box {
   display: grid;
@@ -230,6 +246,12 @@ body {
   border-radius: 20px;
 }
 
+/* TEXTO JUSTIFICADO */
+.two-columns p {
+  text-align: justify;
+  margin-bottom: 12px;
+}
+
 /* MAPA */
 .map {
   width: 100%;
@@ -246,6 +268,7 @@ body {
   background: none;
   text-align: left;
   font-weight: 600;
+  font-size: 1.1rem;
   padding: 16px 0;
   cursor: pointer;
 }
@@ -253,6 +276,7 @@ body {
 .faq-answer {
   display: none;
   color: var(--gray);
+  margin-bottom: 12px;
 }
 
 .faq-item.active .faq-answer {
@@ -264,21 +288,37 @@ body {
   text-align: center;
 }
 
+/* FOOTER */
+.footer {
+  background: #111;
+  color: #ccc;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.footer-logo {
+  width: 120px;
+  margin-bottom: 20px;
+}
+
+.footer p {
+  margin-bottom: 10px;
+}
+
 /* WHATSAPP */
 .whatsapp-float {
   position: fixed;
-  right: 20px;
-  bottom: 20px;
+  right: 16px;
+  bottom: 16px;
   z-index: 999;
 }
 
 .whatsapp-float img {
-  width: 65px;
-  transition: transform 0.2s;
-}
-
-.whatsapp-float img:hover {
-  transform: scale(1.08);
+  width: 75px;
+  background: #25D366;
+  padding: 10px;
+  border-radius: 50%;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
 }
 
 /* RESPONSIVO */
@@ -313,6 +353,6 @@ body {
   }
 
   .whatsapp-float img {
-    width: 55px;
+    width: 65px;
   }
 }
