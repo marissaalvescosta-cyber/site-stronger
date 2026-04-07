@@ -27,14 +27,24 @@ body {
   align-items: center;
 }
 
+.header-logo {
+  width: 110px;
+}
+
+/* NAV */
 .nav {
   display: flex;
   gap: 24px;
 }
 
+.nav a {
+  text-decoration: none;
+  color: #111;
+}
+
 .nav-cta {
   background: #9b0000;
-  color: #fff;
+  color: #fff !important;
   padding: 8px 16px;
   border-radius: 10px;
 }
@@ -47,7 +57,8 @@ body {
 
 .hero-logo {
   width: 180px;
-  margin-bottom: 20px;
+  max-width: 80%;
+  margin-bottom: 24px;
 }
 
 .hero h1 {
@@ -60,7 +71,7 @@ body {
   margin-bottom: 30px;
 }
 
-/* BOTÕES */
+/* BOTÃO */
 .btn-primary {
   background: #9b0000;
   color: #fff;
@@ -175,11 +186,6 @@ body {
 
 .whatsapp-float img {
   width: 65px;
-  transition: transform 0.2s;
-}
-
-.whatsapp-float img:hover {
-  transform: scale(1.08);
 }
 
 /* RESPONSIVO */
@@ -202,6 +208,10 @@ body {
 
   .section {
     padding: 70px 16px;
+  }
+
+  .hero-logo {
+    width: 140px;
   }
 
   .whatsapp-float img {
