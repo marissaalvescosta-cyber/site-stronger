@@ -43,7 +43,7 @@ body {
 }
 
 .header-logo {
-  width: 85px;
+  width: 100px;
 }
 
 /* NAV */
@@ -94,7 +94,7 @@ body {
 }
 
 .hero-logo {
-  width: 160px;
+  width: 200px;
   max-width: 80%;
   margin-bottom: 24px;
 }
