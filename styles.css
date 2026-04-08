@@ -1,182 +1,318 @@
-* {margin:0;padding:0;box-sizing:border-box;}
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-:root {
-  --red:#9b0000;
-  --gray:#666;
-  --light:#fafafa;
+  <title>Stronger Fisioterapia | Vila Olímpia</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+<header class="header">
+  <div class="header-container">
+    <img src="assets/logo-stronger.png" class="header-logo">
+
+    <nav class="nav">
+      <a href="#topo">Início</a>
+
+      <a href="https://vercel.com/marissas-projects-e9959a12/avaliacaostrongerbjj" target="_blank">
+        Avaliação
+      </a>
+
+      <a href="https://strongerbjj.vercel.app/" target="_blank">
+        Stronger BJJ
+      </a>
+
+      <a href="#">Stronger Recovery</a>
+
+      <a href="https://wa.me/5511932427523?text=Oi%21%20Vim%20pelo%20site%20da%20Stronger%20e%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o.%20Pode%20me%20explicar%20como%20funciona%3F"
+         class="nav-cta">
+        Agendar
+      </a>
+    </nav>
+
+    <button class="menu-toggle">☰</button>
+  </div>
+</header>
+
+<section class="hero" id="topo">
+  <div class="container">
+    <img src="assets/logo-stronger.png" class="hero-logo">
+
+    <h1>Fisioterapia especializada para quem quer treinar sem dor e com segurança</h1>
+
+    <p class="hero-subtitle">
+      Da dor ao retorno ao esporte com um plano estruturado e individualizado
+    </p>
+
+    <div class="center">
+      <a href="https://wa.me/5511932427523?text=Oi%21%20Vim%20pelo%20site%20da%20Stronger%20e%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o.%20Pode%20me%20explicar%20como%20funciona%3F"
+         class="btn-primary">
+        Agendar avaliação
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <h2>Para quem é a Stronger</h2>
+
+    <div class="cards">
+      <div class="card">Praticantes de exercícios físicos</div>
+      <div class="card">Pessoas com dor</div>
+      <div class="card">Prevenção de lesões</div>
+      <div class="card">Atletas amadores e profissionais</div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="avaliacao">
+  <div class="container">
+    <h2>Avaliação em Fisioterapia</h2>
+
+    <p class="subtitle">
+      O primeiro passo para tratar a dor e voltar a treinar com segurança
+    </p>
+
+    <div class="avaliacao-box">
+      <div>
+        <h3>Uma avaliação completa e individualizada</h3>
+
+        <p>
+          Entendemos seu corpo, sua dor e seu esporte para montar um plano
+          totalmente direcionado à sua recuperação e performance.
+        </p>
+
+        <p><strong>Duração aproximada: 1h30</strong></p>
+      </div>
+
+      <div class="avaliacao-right">
+        <div class="avaliacao-item">Análise de força e controle</div>
+        <div class="avaliacao-item">Avaliação de mobilidade e movimento</div>
+        <div class="avaliacao-item">Testes específicos para seu esporte</div>
+        <div class="avaliacao-item">Direcionamento do tratamento</div>
+      </div>
+    </div>
+
+    <div class="center">
+      <a href="https://wa.me/5511932427523?text=Oi%21%20Vim%20pelo%20site%20da%20Stronger%20e%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o.%20Pode%20me%20explicar%20como%20funciona%3F"
+         class="btn-primary">
+        Agendar avaliação
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <h2>Resultados de quem já passou pela Stronger</h2>
+
+    <div class="testimonials">
+
+      <div class="testimonial-card">
+        ★★★★★
+        <p>
+          Tenho sessões com a Marissa devido a duas cirurgias no joelho e uma no ombro.
+          Ela é muito atenciosa e me ajudou com as dores e meus treinos.
+          Hoje já consigo escalar e treinar jiu-jitsu novamente.
+        </p>
+        <strong>Daniely Lettieri</strong>
+        <span>Jiu-jitsu</span>
+      </div>
+
+      <div class="testimonial-card">
+        ★★★★★
+        <p>
+          Amo as sessões, sempre muito atenciosa, explica tudo com clareza
+          e envia exercícios para casa. Me ajudou muito a aliviar minhas dores.
+        </p>
+        <strong>Ana Paula Fernandes</strong>
+      </div>
+
+      <div class="testimonial-card">
+        ★★★★★
+        <p>
+          A melhor profissional que já conheci. Sempre respeitou meus limites,
+          com atendimento extremamente cuidadoso e excelente resultado.
+        </p>
+        <strong>Julia Terin</strong>
+      </div>
+
+    </div>
+
+    <div class="center">
+      <a href="https://www.google.com/search?q=stronger+fisioterapia#mpd=~6812246102963512953/customers/reviews" target="_blank" class="btn-primary">
+        Ver avaliações no Google
+      </a>
+
+      <a href="https://www.doctoralia.com.br/marissa-alves" target="_blank" class="btn-secondary">
+        Ver perfil no Doctoralia
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="reembolso-box">
+
+      <div>
+        <h2>Mais liberdade no seu tratamento</h2>
+
+        <p>
+          Aqui, o atendimento é particular — sem limitações de convênio,
+          com foco total na sua recuperação e performance.
+        </p>
+
+        <p>
+          E você não precisa abrir mão do seu plano:
+          fornecemos toda a documentação necessária para solicitação de reembolso,
+          com orientação da nossa equipe durante todo o processo.
+        </p>
+      </div>
+
+      <div>
+        <div class="reembolso-item">✔ Documentação completa para reembolso</div>
+        <div class="reembolso-item">✔ Orientação durante todo o processo</div>
+        <div class="reembolso-item">✔ Possibilidade de reembolso parcial ou total</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container two-columns">
+    <img src="assets/foto-marissa.jpg" class="rounded-img">
+
+    <div>
+      <h2>Quem sou eu</h2>
+
+      <p><strong>Marissa Alves</strong> — Fisioterapeuta ortopédica e esportiva</p>
+
+      <p>
+        Sou fisioterapeuta com foco em quem treina e quer voltar ao esporte com segurança,
+        sem precisar parar por dor.
+      </p>
+
+      <p>
+        Atendo desde pessoas com dor até atletas amadores e profissionais,
+        sempre com plano individualizado.
+      </p>
+
+      <p>
+        Também vivo o que ensino: pratico musculação e jiu-jitsu.
+      </p>
+
+      <p>
+        Acredito que ninguém deveria precisar parar de treinar por causa de dor.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container two-columns">
+    <img src="assets/foto-clinica.jpg" class="rounded-img">
+
+    <div>
+      <h2>Onde estamos</h2>
+
+      <p>
+        Rua Helena, 309 — Vila Olímpia — São Paulo
+      </p>
+
+      <p>
+        A 6 minutos da estação Vila Olímpia<br>
+        Estacionamento gratuito no prédio
+      </p>
+
+      <iframe src="https://www.google.com/maps?q=Rua%20Helena,%20309,%20São%20Paulo&output=embed"
+        class="map"></iframe>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <h2>Perguntas frequentes</h2>
+
+    <div class="faq">
+
+      <div class="faq-item">
+        <button class="faq-question">Preciso parar de treinar durante o tratamento?</button>
+        <p class="faq-answer">
+          Não necessariamente. Na maioria dos casos, ajustamos sua rotina para que você continue treinando com segurança enquanto se recupera.
+        </p>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">Quantas sessões vou precisar?</button>
+        <p class="faq-answer">
+          Depende do seu caso, mas trabalhamos com um plano estruturado focado em evolução real.
+        </p>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">E se eu já tentei outros tratamentos e não resolveu?</button>
+        <p class="faq-answer">
+          Isso é mais comum do que parece. Muitos pacientes chegam aqui após tentarem outras abordagens sem sucesso.
+          Nosso foco é entender a causa e devolver segurança para treinar.
+        </p>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">Atende convênio?</button>
+        <p class="faq-answer">
+          O atendimento é particular, mas fornecemos toda a documentação necessária para solicitação de reembolso.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="section final-cta">
+  <div class="container">
+    <h2>Pronta para voltar a treinar sem dor?</h2>
+
+    <div class="center">
+      <a href="https://wa.me/5511932427523?text=Oi%21%20Quero%20voltar%20a%20treinar%20sem%20dor.%20Podemos%20agendar%20uma%20avalia%C3%A7%C3%A3o%3F"
+         class="btn-primary">
+        Agendar avaliação agora
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <img src="assets/logo-stronger.png" class="footer-logo">
+    <p>Stronger Fisioterapia — Vila Olímpia</p>
+  </div>
+</footer>
+
+<a href="https://wa.me/5511932427523?text=Oi%21%20Vim%20pelo%20site%20da%20Stronger%20e%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o."
+   class="whatsapp-float">
+  <img src="assets/whatsapp.png">
+</a>
+
+<script>
+document.querySelector('.menu-toggle').onclick = () => {
+  document.querySelector('.mobile-menu').classList.toggle('open');
 }
 
-body {
-  font-family:'Inter',sans-serif;
-  color:#111;
-}
-
-/* HEADER */
-.header {
-  position:fixed;
-  width:100%;
-  height:60px;
-  background:#fff;
-  border-bottom:1px solid #eee;
-  z-index:1000;
-}
-
-.header-container {
-  max-width:1100px;
-  margin:auto;
-  padding:6px 20px;
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  height:100%;
-}
-
-.header-logo {width:85px;}
-
-.nav {display:flex;gap:24px;}
-
-.nav a {text-decoration:none;color:#111;}
-
-.nav-cta {
-  background:var(--red);
-  color:#fff!important;
-  padding:8px 16px;
-  border-radius:10px;
-}
-
-/* HERO */
-.hero {
-  padding:120px 20px 80px;
-  text-align:center;
-}
-
-.hero-logo {
-  width:160px;
-  margin-bottom:24px;
-}
-
-/* BOTÕES */
-.btn-primary {
-  background:var(--red);
-  color:#fff;
-  padding:14px 24px;
-  border-radius:12px;
-  text-decoration:none;
-  box-shadow:0 8px 20px rgba(155,0,0,0.25);
-}
-
-.btn-secondary {
-  border:2px solid var(--red);
-  color:var(--red);
-  padding:14px 24px;
-  border-radius:12px;
-  text-decoration:none;
-}
-
-/* CONTAINER */
-.container {
-  max-width:1100px;
-  margin:auto;
-}
-
-/* CENTER */
-.center {
-  display:flex;
-  justify-content:center;
-  gap:16px;
-  flex-wrap:wrap;
-}
-
-/* SEÇÕES */
-.section {
-  width:100%;
-  padding:110px 20px;
-}
-
-.section:nth-of-type(even){
-  background:var(--light);
-}
-
-/* CARDS */
-.cards {display:grid;grid-template-columns:repeat(4,1fr);gap:20px;}
-.card {background:#fff;padding:20px;border-radius:12px;}
-
-/* AVALIAÇÃO */
-.avaliacao-box {
-  display:grid;
-  grid-template-columns:1.2fr 1fr;
-  gap:30px;
-  background:#f8f8f8;
-  padding:40px;
-  border-radius:20px;
-}
-
-/* DEPOIMENTOS */
-.testimonials {display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
-.testimonial-card {background:#fff;padding:20px;border-radius:12px;}
-
-/* REEMBOLSO */
-.reembolso-box {
-  display:grid;
-  grid-template-columns:1.2fr 1fr;
-  gap:30px;
-  background:#f5f5f5;
-  padding:40px;
-  border-radius:20px;
-}
-
-/* COLUNAS */
-.two-columns {
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:40px;
-  align-items:center;
-}
-
-.two-columns p {text-align:justify;}
-
-/* MAPA */
-.map {width:100%;height:280px;border:none;border-radius:16px;margin-top:20px;}
-
-/* FAQ */
-.faq-question {font-size:1.1rem;}
-.faq-answer {display:none;}
-.faq-item.active .faq-answer {display:block;}
-
-/* FOOTER */
-.footer {
-  background:#111;
-  color:#ccc;
-  text-align:center;
-  padding:60px 20px;
-}
-
-.footer-logo {width:120px;margin-bottom:20px;}
-
-/* WHATSAPP */
-.whatsapp-float {
-  position:fixed;
-  right:16px;
-  bottom:16px;
-}
-
-.whatsapp-float img {
-  width:60px;
-  background:#25D366;
-  padding:14px;
-  border-radius:50%;
-  box-shadow:0 12px 30px rgba(0,0,0,0.3);
-  border:3px solid white;
-}
-
-/* RESPONSIVO */
-@media(max-width:768px){
-  .nav{display:none;}
-  .cards,
-  .testimonials,
-  .avaliacao-box,
-  .reembolso-box,
-  .two-columns{
-    grid-template-columns:1fr;
+document.querySelectorAll('.faq-question').forEach(btn => {
+  btn.onclick = () => {
+    btn.parentElement.classList.toggle('active');
   }
-}
+});
+</script>
+
+</body>
+</html>
