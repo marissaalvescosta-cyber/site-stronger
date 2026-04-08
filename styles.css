@@ -178,21 +178,43 @@ body {
   box-shadow: 0 10px 30px rgba(0,0,0,0.05);
 }
 
-/* AVALIAÇÃO */
+/* ========================= */
+/* 🔥 AVALIAÇÃO (AJUSTADO) */
+/* ========================= */
+
 .avaliacao-box {
   display: grid;
   grid-template-columns: 1.2fr 1fr;
-  gap: 30px;
+  gap: 40px;
   background: #f8f8f8;
   padding: 40px;
   border-radius: 20px;
 }
 
+.avaliacao-box h3 {
+  margin-bottom: 16px;
+}
+
+.avaliacao-box p {
+  margin-bottom: 12px;
+  line-height: 1.7;
+}
+
+.avaliacao-right {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
 .avaliacao-item {
   background: #fff;
-  padding: 16px;
-  border-radius: 12px;
+  padding: 20px;
+  border-radius: 14px;
   box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+}
+
+#avaliacao .center {
+  margin-top: 40px;
 }
 
 /* DEPOIMENTOS */
@@ -220,20 +242,38 @@ body {
   color: var(--gray);
 }
 
-/* REEMBOLSO */
+/* ========================= */
+/* 🔥 REEMBOLSO (AJUSTADO) */
+/* ========================= */
+
 .reembolso-box {
   display: grid;
   grid-template-columns: 1.2fr 1fr;
-  gap: 30px;
+  gap: 40px;
   background: linear-gradient(135deg, #f8f8f8, #f2f2f2);
   padding: 50px;
   border-radius: 24px;
 }
 
+.reembolso-box h2 {
+  margin-bottom: 20px;
+}
+
+.reembolso-box p {
+  margin-bottom: 16px;
+  line-height: 1.7;
+}
+
+.reembolso-box div:last-child {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
 .reembolso-item {
   background: #fff;
-  padding: 16px;
-  border-radius: 12px;
+  padding: 18px 20px;
+  border-radius: 14px;
   box-shadow: 0 8px 20px rgba(0,0,0,0.05);
 }
 
@@ -359,5 +399,15 @@ body {
 
   .whatsapp-float img {
     width: 55px;
+  }
+
+  /* 🔥 AJUSTES MOBILE NOVOS */
+  .avaliacao-box {
+    gap: 24px;
+  }
+
+  .reembolso-box {
+    padding: 30px 20px;
+    gap: 24px;
   }
 }
