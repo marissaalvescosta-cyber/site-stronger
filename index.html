@@ -82,7 +82,25 @@
     <li><a href="#local">Localização</a></li>
   </ul>
   <a href="https://wa.me/5511932427523?text=Olá!%20Gostaria%20de%20agendar%20uma%20avaliação." class="nav-cta">Agendar →</a>
+  <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">
+  <span></span>
+  <span></span>
+</button>
 </nav>
+  <div class="mobile-menu" id="mobileMenu">
+  <a href="#servicos">Serviços</a>
+  <a href="#avaliacao">Avaliação</a>
+  <a href="#clinica">Nossa Clínica</a>
+  <a href="#sobre">Sobre</a>
+  <a href="#blog">Blog</a>
+  <a href="#local">Localização</a>
+
+  <a href="https://wa.me/5511932427523?text=Olá!%20Gostaria%20de%20agendar%20uma%20avaliação."
+     class="mobile-menu-cta"
+     target="_blank">
+     Agendar pelo WhatsApp
+  </a>
+</div>
 
 <!-- HERO -->
 <section class="hero">
@@ -474,6 +492,24 @@ if (wrap) {
   wrap.addEventListener('mouseenter', () => clearInterval(autoTimer));
   wrap.addEventListener('mouseleave', () => { autoTimer = setInterval(() => moveCarousel(1), 4000); });
 }
+
+const menuToggle = document.getElementById('menuToggle');
+const mobileMenu = document.getElementById('mobileMenu');
+
+menuToggle.addEventListener('click', () => {
+  menuToggle.classList.toggle('active');
+  mobileMenu.classList.toggle('active');
+  document.body.classList.toggle('menu-open');
+});
+
+document.querySelectorAll('.mobile-menu a').forEach(link => {
+  link.addEventListener('click', () => {
+    menuToggle.classList.remove('active');
+    mobileMenu.classList.remove('active');
+    document.body.classList.remove('menu-open');
+  });
+});
+  
 </script>
 
 </body>
