@@ -687,6 +687,87 @@ footer { background: #080808; border-top: 1px solid #0f0f0f; padding: 28px 40px;
 .footer-links a:hover { color: var(--text-muted); }
 
 /* =====================
+   MENU MOBILE
+   ===================== */
+
+.menu-toggle{
+  width:48px;
+  height:48px;
+
+  display:none;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  gap:6px;
+
+  background:none;
+  border:none;
+
+  cursor:pointer;
+
+  z-index:1002;
+}
+
+.menu-toggle span{
+  width:22px;
+  height:2px;
+
+  background:var(--white);
+
+  transition:0.3s;
+}
+
+.menu-toggle.active span:nth-child(1){
+  transform:rotate(45deg) translateY(6px);
+}
+
+.menu-toggle.active span:nth-child(2){
+  transform:rotate(-45deg) translateY(-6px);
+}
+
+.mobile-menu{
+  position:fixed;
+  inset:0;
+  background:rgba(10,10,10,0.98);
+  backdrop-filter:blur(14px);
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  gap:28px;
+  z-index:1001;
+  opacity:0;
+  pointer-events:none;
+
+  transition:0.35s ease;
+}
+
+.mobile-menu.active{
+  opacity:1;
+  pointer-events:auto;
+}
+
+.mobile-menu a{
+  font-family:'Bebas Neue', sans-serif;
+  font-size:34px;
+  letter-spacing:1px;
+  color:var(--white);
+}
+
+.mobile-menu-cta{
+  margin-top:10px;
+  background:var(--accent);
+  padding:14px 24px;
+  border-radius:4px;
+  font-family:'DM Sans', sans-serif !important;
+  font-size:14px !important;
+}
+
+body.menu-open{
+  overflow:hidden;
+}
+
+/* =====================
    RESPONSIVO
    ===================== */
 @media (max-width: 900px) {
