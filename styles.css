@@ -732,4 +732,9 @@ footer { background: #080808; border-top: 1px solid #0f0f0f; padding: 28px 40px;
   footer { flex-direction: column; gap: 16px; text-align: center; padding: 28px 20px; }
   .footer-links a { margin: 0 10px; }
   .wa-float { bottom: 20px; right: 20px; }
+
+   .sobre{
+  display:flex;
+  flex-direction:column-reverse;
+}
 }
