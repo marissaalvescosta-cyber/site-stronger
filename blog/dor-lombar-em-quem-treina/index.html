@@ -24,7 +24,7 @@
   "@context": "https://schema.org",
   "@type": "MedicalWebPage",
   "headline": "Dor Lombar em Quem Treina: Sobrecarga ou Sinal de Alerta?",
-  "description": "Dor lombar depois do treino é lesão grave? Entenda quando é apenas sobrecarga e quando é sinal de alerta — e como a fisioterapia esportiva pode ajudar.",
+  "description": "Dor lombar depois do treino é lesão grave? Entenda quando é apenas sobrecarga e quando é sinal de alerta — e como a fisioterapia pode ajudar.",
   "url": "https://strongerfisioterapia.com.br/blog/dor-lombar-em-quem-treina/",
   "image": "https://strongerfisioterapia.com.br/assets/foto-clinica.JPEG",
   "datePublished": "2026-05-15",
@@ -118,31 +118,13 @@ h1 { font-family: 'Bebas Neue', sans-serif; font-size: 52px; line-height: 0.95; 
   /* CAPA */
 .article-cover {
   background: #111;
-  min-height: 200px;
-  height: auto;
+  height: 420px;        /* altura fixa — ajuste se quiser maior ou menor */
   display: flex;
   align-items: center;
   justify-content: center;
   border-bottom: 1px solid #1a1a1a;
-  position: relative;
+  position: relative;   /* obrigatório para o position:absolute da img funcionar */
   overflow: hidden;
-}
-
-.article-cover::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: radial-gradient(
-    ellipse at 50% 60%,
-    var(--accent-glow),
-    transparent 70%
-  );
-}
-
-.article-cover span {
-  font-size: 72px;
-  position: relative;
-  z-index: 1;
 }
 
 /* LAYOUT */
@@ -347,11 +329,11 @@ body.menu-open { overflow: hidden; }
   <img
     src="/assets/capa-dor-lombar.jpg"
     alt="Pessoa com dor lombar fazendo agachamento na fisioterapia na Vila Olímpia, São Paulo"
-    style="width:100%;height:auto;display:block;"
+    style="width:100%; height:100%; object-fit:cover; display:block; position:absolute; inset:0;"
     onerror="this.style.display='none'"
   >
 </div>
-
+  
 <!-- LAYOUT ARTIGO + SIDEBAR -->
 <div class="article-layout">
 
