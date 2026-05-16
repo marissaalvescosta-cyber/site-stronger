@@ -114,10 +114,36 @@ h1 { font-family: 'Bebas Neue', sans-serif; font-size: 52px; line-height: 0.95; 
 .meta-divider { width: 1px; height: 24px; background: #2a2a2a; }
 .meta-item { font-size: 12px; color: #3a3a3a; }
 
-/* CAPA */
-.article-cover { background: #111; height: 320px; display: flex; align-items: center; justify-content: center; border-bottom: 1px solid #1a1a1a; position: relative; overflow: hidden; }
-.article-cover::before { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse at 50% 60%, var(--accent-glow), transparent 70%); }
-.article-cover span { font-size: 72px; position: relative; z-index: 1; }
+
+  /* CAPA */
+.article-cover {
+  background: #111;
+  min-height: 320px;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid #1a1a1a;
+  position: relative;
+  overflow: hidden;
+}
+
+.article-cover::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    ellipse at 50% 60%,
+    var(--accent-glow),
+    transparent 70%
+  );
+}
+
+.article-cover span {
+  font-size: 72px;
+  position: relative;
+  z-index: 1;
+}
 
 /* LAYOUT */
 .article-layout { display: grid; grid-template-columns: 1fr 280px; gap: 48px; max-width: 1100px; margin: 0 auto; padding: 60px 40px 80px; align-items: start; }
@@ -320,8 +346,8 @@ body.menu-open { overflow: hidden; }
 <div class="article-cover">
   <img
     src="/assets/capa-dor-lombar.jpg"
-    alt="Atleta com dor lombar sendo avaliado por fisioterapeuta esportiva em Vila Olímpia, São Paulo"
-    style="width:100%;height:100%;object-fit:contain;position:absolute;inset:0;background:#000;"
+    alt="Pessoa com dor lombar fazendo agachamento na fisioterapia na Vila Olímpia, São Paulo"
+    style="width:100%;height:auto;display:block;"
     onerror="this.style.display='none'"
   >
 </div>
