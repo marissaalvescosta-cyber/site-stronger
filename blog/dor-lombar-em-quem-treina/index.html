@@ -1,117 +1,81 @@
-<!-- POST DOR LOMBAR -->
-<article class="post-card">
-  <div class="post-thumb">
-    <img 
-      src="/assets/capa-dor-lombar.jpg" 
-      alt="Dor lombar em quem treina"
-      style="width:100%;height:100%;object-fit:cover;"
-    >
-  </div>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dor Lombar em Quem Treina: Sobrecarga ou Sinal de Alerta? | Stronger Fisioterapia</title>
+<meta name="description" content="Dor lombar depois do treino é lesão grave? Entenda quando é apenas sobrecarga e quando é sinal de alerta — e como a fisioterapia esportiva pode ajudar.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://strongerfisioterapia.com.br/blog/dor-lombar-em-quem-treina/">
+<link rel="icon" type="image/png" href="/assets/favicon.png">
 
-  <div class="post-body">
-    <div class="post-tag-small">Coluna</div>
+<meta property="og:title" content="Dor Lombar em Quem Treina: Sobrecarga ou Sinal de Alerta?">
+<meta property="og:description" content="Dor lombar depois do treino é lesão grave? Entenda quando é apenas sobrecarga e quando é sinal de alerta.">
+<meta property="og:url" content="https://strongerfisioterapia.com.br/blog/dor-lombar-em-quem-treina/">
+<meta property="og:type" content="article">
+<meta property="og:image" content="https://strongerfisioterapia.com.br/assets/foto-clinica.JPEG">
+<meta property="article:published_time" content="2026-05-15">
+<meta property="article:author" content="Marissa Alves">
+<meta property="article:section" content="Coluna">
+<meta property="article:tag" content="dor lombar, coluna, fisioterapia esportiva, musculação, jiu-jitsu">
 
-    <h2 class="post-title">
-      Dor lombar em quem treina: sobrecarga ou sinal de alerta?
-    </h2>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MedicalWebPage",
+  "headline": "Dor Lombar em Quem Treina: Sobrecarga ou Sinal de Alerta?",
+  "description": "Dor lombar depois do treino é lesão grave? Entenda quando é apenas sobrecarga e quando é sinal de alerta — e como a fisioterapia esportiva pode ajudar.",
+  "url": "https://strongerfisioterapia.com.br/blog/dor-lombar-em-quem-treina/",
+  "image": "https://strongerfisioterapia.com.br/assets/foto-clinica.JPEG",
+  "datePublished": "2026-05-15",
+  "dateModified": "2026-05-15",
+  "author": {
+    "@type": "Person",
+    "name": "Marissa Alves",
+    "jobTitle": "Fisioterapeuta Esportiva",
+    "url": "https://strongerfisioterapia.com.br/#sobre"
+  },
+  "publisher": {
+    "@type": "MedicalBusiness",
+    "name": "Stronger Fisioterapia",
+    "url": "https://strongerfisioterapia.com.br",
+    "logo": "https://strongerfisioterapia.com.br/assets/logo-stronger.png"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://strongerfisioterapia.com.br/blog/dor-lombar-em-quem-treina/"
+  },
+  "breadcrumb": {
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Início", "item": "https://strongerfisioterapia.com.br/" },
+      { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://strongerfisioterapia.com.br/blog/" },
+      { "@type": "ListItem", "position": 3, "name": "Dor Lombar em Quem Treina" }
+    ]
+  }
+}
+</script>
 
-    <p class="post-desc">
-      Entenda quando a dor lombar é apenas sobrecarga e quando merece atenção.
-    </p>
-
-    <div class="post-footer">
-      <span class="post-date">Mai 2026 · 4 min</span>
-
-      <a href="/blog/dor-lombar-em-quem-treina/" class="post-card-link">
-        Ler
-        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <path d="M5 12h14M12 5l7 7-7 7"/>
-        </svg>
-      </a>
-    </div>
-  </div>
-</article>
-E no destaque principal você pode trocar para:
-
-<a href="/blog/dor-lombar-em-quem-treina/" class="btn-ler">
-  Ler artigo completo
-</a>
-O mais importante é:
-
-href="/blog/dor-lombar-em-quem-treina/"
-Porque isso conecta a home do blog ao HTML do artigo. 
-
-
-A estrutura ideal do projeto fica assim:
-
-/blog/
-   index.html
-
-/blog/dor-lombar-em-quem-treina/
-   index.html
-Então:
-
-/blog/ → abre a página principal
-
-/blog/dor-lombar-em-quem-treina/ → abre o artigo
-
-Isso funciona perfeitamente na Vercel/Next/static hosting.
-
-
-Está dando para baixar o arquivo e não ler na página
-
-Isso acontece porque provavelmente o arquivo do artigo está como:
-
-dor-lombar-em-quem-treina.html
-ou então o servidor está tratando o arquivo como download em vez de página.
-
-O ideal é estruturar assim:
-
-/blog/
-   index.html
-
-/blog/dor-lombar-em-quem-treina/
-   index.html
-Ou seja:
-
-a pasta chama:
-
-dor-lombar-em-quem-treina
-e dentro dela existe um:
-
-index.html
-Aí o link:
-
-href="/blog/dor-lombar-em-quem-treina/"
-vai abrir normalmente no navegador.
-
-Hoje provavelmente você está apontando para algo que o host entende como arquivo bruto.
-
-Então faça assim:
-
-Estrutura correta
-public/
-└── blog/
-    ├── index.html
-    └── dor-lombar-em-quem-treina/
-        └── index.html
-Depois mantenha o link exatamente assim:
-
-<a href="/blog/dor-lombar-em-quem-treina/">
-Não coloque:
-
-href="/blog/dor-lombar-em-quem-treina.html"
-nem:
-
-href="/assets/dor-lombar-em-quem-treina.html"
-porque isso pode virar download dependendo da configuração do host.
-
-Seu artigo já está bem estruturado para SEO e navegação. 
-
-
-A home do blog também já está pronta para receber os cards dos artigos. 
-
-
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+:root {
+  --black: #0d0d0d;
+  --white: #f5f2ed;
+  --accent: #C0111A;
+  --accent-dim: #9a0d14;
+  --accent-glow: rgba(192,17,26,0.10);
+  --gray: #1a1a1a;
+  --gray-border: #262626;
+  --text-muted: #777;
+  --text-body: #aaa;
+  --radius: 4px;
+  --content-width: 720px;
+}
+html { scroll-behavior: smooth; }
+body { background: var(--black); color: var(--white); font-family: 'DM Sans', sans-serif; font-size: 16px; line-height: 1.7; overflow-x: hidden; }
+a { color: inherit; text-decoration: none; }
+img { max-width: 100%; display: block; }
 
 /* PROGRESSO */
 .reading-progress { position: fixed; top: 0; left: 0; width: 0%; height: 2px; background: var(--accent); z-index: 200; transition: width 0.1s linear; }
@@ -119,9 +83,9 @@ A home do blog também já está pronta para receber os cards dos artigos.
 /* WA FLUTUANTE */
 .wa-float { position: fixed; bottom: 28px; right: 28px; z-index: 999; display: flex; align-items: center; gap: 10px; }
 .wa-label { background: #1a1a1a; border: 1px solid #2a2a2a; color: var(--white); font-size: 12px; padding: 6px 14px; border-radius: 100px; white-space: nowrap; opacity: 0; transform: translateX(8px); transition: all 0.25s; pointer-events: none; }
-.wa-float .wa-label { opacity: 1; transform: translateX(0); }
+.wa-float:hover .wa-label { opacity: 1; transform: translateX(0); }
 .wa-btn { width: 52px; height: 52px; background: #25D366; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 20px rgba(37,211,102,0.3); transition: transform 0.2s; }
-.wa-btn { transform: scale(1.08); }
+.wa-btn:hover { transform: scale(1.08); }
 
 /* NAV */
 nav { display: flex; justify-content: space-between; align-items: center; padding: 18px 40px; border-bottom: 1px solid #1a1a1a; position: sticky; top: 0; background: rgba(13,13,13,0.97); backdrop-filter: blur(10px); z-index: 100; }
@@ -129,16 +93,16 @@ nav { display: flex; justify-content: space-between; align-items: center; paddin
 .nav-logo img { height: 32px; width: auto; }
 .nav-links { display: flex; gap: 28px; list-style: none; }
 .nav-links a { color: var(--text-muted); font-size: 13px; letter-spacing: 0.5px; transition: color 0.2s; }
-.nav-links a, .nav-links a.active { color: var(--white); }
+.nav-links a:hover, .nav-links a.active { color: var(--white); }
 .nav-cta { background: var(--accent); color: var(--white); padding: 9px 22px; border-radius: var(--radius); font-size: 13px; font-weight: 500; transition: background 0.2s; }
-.nav-cta { background: var(--accent-dim); }
+.nav-cta:hover { background: var(--accent-dim); }
 
 /* HERO */
 .article-hero { background: var(--gray); padding: 56px 40px 0; border-bottom: 1px solid var(--gray-border); }
 .article-hero-inner { max-width: var(--content-width); margin: 0 auto; }
 .breadcrumb { display: flex; align-items: center; gap: 8px; font-size: 12px; color: var(--text-muted); margin-bottom: 24px; }
 .breadcrumb a { color: var(--text-muted); transition: color 0.2s; }
-.breadcrumb a { color: var(--white); }
+.breadcrumb a:hover { color: var(--white); }
 .breadcrumb span { color: #333; }
 .article-tag { display: inline-block; font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase; color: var(--accent); border: 1px solid var(--accent); border-radius: 100px; padding: 4px 12px; margin-bottom: 20px; }
 h1 { font-family: 'Bebas Neue', sans-serif; font-size: 52px; line-height: 0.95; color: var(--white); margin-bottom: 20px; }
@@ -189,14 +153,14 @@ h1 { font-family: 'Bebas Neue', sans-serif; font-size: 52px; line-height: 0.95; 
 .referencias h3 { font-size: 11px; letter-spacing: 2px; text-transform: uppercase; color: var(--text-muted); margin-bottom: 16px; font-weight: 500; }
 .referencias ol { list-style: none; counter-reset: ref-counter; padding: 0; }
 .referencias ol li { counter-increment: ref-counter; color: #555; font-size: 13px; line-height: 1.6; padding: 8px 0 8px 28px; border-bottom: 1px solid #141414; position: relative; font-weight: 300; }
-.referencias ol li { border-bottom: none; }
+.referencias ol li:last-child { border-bottom: none; }
 .referencias ol li::before { content: counter(ref-counter); color: var(--accent); font-size: 11px; font-family: 'Bebas Neue', sans-serif; position: absolute; left: 0; top: 9px; letter-spacing: 0.5px; }
 
 /* COMPARTILHAR */
 .share-bar { display: flex; align-items: center; gap: 12px; padding: 24px 0; border-top: 1px solid #1a1a1a; border-bottom: 1px solid #1a1a1a; margin: 48px 0; }
 .share-label { font-size: 12px; color: var(--text-muted); }
 .share-btn { display: flex; align-items: center; gap: 6px; font-size: 12px; color: var(--text-muted); padding: 7px 14px; border: 1px solid #2a2a2a; border-radius: 100px; transition: all 0.2s; cursor: pointer; background: none; font-family: 'DM Sans', sans-serif; }
-.share-btn { border-color: var(--accent); color: var(--white); }
+.share-btn:hover { border-color: var(--accent); color: var(--white); }
 
 /* AUTOR */
 .author-box { background: var(--gray); border: 1px solid var(--gray-border); border-radius: var(--radius); padding: 28px; margin: 40px 0; display: flex; gap: 20px; align-items: flex-start; }
@@ -217,7 +181,7 @@ h1 { font-family: 'Bebas Neue', sans-serif; font-size: 52px; line-height: 0.95; 
 .related h3 { font-family: 'Bebas Neue', sans-serif; font-size: 24px; color: var(--white); margin-bottom: 20px; letter-spacing: 1px; }
 .related-grid { display: flex; flex-direction: column; gap: 1px; background: #1a1a1a; }
 .related-card { background: #0d0d0d; padding: 20px; display: flex; gap: 14px; align-items: flex-start; transition: background 0.2s; }
-.related-card { background: #111; }
+.related-card:hover { background: #111; }
 .related-thumb { width: 48px; height: 48px; background: #141414; border-radius: 4px; display: flex; align-items: center; justify-content: center; font-size: 20px; flex-shrink: 0; }
 .related-tag { font-size: 10px; letter-spacing: 1px; text-transform: uppercase; color: var(--accent); margin-bottom: 4px; }
 .related-title { font-size: 14px; font-weight: 500; color: var(--white); line-height: 1.4; }
@@ -229,13 +193,13 @@ h1 { font-family: 'Bebas Neue', sans-serif; font-size: 52px; line-height: 0.95; 
 .sidebar-toc h4 { font-size: 10px; letter-spacing: 2px; text-transform: uppercase; color: var(--accent); margin-bottom: 16px; font-weight: 500; }
 .toc-list { list-style: none; display: flex; flex-direction: column; gap: 2px; padding: 0; }
 .toc-list li a { font-size: 13px; color: var(--text-muted); display: block; padding: 6px 0; border-bottom: 1px solid #222; transition: color 0.2s; line-height: 1.4; }
-.toc-list li a { color: var(--white); }
-.toc-list li a { border-bottom: none; }
+.toc-list li a:hover { color: var(--white); }
+.toc-list li:last-child a { border-bottom: none; }
 .sidebar-cta { background: var(--accent); border-radius: var(--radius); padding: 24px; text-align: center; }
 .sidebar-cta h4 { font-family: 'Bebas Neue', sans-serif; font-size: 24px; color: var(--white); line-height: 1; margin-bottom: 8px; }
 .sidebar-cta p { font-size: 13px; color: rgba(255,255,255,0.7); margin-bottom: 16px; font-weight: 300; line-height: 1.5; }
 .sidebar-cta a { background: var(--black); color: var(--white); padding: 10px 18px; border-radius: var(--radius); font-size: 13px; font-weight: 500; display: block; transition: opacity 0.2s; }
-.sidebar-cta a { opacity: 0.85; }
+.sidebar-cta a:hover { opacity: 0.85; }
 
 /* NAV ARTIGOS */
 .article-footer-nav { background: var(--gray); border-top: 1px solid var(--gray-border); padding: 40px; display: flex; justify-content: space-between; align-items: center; gap: 20px; }
@@ -249,178 +213,353 @@ footer { background: #080808; border-top: 1px solid #0f0f0f; padding: 28px 40px;
 .footer-logo img { height: 24px; width: auto; opacity: 0.35; }
 .footer-copy { font-size: 12px; color: #222; }
 .footer-links a { font-size: 12px; color: #2e2e2e; margin-left: 20px; transition: color 0.2s; }
-.footer-links a { color: var(--text-muted); }
+.footer-links a:hover { color: var(--text-muted); }
 
 /* MENU MOBILE */
 .menu-toggle { width: 48px; height: 48px; display: none; flex-direction: column; justify-content: center; align-items: center; gap: 6px; background: none; border: none; cursor: pointer; z-index: 1001; }
 .menu-toggle span { width: 22px; height: 1.5px; background: var(--white); transition: 0.3s; }
-.menu-toggle.active span(1) { transform: rotate(45deg) translateY(5px); }
-.menu-toggle.active span(2) { transform: rotate(-45deg) translateY(-5px); }
+.menu-toggle.active span:nth-child(1) { transform: rotate(45deg) translateY(5px); }
+.menu-toggle.active span:nth-child(2) { transform: rotate(-45deg) translateY(-5px); }
 .mobile-menu { position: fixed; inset: 0; background: rgba(13,13,13,0.98); backdrop-filter: blur(14px); display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 28px; z-index: 1000; opacity: 0; pointer-events: none; transition: 0.35s ease; }
 .mobile-menu.active { opacity: 1; pointer-events: auto; }
 .mobile-menu a { font-family: 'Bebas Neue', sans-serif; font-size: 34px; letter-spacing: 1px; color: var(--white); transition: 0.2s; }
-.mobile-menu a { color: var(--accent); }
+.mobile-menu a:hover { color: var(--accent); }
 .mobile-menu-cta { margin-top: 20px; font-family: 'DM Sans', sans-serif !important; font-size: 14px !important; letter-spacing: 0 !important; background: var(--accent); padding: 14px 26px; border-radius: 4px; }
 body.menu-open { overflow: hidden; }
 
 /* RESPONSIVO */
 @media (max-width: 900px) {
-.article-layout { grid-template-columns: 1fr; }
-.article-sidebar { position: static; }
-.sidebar-toc { display: none; }
+  .article-layout { grid-template-columns: 1fr; }
+  .article-sidebar { position: static; }
+  .sidebar-toc { display: none; }
 }
 @media (max-width: 768px) {
-nav { padding: 16px 20px; }
-.nav-links { display: none; }
-.nav-cta { display: none; }
-.menu-toggle { display: flex; }
-.article-hero { padding: 40px 20px 0; }
-h1 { font-size: 36px; }
-.article-layout { padding: 40px 20px 60px; gap: 32px; }
-.article-footer-nav { flex-direction: column; padding: 28px 20px; }
-footer { flex-direction: column; gap: 16px; text-align: center; padding: 28px 20px; }
-.footer-links a { margin: 0 10px; }
-.wa-float { bottom: 20px; right: 20px; }
+  nav { padding: 16px 20px; }
+  .nav-links { display: none; }
+  .nav-cta { display: none; }
+  .menu-toggle { display: flex; }
+  .article-hero { padding: 40px 20px 0; }
+  h1 { font-size: 36px; }
+  .article-layout { padding: 40px 20px 60px; gap: 32px; }
+  .article-footer-nav { flex-direction: column; padding: 28px 20px; }
+  footer { flex-direction: column; gap: 16px; text-align: center; padding: 28px 20px; }
+  .footer-links a { margin: 0 10px; }
+  .wa-float { bottom: 20px; right: 20px; }
 }
+</style>
+</head>
+<body>
 
+<div class="reading-progress" id="readingProgress"></div>
 
-<p class="article-intro">
-  Sentir dor lombar depois de um treino mais intenso não significa automaticamente que existe uma lesão grave. Na maioria dos casos, o movimento e o fortalecimento ajudam mais do que o repouso prolongado.
-</p>
-
-<h2 id="sobrecarga">Quando é apenas sobrecarga?</h2>
-
-<p>O desconforto lombar pós-treino aparece com frequência por <strong>aumento de carga, falta de recuperação adequada, excesso de treino</strong> ou mudanças na rotina de exercícios. Isso é extremamente comum em pessoas que fazem musculação, corrida, crossfit ou jiu-jitsu.</p>
-
-<div class="success">
-  <span class="success-label">✓ Boa notícia</span>
-  <p>Na maioria dos casos, o movimento e o fortalecimento ajudam muito mais do que o repouso prolongado. Parar de treinar não costuma ser a solução.</p>
-</div>
-
-<h2 id="exames">O que os exames dizem — e o que não dizem</h2>
-
-<p>Outro ponto importante é que <strong>exames como ressonância nem sempre explicam a dor</strong>. Muitas pessoas sem nenhum sintoma apresentam hérnia de disco, desgaste ou abaulamentos na coluna e continuam treinando normalmente.</p>
-
-<p>Por isso, o exame deve sempre ser interpretado junto com os sintomas e a avaliação física. <strong>Dor não é sinônimo automático de "coluna ruim" ou "fim dos treinos".</strong></p>
-
-<div class="callout">
-  <span class="callout-label">📋 Para saber</span>
-  <p>Estudos mostram que mais de 50% das pessoas sem dor alguma apresentam alterações na ressonância da coluna — como hérnia ou protrusão discal. O exame sozinho não define o tratamento.</p>
-</div>
-
-<h2 id="alertas">Sinais que merecem atenção imediata</h2>
-
-<p>Apesar disso, existem alguns sinais que merecem atenção e avaliação rápida por um profissional de saúde:</p>
-
-<ul>
-  <li><strong>Perda importante de força</strong> nos membros inferiores</li>
-  <li><strong>Alteração urinária ou intestinal</strong> sem causa aparente</li>
-  <li><strong>Dormência na região íntima</strong> (sinal de alerta sério)</li>
-  <li><strong>Febre associada à dor</strong> lombar</li>
-  <li><strong>Dor muito intensa e constante à noite</strong>, que não melhora com nenhuma posição</li>
-</ul>
-
-<div class="warning">
-  <span class="warning-label">⚠️ Atenção</span>
-  <p>Esses casos são menos comuns, mas precisam de investigação adequada e rápida. Se você apresenta algum desses sintomas, procure um profissional de saúde antes de continuar treinando.</p>
-</div>
-
-<!-- IMAGEM DO MEIO -->
-<figure style="margin:40px 0;border-radius:var(--radius);overflow:hidden;border:1px solid #1a1a1a;">
-  <img
-    src="/assets/imagem-dor-lombar.jpg"
-    alt="Exercício de fortalecimento lombar para todos — fisioterapia ortopédica e esportiva Stronger Fisioterapia Vila Olímpia"
-    style="width:100%;height:300px;object-fit:cover;display:block;"
-    loading="lazy"
-    onerror="this.parentElement.style.display='none'"
-  >
-  <figcaption style="background:#111;padding:10px 16px;font-size:12px;color:var(--text-muted);letter-spacing:0.3px;">
-    Fortalecimento lombar: parte fundamental do tratamento e da prevenção de novas crises.
-  </figcaption>
-</figure>
-
-<div class="divider"></div>
-
-<h2 id="fisioterapia">O que a fisioterapia faz pela sua lombar</h2>
-
-<p>Na fisioterapia, o foco não é apenas aliviar a dor — é <strong>entender o motivo dela aparecer</strong>. Avaliamos força, mobilidade, controle de movimento e sobrecarga durante os treinos para ajudar no retorno ao esporte de forma segura.</p>
-
-<p>Em muitos casos, <strong>pequenos ajustes no treino e um bom fortalecimento</strong> já fazem grande diferença na recuperação e prevenção de novas crises.</p>
-
-<div class="cta-inline">
-  <h3>DOR LOMBAR ATRAPALHANDO<br>SEU TREINO?</h3>
-  <p>Agende uma avaliação e entenda a causa de verdade.</p>
-  <a href="https://wa.me/5511932427523?text=Olá!%20Tenho%20dor%20lombar%20e%20quero%20agendar%20uma%20avaliação.">
-    Agendar pelo WhatsApp →
+<!-- WA FLUTUANTE -->
+<div class="wa-float">
+  <span class="wa-label">Agendar avaliação</span>
+  <a href="https://wa.me/5511932427523?text=Olá!%20Li%20o%20artigo%20sobre%20dor%20lombar%20e%20quero%20agendar%20uma%20avaliação." class="wa-btn" aria-label="WhatsApp">
+    <svg width="26" height="26" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
   </a>
 </div>
 
-<!-- REFERÊNCIAS -->
-<div class="referencias">
-  <h3>Referências científicas</h3>
-  <ol>
-    <li>Hayden JA et al. Exercise therapy for chronic low back pain. <em>Cochrane Database of Systematic Reviews</em>, 2021.</li>
-    <li>George SZ et al. Interventions for the Management of Acute and Chronic Low Back Pain. <em>JOSPT</em>, 2021.</li>
-    <li>World Health Organization (WHO). Guideline for chronic low back pain, 2023.</li>
-    <li>Brinjikji W et al. Systematic literature review of imaging features of spinal degeneration in asymptomatic populations. <em>AJNR</em>, 2015.</li>
-    <li>Trompeter K et al. Treating low back pain in athletes: a systematic review, 2021.</li>
-  </ol>
-</div>
-
-<!-- COMPARTILHAR -->
-<div class="share-bar">
-  <span class="share-label">Compartilhar:</span>
-  <button class="share-btn" onclick="shareWhatsApp()">
-    <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-    WhatsApp
+<!-- NAV -->
+<nav>
+  <a href="/" class="nav-logo" aria-label="Stronger Fisioterapia">
+    <img src="/assets/logo-stronger.png" alt="Stronger Fisioterapia">
+  </a>
+  <ul class="nav-links">
+    <li><a href="/#servicos">Serviços</a></li>
+    <li><a href="/#avaliacao">Avaliação</a></li>
+    <li><a href="/blog/" class="active">Blog</a></li>
+    <li><a href="/#sobre">Sobre</a></li>
+    <li><a href="/#local">Localização</a></li>
+  </ul>
+  <a href="https://wa.me/5511932427523" class="nav-cta">Agendar →</a>
+  <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">
+    <span></span><span></span>
   </button>
-  <button class="share-btn" onclick="copyLink()">
-    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
-    Copiar link
-  </button>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="/#servicos">Serviços</a>
+  <a href="/#avaliacao">Avaliação</a>
+  <a href="/blog/">Blog</a>
+  <a href="/#sobre">Sobre</a>
+  <a href="/#local">Localização</a>
+  <a href="https://wa.me/5511932427523" class="mobile-menu-cta" target="_blank">Agendar pelo WhatsApp</a>
 </div>
 
-<!-- AUTOR -->
-<div class="author-box">
-  <div class="author-box-avatar">
-    <img src="/assets/foto-marissa.jpg" alt="Marissa Alves" onerror="this.style.display='none';this.parentElement.innerHTML='👩‍⚕️'">
+<!-- HERO DO ARTIGO -->
+<header class="article-hero">
+  <div class="article-hero-inner">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="/">Início</a>
+      <span>›</span>
+      <a href="/blog/">Blog</a>
+      <span>›</span>
+      <span style="color:var(--white)">Coluna</span>
+    </nav>
+    <span class="article-tag">Coluna · Fisioterapia </span>
+    <h1>DOR LOMBAR EM QUEM TREINA:<br>SOBRECARGA OU<br>SINAL DE ALERTA?</h1>
+    <div class="article-meta">
+      <div class="meta-author">
+               <div>
+          <span class="author-name">Marissa Alves</span>
+          <span class="author-title">Fisioterapeuta · CREFITO3: 295472-F</span>
+        </div>
+      </div>
+      <div class="meta-divider"></div>
+      <span class="meta-item">📅 15 de maio de 2026</span>
+      <div class="meta-divider"></div>
+      <span class="meta-item">⏱ 4 min de leitura</span>
+      <div class="meta-divider"></div>
+      <span class="meta-item">🏋️ Musculação · BJJ · Coluna</span>
+    </div>
   </div>
-  <div>
-    <div class="author-box-name">Marissa Alves</div>
-    <div class="author-box-title">Fisioterapeuta - CREFITO3: 295472-F </div>
-    <p class="author-box-bio">Formada pela UNIFAL-MG com pós-graduação em Fisiologia do Exercício pela UNIFESP. Praticante de jiu-jitsu e musculação, atende atletas amadores e profissionais na Stronger Fisioterapia, em Vila Olímpia, São Paulo.</p>
-  </div>
+</header>
+
+<!-- CAPA -->
+<div class="article-cover">
+  <img
+    src="/assets/capa-dor-lombar.jpg"
+    alt="Atleta com dor lombar sendo avaliado por fisioterapeuta esportiva em Vila Olímpia, São Paulo"
+    style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0;"
+    onerror="this.style.display='none'"
+  >
+  <span style="position:relative;z-index:1;font-size:72px;">🦴</span>
 </div>
 
-<!-- RELACIONADOS -->
-<div class="related">
-  <h3>LEIA TAMBÉM</h3>
-  <div class="related-grid">
-    <a href="/blog/voltar-ao-jiu-jitsu-apos-cirurgia-joelho/" class="related-card">
-      <div class="related-thumb">🦵</div>
-      <div>
-        <div class="related-tag">Reabilitação</div>
-        <div class="related-title">Como voltar ao jiu-jitsu após cirurgia no joelho</div>
-        <div class="related-date">Mai 2026 · 6 min</div>
+<!-- LAYOUT ARTIGO + SIDEBAR -->
+<div class="article-layout">
+
+  <main class="article-content" id="articleContent">
+
+    <p class="article-intro">
+      Sentir dor lombar depois de um treino mais intenso não significa automaticamente que existe uma lesão grave. Na maioria dos casos, o movimento e o fortalecimento ajudam mais do que o repouso prolongado.
+    </p>
+
+    <h2 id="sobrecarga">Quando é apenas sobrecarga?</h2>
+
+    <p>O desconforto lombar pós-treino aparece com frequência por <strong>aumento de carga, falta de recuperação adequada, excesso de treino</strong> ou mudanças na rotina de exercícios. Isso é extremamente comum em pessoas que fazem musculação, corrida, crossfit ou jiu-jitsu.</p>
+
+    <div class="success">
+      <span class="success-label">✓ Boa notícia</span>
+      <p>Na maioria dos casos, o movimento e o fortalecimento ajudam muito mais do que o repouso prolongado. Parar de treinar não costuma ser a solução.</p>
+    </div>
+
+    <h2 id="exames">O que os exames dizem — e o que não dizem</h2>
+
+    <p>Outro ponto importante é que <strong>exames como ressonância nem sempre explicam a dor</strong>. Muitas pessoas sem nenhum sintoma apresentam hérnia de disco, desgaste ou abaulamentos na coluna e continuam treinando normalmente.</p>
+
+    <p>Por isso, o exame deve sempre ser interpretado junto com os sintomas e a avaliação física. <strong>Dor não é sinônimo automático de "coluna ruim" ou "fim dos treinos".</strong></p>
+
+    <div class="callout">
+      <span class="callout-label">📋 Para saber</span>
+      <p>Estudos mostram que mais de 50% das pessoas sem dor alguma apresentam alterações na ressonância da coluna — como hérnia ou protrusão discal. O exame sozinho não define o tratamento.</p>
+    </div>
+
+    <h2 id="alertas">Sinais que merecem atenção imediata</h2>
+
+    <p>Apesar disso, existem alguns sinais que merecem atenção e avaliação rápida por um profissional de saúde:</p>
+
+    <ul>
+      <li><strong>Perda importante de força</strong> nos membros inferiores</li>
+      <li><strong>Alteração urinária ou intestinal</strong> sem causa aparente</li>
+      <li><strong>Dormência na região íntima</strong> (sinal de alerta sério)</li>
+      <li><strong>Febre associada à dor</strong> lombar</li>
+      <li><strong>Dor muito intensa e constante à noite</strong>, que não melhora com nenhuma posição</li>
+    </ul>
+
+    <div class="warning">
+      <span class="warning-label">⚠️ Atenção</span>
+      <p>Esses casos são menos comuns, mas precisam de investigação adequada e rápida. Se você apresenta algum desses sintomas, procure um profissional de saúde antes de continuar treinando.</p>
+    </div>
+
+    <!-- IMAGEM DO MEIO -->
+    <figure style="margin:40px 0;border-radius:var(--radius);overflow:hidden;border:1px solid #1a1a1a;">
+      <img
+        src="/assets/imagem-dor-lombar.jpg"
+        alt="Exercício de fortalecimento lombar para atletas — fisioterapia esportiva Stronger Fisioterapia Vila Olímpia"
+        style="width:100%;height:300px;object-fit:cover;display:block;"
+        loading="lazy"
+        onerror="this.parentElement.style.display='none'"
+      >
+      <figcaption style="background:#111;padding:10px 16px;font-size:12px;color:var(--text-muted);letter-spacing:0.3px;">
+        Estabilização CORE: parte fundamental do tratamento e da prevenção de novas crises.
+      </figcaption>
+    </figure>
+
+    <div class="divider"></div>
+
+    <h2 id="fisioterapia">O que a fisioterapia faz pela sua lombar</h2>
+
+    <p>Na fisioterapia, o foco não é apenas aliviar a dor — é <strong>entender o motivo dela aparecer</strong>. Avaliamos força, mobilidade, controle de movimento e sobrecarga durante os treinos para ajudar no retorno ao esporte de forma segura.</p>
+
+    <p>Em muitos casos, <strong>pequenos ajustes no treino e um bom fortalecimento</strong> já fazem grande diferença na recuperação e prevenção de novas crises.</p>
+
+    <div class="cta-inline">
+      <h3>DOR LOMBAR ATRAPALHANDO<br>SEU TREINO?</h3>
+      <p>Agende uma avaliação e entenda a causa de verdade.</p>
+      <a href="https://wa.me/5511932427523?text=Olá!%20Tenho%20dor%20lombar%20e%20quero%20agendar%20uma%20avaliação.">
+        Agendar pelo WhatsApp →
+      </a>
+    </div>
+
+    <!-- REFERÊNCIAS -->
+    <div class="referencias">
+      <h3>Referências científicas</h3>
+      <ol>
+        <li>Hayden JA et al. Exercise therapy for chronic low back pain. <em>Cochrane Database of Systematic Reviews</em>, 2021.</li>
+        <li>George SZ et al. Interventions for the Management of Acute and Chronic Low Back Pain. <em>JOSPT</em>, 2021.</li>
+        <li>World Health Organization (WHO). Guideline for chronic low back pain, 2023.</li>
+        <li>Brinjikji W et al. Systematic literature review of imaging features of spinal degeneration in asymptomatic populations. <em>AJNR</em>, 2015.</li>
+        <li>Trompeter K et al. Treating low back pain in athletes: a systematic review, 2021.</li>
+      </ol>
+    </div>
+
+    <!-- COMPARTILHAR -->
+    <div class="share-bar">
+      <span class="share-label">Compartilhar:</span>
+      <button class="share-btn" onclick="shareWhatsApp()">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        WhatsApp
+      </button>
+      <button class="share-btn" onclick="copyLink()">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+        Copiar link
+      </button>
+    </div>
+
+    <!-- AUTOR -->
+    <div class="author-box">
+      <div class="author-box-avatar">
+        <img src="/assets/foto-marissa.jpg" alt="Marissa Alves" onerror="this.style.display='none';this.parentElement.innerHTML='👩‍⚕️'">
       </div>
-    </a>
-    <a href="/blog/erros-na-reabilitacao/" class="related-card">
-      <div class="related-thumb">⚠️</div>
       <div>
-        <div class="related-tag">Prevenção</div>
-        <div class="related-title">3 erros que atletas cometem na reabilitação</div>
-        <div class="related-date">Abr 2026 · 5 min</div>
+        <div class="author-box-name">Marissa Alves</div>
+        <div class="author-box-title">Fisioterapeuta Esportiva · Faixa Roxa BJJ</div>
+        <p class="author-box-bio">Formada pela UNIFAL-MG com pós-graduação em Fisiologia do Exercício pela UNIFESP. Praticante de jiu-jitsu e musculação, atende atletas amadores e profissionais na Stronger Fisioterapia, em Vila Olímpia, São Paulo.</p>
       </div>
-    </a>
-    <a href="/blog/dor-no-ombro-volta-sempre/" class="related-card">
-      <div class="related-thumb">💪</div>
-      <div>
-        <div class="related-tag">Musculação</div>
-        <div class="related-title">Por que sua dor no ombro volta sempre</div>
-        <div class="related-date">Mar 2026 · 4 min</div>
+    </div>
+
+    <!-- RELACIONADOS -->
+    <div class="related">
+      <h3>LEIA TAMBÉM</h3>
+      <div class="related-grid">
+        <a href="/blog/voltar-ao-jiu-jitsu-apos-cirurgia-joelho/" class="related-card">
+          <div class="related-thumb">🦵</div>
+          <div>
+            <div class="related-tag">Reabilitação</div>
+            <div class="related-title">Como voltar ao jiu-jitsu após cirurgia no joelho</div>
+            <div class="related-date">Mai 2026 · 6 min</div>
+          </div>
+        </a>
+        <a href="/blog/erros-na-reabilitacao/" class="related-card">
+          <div class="related-thumb">⚠️</div>
+          <div>
+            <div class="related-tag">Prevenção</div>
+            <div class="related-title">3 erros que atletas cometem na reabilitação</div>
+            <div class="related-date">Abr 2026 · 5 min</div>
+          </div>
+        </a>
+        <a href="/blog/dor-no-ombro-volta-sempre/" class="related-card">
+          <div class="related-thumb">💪</div>
+          <div>
+            <div class="related-tag">Musculação</div>
+            <div class="related-title">Por que sua dor no ombro volta sempre</div>
+            <div class="related-date">Mar 2026 · 4 min</div>
+          </div>
+        </a>
       </div>
-    </a>
-  </div>
+    </div>
+
+  </main>
+
+  <!-- SIDEBAR -->
+  <aside class="article-sidebar">
+    <div class="sidebar-toc">
+      <h4>Neste artigo</h4>
+      <ul class="toc-list">
+        <li><a href="#sobrecarga">Quando é apenas sobrecarga?</a></li>
+        <li><a href="#exames">O que os exames dizem</a></li>
+        <li><a href="#alertas">Sinais de alerta imediatos</a></li>
+        <li><a href="#fisioterapia">O que a fisioterapia faz</a></li>
+      </ul>
+    </div>
+    <div class="sidebar-cta">
+      <h4>DOR LOMBAR NO TREINO?</h4>
+      <p>Agende sua avaliação e entenda a causa de verdade.</p>
+      <a href="https://wa.me/5511932427523?text=Olá!%20Tenho%20dor%20lombar%20e%20quero%20agendar%20uma%20avaliação.">Agendar pelo WhatsApp →</a>
+    </div>
+  </aside>
+
 </div>
 
-Fechar
+<!-- NAV ENTRE ARTIGOS -->
+<nav class="article-footer-nav" aria-label="Navegação entre artigos">
+  <a href="/blog/" class="footer-nav-btn">
+    <span>← Voltar ao blog</span>
+    <strong>Todos os artigos</strong>
+  </a>
+  <a href="/blog/voltar-ao-jiu-jitsu-apos-cirurgia-joelho/" class="footer-nav-btn next">
+    <span>Próximo artigo →</span>
+    <strong>Como voltar ao jiu-jitsu após cirurgia no joelho</strong>
+  </a>
+</nav>
+
+<!-- FOOTER -->
+<footer>
+  <a href="/" class="footer-logo" aria-label="Stronger Fisioterapia">
+    <img src="/assets/logo-stronger.png" alt="Stronger Fisioterapia">
+  </a>
+  <div class="footer-copy">© 2026 Stronger Fisioterapia · Vila Olímpia, São Paulo</div>
+  <div class="footer-links">
+    <a href="https://instagram.com/strongerfisioterapia" target="_blank" rel="noopener">Instagram</a>
+    <a href="https://wa.me/5511932427523">WhatsApp</a>
+    </div>
+</footer>
+
+<script>
+window.addEventListener('scroll', () => {
+  const article = document.getElementById('articleContent');
+  const bar = document.getElementById('readingProgress');
+  if (!article || !bar) return;
+  const scrolled = window.scrollY - article.offsetTop;
+  const progress = Math.min(Math.max((scrolled / article.offsetHeight) * 100, 0), 100);
+  bar.style.width = progress + '%';
+});
+
+function shareWhatsApp() {
+  const url = encodeURIComponent(window.location.href);
+  const text = encodeURIComponent('Dor lombar em quem treina: sobrecarga ou sinal de alerta? — Stronger Fisioterapia');
+  window.open('https://wa.me/?text=' + text + '%20' + url, '_blank');
+}
+
+function copyLink() {
+  navigator.clipboard.writeText(window.location.href).then(() => {
+    document.querySelectorAll('.share-btn').forEach(btn => {
+      if (btn.textContent.includes('Copiar')) {
+        const orig = btn.innerHTML;
+        btn.textContent = 'Copiado ✓';
+        setTimeout(() => { btn.innerHTML = orig; }, 2000);
+      }
+    });
+  });
+}
+
+const menuToggle = document.getElementById('menuToggle');
+const mobileMenu = document.getElementById('mobileMenu');
+menuToggle.addEventListener('click', () => {
+  menuToggle.classList.toggle('active');
+  mobileMenu.classList.toggle('active');
+  document.body.classList.toggle('menu-open');
+});
+document.querySelectorAll('.mobile-menu a').forEach(link => {
+  link.addEventListener('click', () => {
+    menuToggle.classList.remove('active');
+    mobileMenu.classList.remove('active');
+    document.body.classList.remove('menu-open');
+  });
+});
+</script>
+
+</body>
+</html>
