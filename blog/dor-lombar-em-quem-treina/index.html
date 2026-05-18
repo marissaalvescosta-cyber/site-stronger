@@ -24,7 +24,7 @@
   "@context": "https://schema.org",
   "@type": "MedicalWebPage",
   "headline": "Dor Lombar em Quem Treina: Sobrecarga ou Sinal de Alerta?",
-  "description": "Dor lombar depois do treino é lesão grave? Entenda quando é apenas sobrecarga e quando é sinal de alerta — e como a fisioterapia pode ajudar.",
+  "description": "Dor lombar depois do treino é lesão grave? Entenda quando é apenas sobrecarga e quando é sinal de alerta — e como a fisioterapia esportiva pode ajudar.",
   "url": "https://strongerfisioterapia.com.br/blog/dor-lombar-em-quem-treina/",
   "image": "https://strongerfisioterapia.com.br/assets/foto-clinica.JPEG",
   "datePublished": "2026-05-15",
@@ -32,7 +32,7 @@
   "author": {
     "@type": "Person",
     "name": "Marissa Alves",
-    "jobTitle": "Fisioterapeuta Ortopédica e Esportiva",
+    "jobTitle": "Fisioterapeuta Esportiva",
     "url": "https://strongerfisioterapia.com.br/#sobre"
   },
   "publisher": {
@@ -114,18 +114,10 @@ h1 { font-family: 'Bebas Neue', sans-serif; font-size: 52px; line-height: 0.95; 
 .meta-divider { width: 1px; height: 24px; background: #2a2a2a; }
 .meta-item { font-size: 12px; color: #3a3a3a; }
 
-
-  /* CAPA */
-.article-cover {
-  background: #111;
-  height: 480px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-bottom: 1px solid #1a1a1a;
-  position: relative;
-  overflow: hidden;
-}
+/* CAPA */
+.article-cover { background: #111; height: 480px; display: flex; align-items: center; justify-content: center; border-bottom: 1px solid #1a1a1a; position: relative; overflow: hidden; }
+.article-cover::before { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse at 50% 60%, var(--accent-glow), transparent 70%); pointer-events: none; z-index: 0; }
+.article-cover span { font-size: 72px; position: relative; z-index: 1; }
 
 /* LAYOUT */
 .article-layout { display: grid; grid-template-columns: 1fr 280px; gap: 48px; max-width: 1100px; margin: 0 auto; padding: 60px 40px 80px; align-items: start; }
@@ -247,6 +239,7 @@ body.menu-open { overflow: hidden; }
   .nav-cta { display: none; }
   .menu-toggle { display: flex; }
   .article-hero { padding: 40px 20px 0; }
+  .article-cover { height: 260px; }
   h1 { font-size: 36px; }
   .article-layout { padding: 40px 20px 60px; gap: 32px; }
   .article-footer-nav { flex-direction: column; padding: 28px 20px; }
@@ -305,13 +298,16 @@ body.menu-open { overflow: hidden; }
       <span>›</span>
       <span style="color:var(--white)">Coluna</span>
     </nav>
-    <span class="article-tag">Coluna · Fisioterapia </span>
+    <span class="article-tag">Coluna · Fisioterapia Esportiva</span>
     <h1>DOR LOMBAR EM QUEM TREINA:<br>SOBRECARGA OU<br>SINAL DE ALERTA?</h1>
     <div class="article-meta">
       <div class="meta-author">
-               <div>
+        <div class="author-avatar">
+          <img src="/assets/foto-marissa.jpg" alt="Marissa Alves" onerror="this.style.display='none';this.parentElement.innerHTML='👩‍⚕️'">
+        </div>
+        <div>
           <span class="author-name">Marissa Alves</span>
-          <span class="author-title">Fisioterapeuta · CREFITO3: 295472-F</span>
+          <span class="author-title">Fisioterapeuta Esportiva · Faixa Roxa BJJ</span>
         </div>
       </div>
       <div class="meta-divider"></div>
@@ -328,12 +324,12 @@ body.menu-open { overflow: hidden; }
 <div class="article-cover">
   <img
     src="/assets/capa-dor-lombar.jpg"
-    alt="Pessoa com dor lombar fazendo agachamento na fisioterapia na Vila Olímpia, São Paulo"
-    style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover; display:block;"
+    alt="Atleta com dor lombar sendo avaliado por fisioterapeuta esportiva em Vila Olímpia, São Paulo"
+    style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover; object-position:center 25%; display:block; z-index:1;"
     onerror="this.style.display='none'"
   >
 </div>
-  
+
 <!-- LAYOUT ARTIGO + SIDEBAR -->
 <div class="article-layout">
 
@@ -390,15 +386,15 @@ body.menu-open { overflow: hidden; }
         onerror="this.parentElement.style.display='none'"
       >
       <figcaption style="background:#111;padding:10px 16px;font-size:12px;color:var(--text-muted);letter-spacing:0.3px;">
-        Estabilização CORE: parte fundamental do tratamento e da prevenção de novas crises.
+        Fortalecimento lombar: parte fundamental do tratamento e da prevenção de novas crises.
       </figcaption>
     </figure>
 
     <div class="divider"></div>
 
-    <h2 id="fisioterapia">O que a fisioterapia faz pela sua lombar</h2>
+    <h2 id="fisioterapia">O que a fisioterapia esportiva faz pela sua lombar</h2>
 
-    <p>Na fisioterapia, o foco não é apenas aliviar a dor — é <strong>entender o motivo dela aparecer</strong>. Avaliamos força, mobilidade, controle de movimento e sobrecarga durante os treinos para ajudar no retorno ao esporte de forma segura.</p>
+    <p>Na fisioterapia esportiva, o foco não é apenas aliviar a dor — é <strong>entender o motivo dela aparecer</strong>. Avaliamos força, mobilidade, controle de movimento e sobrecarga durante os treinos para ajudar no retorno ao esporte de forma segura.</p>
 
     <p>Em muitos casos, <strong>pequenos ajustes no treino e um bom fortalecimento</strong> já fazem grande diferença na recuperação e prevenção de novas crises.</p>
 
@@ -442,8 +438,8 @@ body.menu-open { overflow: hidden; }
       </div>
       <div>
         <div class="author-box-name">Marissa Alves</div>
-        <div class="author-box-title">Fisioterapeuta · CREFITO3: 295472-F</div>
-        <p class="author-box-bio">Formada pela UNIFAL-MG com pós-graduação em Fisiologia do Exercício pela UNIFESP. Praticante de jiu-jitsu e musculação, atende atletas amadores e profissionais na Stronger Fisioterapia, na Vila Olímpia, São Paulo.</p>
+        <div class="author-box-title">Fisioterapeuta Esportiva · Faixa Roxa BJJ</div>
+        <p class="author-box-bio">Formada pela UNIFAL-MG com pós-graduação em Fisiologia do Exercício pela UNIFESP. Praticante de jiu-jitsu e musculação, atende atletas amadores e profissionais na Stronger Fisioterapia, em Vila Olímpia, São Paulo.</p>
       </div>
     </div>
 
@@ -521,7 +517,8 @@ body.menu-open { overflow: hidden; }
   <div class="footer-links">
     <a href="https://instagram.com/strongerfisioterapia" target="_blank" rel="noopener">Instagram</a>
     <a href="https://wa.me/5511932427523">WhatsApp</a>
-    </div>
+    <a href="https://www.doctoralia.com.br/marissa-alves/fisioterapeuta/sao-paulo" target="_blank" rel="noopener">Doctoralia</a>
+  </div>
 </footer>
 
 <script>
