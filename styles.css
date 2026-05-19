@@ -582,25 +582,6 @@ h1 em { color: var(--accent); font-style: normal; }
 }
 
 /* =====================
-   PARCEIROS
-   ===================== */
-.parceiros { background: var(--black); padding: 80px 40px; }
-.parceiros-intro { color: var(--text-muted); font-size: 15px; font-weight: 300; max-width: 560px; margin-top: 12px; line-height: 1.75; }
-.parceiros-fases { display: grid; grid-template-columns: repeat(3,1fr); gap: 1px; margin-top: 48px; background: #1a1a1a; }
-.fase-col { background: #0d0d0d; padding: 36px 28px; }
-.fase-titulo {
-  font-size: 10px; letter-spacing: 2px; text-transform: uppercase;
-  color: var(--accent); margin-bottom: 20px; font-weight: 500;
-  display: flex; align-items: center; gap: 8px;
-}
-.fase-titulo::after { content: ''; flex: 1; height: 1px; background: #1a1a1a; }
-.parceiro-item { display: flex; gap: 12px; align-items: flex-start; padding: 14px 0; border-bottom: 1px solid #141414; }
-.parceiro-item:last-child { border-bottom: none; }
-.parceiro-icon { width: 36px; height: 36px; background: #141414; border: 1px solid #1e1e1e; border-radius: 4px; display: flex; align-items: center; justify-content: center; font-size: 16px; flex-shrink: 0; }
-.parceiro-info h4 { font-size: 14px; font-weight: 500; color: var(--white); margin-bottom: 2px; }
-.parceiro-info p  { font-size: 12px; color: var(--text-muted); font-weight: 300; }
-
-/* =====================
    REEMBOLSO
    ===================== */
 .reembolso {
@@ -818,8 +799,4 @@ body.menu-open{
   .sobre { display: flex; flex-direction: column-reverse; }
 }
 
-   .sobre{
-  display:flex;
-  flex-direction:column-reverse;
-}
-}
+
