@@ -784,6 +784,8 @@ body.menu-open{
 @media (max-width: 768px) {
   nav { padding: 16px 20px; }
   .nav-links { display: none; }
+  .nav-cta { display: none; }
+  .menu-toggle { display: flex; }
   h1 { font-size: 52px; }
   h2 { font-size: 38px; }
   .sec-dark, .sec-gray { padding: 60px 20px; }
@@ -813,6 +815,8 @@ body.menu-open{
   footer { flex-direction: column; gap: 16px; text-align: center; padding: 28px 20px; }
   .footer-links a { margin: 0 10px; }
   .wa-float { bottom: 20px; right: 20px; }
+  .sobre { display: flex; flex-direction: column-reverse; }
+}
 
    .sobre{
   display:flex;
