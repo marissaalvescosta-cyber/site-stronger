@@ -334,10 +334,33 @@ footer { background: #080808; border-top: 1px solid #0f0f0f; padding: 28px 40px;
     <span class="section-label">Fique por dentro</span>
     <h2>NOVOS ARTIGOS<br>NO SEU EMAIL</h2>
     <p>Conteúdo novo toda semana. Sem spam, só o que realmente importa para quem treina.</p>
-    <div class="newsletter-form">
-      <input type="email" class="newsletter-input" placeholder="seu@email.com" aria-label="Email">
-      <button class="newsletter-btn">Quero receber</button>
-    </div>
+    <form 
+  action="https://strongerfisioterapia.us13.list-manage.com/subscribe/post?u=d593e567a1530d5eb7394d610&amp;id=aabdf6d886&amp;f_id=0099f6e7f0"
+  method="post"
+  target="_blank"
+  class="newsletter-form"
+>
+  <input 
+    type="email"
+    name="EMAIL"
+    class="newsletter-input"
+    placeholder="seu@email.com"
+    aria-label="Email"
+    required
+  >
+  <!-- anti-bot -->
+  <div style="position:absolute;left:-5000px;" aria-hidden="true">
+    <input 
+      type="text"
+      name="b_d593e567a1530d5eb7394d610_aabdf6d886"
+      tabindex="-1"
+      value=""
+    >
+  </div>
+  <button type="submit" class="newsletter-btn">
+    Quero receber
+  </button>
+</form>
     <p class="newsletter-note">Sem spam. Cancele quando quiser.</p>
   </div>
 </section>
