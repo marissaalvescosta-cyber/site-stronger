@@ -6,7 +6,8 @@
 <title>Meu ombro está doendo, e agora? O Que Você Realmente Precisa Saber | Stronger Fisioterapia</title>
 <meta name="description" content="Dor no ombro durante os treinos é lesão grave? Entenda o que a ciência mostra e como a fisioterapia esportiva na Vila Olímpia pode te ajudar a voltar a treinar.">
 <meta name="robots" content="index, follow">
-<link rel="canonical" href="https://strongerfisioterapia.com.br/blog/dor-no-ombro-fisioterapia-vila-olimpia/">
+<!-- CORRIGIDO: canonical unificada com a URL real da página -->
+<link rel="canonical" href="https://strongerfisioterapia.com.br/blog/dor-no-ombro/">
 <link rel="icon" type="image/png" href="/assets/favicon.png">
 
 <meta property="og:title" content="Dor no Ombro em Quem Treina: O Que Você Realmente Precisa Saber">
@@ -19,13 +20,14 @@
 <meta property="article:section" content="Ombro">
 <meta property="article:tag" content="dor no ombro, fisioterapia Vila Olímpia, fisioterapia esportiva, musculação, jiu-jitsu">
 
+<!-- CORRIGIDO: @type BlogPosting (era MedicalWebPage), URL do schema unificada com canonical, publisher com ImageObject -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "MedicalWebPage",
+  "@type": "BlogPosting",
   "headline": "Dor no Ombro: O Que Você Realmente Precisa Saber",
   "description": "Dor no ombro durante os treinos é lesão grave? Entenda o que a ciência mostra e como a fisioterapia esportiva na Vila Olímpia pode te ajudar a voltar a treinar.",
-  "url": "https://strongerfisioterapia.com.br/blog/dor-no-ombro-fisioterapia-vila-olimpia/",
+  "url": "https://strongerfisioterapia.com.br/blog/dor-no-ombro/",
   "image": "https://strongerfisioterapia.com.br/assets/foto-clinica.JPEG",
   "datePublished": "2026-05-25",
   "dateModified": "2026-05-25",
@@ -36,14 +38,17 @@
     "url": "https://strongerfisioterapia.com.br/#sobre"
   },
   "publisher": {
-    "@type": "MedicalBusiness",
+    "@type": "Organization",
     "name": "Stronger Fisioterapia",
     "url": "https://strongerfisioterapia.com.br",
-    "logo": "https://strongerfisioterapia.com.br/assets/logo-stronger.png"
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://strongerfisioterapia.com.br/assets/logo-stronger.png"
+    }
   },
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://strongerfisioterapia.com.br/blog/dor-no-ombro-fisioterapia-vila-olimpia/"
+    "@id": "https://strongerfisioterapia.com.br/blog/dor-no-ombro/"
   },
   "breadcrumb": {
     "@type": "BreadcrumbList",
@@ -116,8 +121,8 @@ h1 { font-family: 'Bebas Neue', sans-serif; font-size: 52px; line-height: 0.95; 
 
 /* CAPA */
 .article-cover { background: #111; height: 480px; display: flex; align-items: center; justify-content: center; border-bottom: 1px solid #1a1a1a; position: relative; overflow: hidden; }
-.article-cover::before { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse at 50% 60%, var(--accent-glow), transparent 70%); pointer-events: none; z-index: 0; }
-.article-cover span { font-size: 72px; position: relative; z-index: 1; }
+.article-cover::before { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse at 50% 60%, var(--accent-glow), transparent 70%); pointer-events: none; z-index: 2; }
+.article-cover img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center 25%; display: block; z-index: 1; }
 
 /* LAYOUT */
 .article-layout { display: grid; grid-template-columns: 1fr 280px; gap: 48px; max-width: 1100px; margin: 0 auto; padding: 60px 40px 80px; align-items: start; }
@@ -313,9 +318,9 @@ body.menu-open { overflow: hidden; }
       <div class="meta-divider"></div>
       <span class="meta-item">📅 Maio de 2026</span>
       <div class="meta-divider"></div>
-      <span class="meta-item">⏱ 4 min de leitura</span>
+      <span class="meta-item">⏱ 3 min de leitura</span>
       <div class="meta-divider"></div>
-      <span class="meta-item"> Ombro</span>
+      <span class="meta-item">Ombro</span>
     </div>
   </div>
 </header>
@@ -324,8 +329,8 @@ body.menu-open { overflow: hidden; }
 <div class="article-cover">
   <img
     src="/assets/capa-dor-ombro.png"
-    alt="Atleta com dor no ombro sendo avaliado por fisioterapeuta na Vila Olímpia, São Paulo"
-    style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover; object-position:center 25%; display:block; z-index:1;"
+    alt="dor no ombro fisioterapia esportiva musculação Vila Olímpia São Paulo"
+    loading="eager"
     onerror="this.style.display='none'"
   >
 </div>
@@ -356,7 +361,7 @@ body.menu-open { overflow: hidden; }
 
     <p>Na maioria das vezes, <strong>não</strong>.</p>
 
-    <p>Ficar parado costuma ser pior do que continuar se movimentando. O que muda é o <em>jeito</em> de treinar: menos peso por um tempo, exercícios adaptados, progressão mais cuidadosa.</p>
+    <p>Ficar parado costuma ser pior do que continuar se movimentando. O que muda é o <em>jeito</em> de treinar: menos peso por um tempo, exercícios adaptados, progressão mais cuidadosa. É o mesmo princípio que vale para <a href="/blog/condromalacia-patelar-preciso-parar-de-treinar/" style="color:var(--accent);text-decoration:underline;text-underline-offset:3px;">quem treina com dor no joelho</a> — o repouso absoluto raramente é a melhor resposta.</p>
 
     <div class="success">
       <span class="success-label">✓ Boa notícia</span>
@@ -393,7 +398,7 @@ body.menu-open { overflow: hidden; }
 
     <p>Já a cirurgia é indicada em casos bem específicos: rupturas graves, perda séria de função ou quando o tratamento conservador não funcionou. A grande maioria das pessoas melhora <strong>sem precisar operar</strong>.</p>
 
-    <h2 id="alertas">Quando vale a pena buscar um fisioterapeuta ?</h2>
+    <h2 id="alertas">Quando vale a pena buscar um fisioterapeuta?</h2>
 
     <p>Se você está passando por alguma dessas situações, é hora de avaliar:</p>
 
@@ -409,7 +414,6 @@ body.menu-open { overflow: hidden; }
       <span class="warning-label">⚠️ Atenção</span>
       <p>Quanto antes você entende o que está acontecendo, mais rápido e fácil é resolver. Dor que persiste, raramente some sozinha e quanto mais tempo passa, mais difícil fica a recuperação.</p>
     </div>
-
 
     <h2 id="stronger">Como a Stronger trata dor no ombro</h2>
 
@@ -427,7 +431,6 @@ body.menu-open { overflow: hidden; }
       </ol>
     </div>
 
-
     <div class="cta-inline">
       <h3>DOR NO OMBRO<br>ATRAPALHANDO SEU TREINO?</h3>
       <p>Agende uma avaliação e entenda a causa de verdade.</p>
@@ -435,7 +438,7 @@ body.menu-open { overflow: hidden; }
         Agendar pelo WhatsApp →
       </a>
     </div>
-    
+
     <!-- COMPARTILHAR -->
     <div class="share-bar">
       <span class="share-label">Compartilhar:</span>
@@ -461,20 +464,20 @@ body.menu-open { overflow: hidden; }
       </div>
     </div>
 
-    <!-- RELACIONADOS -->
+    <!-- RELACIONADOS — CORRIGIDO: adicionado artigo de joelho, removido thumb vazio -->
     <div class="related">
       <h3>LEIA TAMBÉM</h3>
       <div class="related-grid">
         <a href="/blog/dor-lombar-em-quem-treina/" class="related-card">
-          
+          <div class="related-thumb">🏋️</div>
           <div>
             <div class="related-tag">Coluna</div>
             <div class="related-title">Dor Lombar em Quem Treina: Sobrecarga ou Sinal de Alerta?</div>
             <div class="related-date">Mai 2026 · 4 min</div>
           </div>
         </a>
-        <a href="/blog/condromalacia-patelar/" class="related-card">
-          
+        <a href="/blog/condromalacia-patelar-preciso-parar-de-treinar/" class="related-card">
+          <div class="related-thumb">🦵</div>
           <div>
             <div class="related-tag">Joelho</div>
             <div class="related-title">Condromalácia Patelar: Preciso parar de treinar?</div>
@@ -508,20 +511,15 @@ body.menu-open { overflow: hidden; }
 
 </div>
 
-<!-- NAV ENTRE ARTIGOS -->
+<!-- NAV ENTRE ARTIGOS — CORRIGIDO: removido botão duplicado com texto "syt" -->
 <nav class="article-footer-nav" aria-label="Navegação entre artigos">
   <a href="/blog/" class="footer-nav-btn">
     <span>← Voltar ao blog</span>
     <strong>Todos os artigos</strong>
   </a>
-  <a href="/blog/dor-lombar-em-quem-treina/" class="footer-nav-btn next">
-    <span>Próximo artigo →</span>
-    <strong>Condromalácia Patelar: Preciso parar de treinar</strong>
-  </a>
-
-   <a href="/blog/condromalacia-patelar/" class="footer-nav-btn next">
-    <span>Próximo artigo →</span>
-    <strong>syt</strong>
+  <a href="/blog/condromalacia-patelar-preciso-parar-de-treinar/" class="footer-nav-btn next">
+    <span>Leia também →</span>
+    <strong>Condromalácia Patelar: Preciso parar de treinar?</strong>
   </a>
 </nav>
 
