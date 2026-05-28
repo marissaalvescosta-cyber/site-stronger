@@ -20,10 +20,11 @@
 <meta property="article:section" content="Ortopedia & Esporte">
 <meta property="article:tag" content="condromalacia patelar, joelho, fisioterapia esportiva, musculação, corrida">
 
+<!-- CORRIGIDO: @type BlogPosting (era MedicalWebPage) — ativa foto de autora e data nos resultados do Google -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "MedicalWebPage",
+  "@type": "BlogPosting",
   "headline": "Condromalacia Patelar: Preciso Parar de Treinar?",
   "description": "Dor no joelho ao agachar ou treinar pernas? Entenda o que é condromalacia patelar, o que a ciência diz e como tratar sem abandonar os treinos.",
   "url": "https://strongerfisioterapia.com.br/blog/condromalacia-patelar-preciso-parar-de-treinar/",
@@ -37,10 +38,13 @@
     "url": "https://strongerfisioterapia.com.br/#sobre"
   },
   "publisher": {
-    "@type": "MedicalBusiness",
+    "@type": "Organization",
     "name": "Stronger Fisioterapia",
     "url": "https://strongerfisioterapia.com.br",
-    "logo": "https://strongerfisioterapia.com.br/assets/logo-stronger.png"
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://strongerfisioterapia.com.br/assets/logo-stronger.png"
+    }
   },
   "mainEntityOfPage": {
     "@type": "WebPage",
@@ -292,7 +296,7 @@ h1 {
 .meta-divider { width: 1px; height: 24px; background: #2a2a2a; }
 .meta-item { font-size: 12px; color: #3a3a3a; }
 
-/* CAPA */
+/* CAPA — CORRIGIDO: altura controlada com object-fit na classe, sem inline style sobrescrevendo */
 .article-cover {
   background: #111;
   height: 480px;
@@ -309,7 +313,7 @@ h1 {
   inset: 0;
   background: radial-gradient(ellipse at 50% 60%, var(--accent-glow), transparent 70%);
   pointer-events: none;
-  z-index: 0;
+  z-index: 2;
 }
 .article-cover img {
   position: absolute;
@@ -755,57 +759,32 @@ footer {
 }
 
 @media (max-width: 768px) {
-  /* Nav */
   nav.main-nav { padding: 16px 20px; }
   .nav-links { display: none; }
   .nav-cta { display: none; }
   .menu-toggle { display: flex; }
-
-  /* Hero */
   .article-hero { padding: 32px 20px 0; }
   h1 { font-size: clamp(32px, 8vw, 42px); line-height: 1; }
   .article-meta { gap: 10px; }
   .meta-divider { display: none; }
   .meta-item { font-size: 11px; }
-
-  /* Capa */
   .article-cover { height: 220px; }
-
-  /* Layout */
   .article-layout { padding: 32px 20px 52px; gap: 24px; }
-
-  /* Conteúdo */
   .article-intro { font-size: 15px; }
   .article-content h2 { font-size: 28px; margin: 36px 0 12px; }
   .article-content p { font-size: 15px; }
   .article-content ul li { font-size: 15px; }
-
-  /* Callouts */
   .callout, .warning, .success { padding: 16px 18px; }
-
-  /* Referências */
   .referencias { padding: 20px; }
-
-  /* CTA inline */
   .cta-inline { padding: 24px 20px; }
   .cta-inline a { width: 100%; justify-content: center; }
-
-  /* Author */
   .author-box { flex-direction: column; gap: 14px; padding: 20px; }
-
-  /* Share */
   .share-bar { gap: 8px; }
-
-  /* Footer nav */
   .article-footer-nav { flex-direction: column; padding: 24px 20px; text-align: center; }
   .footer-nav-btn { max-width: 100%; }
   .footer-nav-btn.next { text-align: center; }
-
-  /* Footer */
   footer { flex-direction: column; gap: 16px; text-align: center; padding: 24px 20px; }
   .footer-links a { margin: 0 10px; }
-
-  /* WA */
   .wa-float { bottom: 20px; right: 20px; }
   .wa-btn { width: 46px; height: 46px; }
 }
@@ -891,13 +870,13 @@ footer {
   </div>
 </header>
 
-<!-- CAPA -->
+<!-- CAPA — CORRIGIDO: sem style inline, agora controlado pelo CSS da classe .article-cover img -->
 <div class="article-cover">
   <img
     src="/assets/capa-condromalacia.png"
-    alt="Fisioterapeuta avaliando joelho de atleta praticante de musculação na Vila Olímpia, São Paulo"
-    onerror="this.style.display='none'"
+    alt="condromalacia patelar fisioterapia joelho Vila Olímpia São Paulo"
     loading="eager"
+    onerror="this.style.display='none'"
   >
 </div>
 
@@ -942,7 +921,7 @@ footer {
       <li><strong>Excesso ou má distribuição de treino</strong></li>
     </ul>
 
-    <p>Ou seja: muitas vezes o problema não é o exercício em si, mas a forma como a carga está sendo aplicada.</p>
+    <p>Ou seja: muitas vezes o problema não é o exercício em si, mas a forma como a carga está sendo aplicada. O mesmo princípio vale para quem treina musculação com dor no ombro — <a href="/blog/dor-no-ombro/" style="color:var(--accent);text-decoration:underline;text-underline-offset:3px;">entender a causa é o primeiro passo para resolver</a>.</p>
 
     <h2 id="parar">Preciso parar de treinar?</h2>
 
@@ -1018,7 +997,7 @@ footer {
       </div>
     </div>
 
-    <!-- RELACIONADOS -->
+    <!-- RELACIONADOS — CORRIGIDO: adicionado artigo de ombro -->
     <div class="related">
       <h3>LEIA TAMBÉM</h3>
       <div class="related-grid">
@@ -1028,6 +1007,14 @@ footer {
             <div class="related-tag">Coluna</div>
             <div class="related-title">Dor lombar em quem treina: sobrecarga ou sinal de alerta?</div>
             <div class="related-date">Mai 2026 · 4 min</div>
+          </div>
+        </a>
+        <a href="/blog/dor-no-ombro/" class="related-card">
+          <div class="related-thumb">💪</div>
+          <div>
+            <div class="related-tag">Ombro</div>
+            <div class="related-title">Meu ombro está doendo, e agora? O que você realmente precisa saber</div>
+            <div class="related-date">Mai 2026 · 3 min</div>
           </div>
         </a>
       </div>
