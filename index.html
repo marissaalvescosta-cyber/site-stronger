@@ -810,26 +810,23 @@ document.querySelectorAll('.mobile-menu a').forEach(link => {
     mobileMenu.classList.remove('active');
     document.body.classList.remove('menu-open');
   });
-813   });
-814
-815   document.querySelectorAll('.faq-item').forEach(item => {
-816     const btn = item.querySelector('.faq-q');
-817     btn.addEventListener('click', () => {
-818       const isOpen = item.classList.contains('active');
-819       document.querySelectorAll('.faq-item').forEach(i => {
-820         i.classList.remove('active');
-821         i.querySelector('.faq-q').setAttribute('aria-expanded', 'false');
-822       });
-823       if (!isOpen) {
-824         item.classList.add('active');
-825         btn.setAttribute('aria-expanded', 'true');
-826       }
-827     });
-828   });
-829
-830   </script>
-  
-  
+});
+
+document.querySelectorAll('.faq-item').forEach(item => {
+  const btn = item.querySelector('.faq-q');
+  btn.addEventListener('click', () => {
+    const isOpen = item.classList.contains('active');
+    document.querySelectorAll('.faq-item').forEach(i => {
+      i.classList.remove('active');
+      i.querySelector('.faq-q').setAttribute('aria-expanded', 'false');
+    });
+    if (!isOpen) {
+      item.classList.add('active');
+      btn.setAttribute('aria-expanded', 'true');
+    }
+  });
+});
+
 </script>
 
 </body>
