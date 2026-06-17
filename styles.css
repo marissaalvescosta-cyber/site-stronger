@@ -763,6 +763,7 @@ body.menu-open { overflow: hidden; }
   .footer-links a { margin: 0 10px; }
   .wa-float { bottom: 20px; right: 20px; }
   .sobre { display: flex; flex-direction: column-reverse; }
+}
 
 /* =====================
    FAQ
