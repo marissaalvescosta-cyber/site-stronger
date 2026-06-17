@@ -492,12 +492,55 @@
   <span class="section-label">Dúvidas frequentes</span>
   <h2>PERGUNTAS</h2>
   <div class="faq-grid">
-    <div class="faq-item"><div class="faq-q">Preciso parar de treinar?</div><div class="faq-a">Não necessariamente. Na maioria dos casos, ajustamos sua rotina para que você continue treinando com segurança enquanto se recupera.</div></div>
-    <div class="faq-item"><div class="faq-q">Quantas sessões vou precisar?</div><div class="faq-a">Depende do seu caso, mas trabalhamos com plano estruturado focado em evolução real — não em prolongar o tratamento.</div></div>
-    <div class="faq-item"><div class="faq-q">Já tentei outros tratamentos sem resultado.</div><div class="faq-a">Nosso foco é entender a causa e devolver segurança para treinar — não apenas aliviar o sintoma temporariamente.</div></div>
-    <div class="faq-item"><div class="faq-q">Atende convênio?</div><div class="faq-a">O atendimento é particular, mas fornecemos toda a documentação para reembolso e orientamos o processo junto com você.</div></div>
-    <div class="faq-item"><div class="faq-q">Qual a duração das sessões?</div><div class="faq-a">As sessões têm aproximadamente 1 hora. A avaliação inicial é de 1h30 para um mapeamento completo.</div></div>
-    <div class="faq-item"><div class="faq-q">Atende online ou domiciliar?</div><div class="faq-a"><strong>Sim!</strong>Além do atendimento presencial, também atendemos online e domiciliar, entre em contato para mais informações.</div></div>
+
+    <div class="faq-item">
+      <button class="faq-q" type="button" aria-expanded="false">
+        Preciso parar de treinar?
+        <svg class="faq-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+      </button>
+      <div class="faq-a"><div class="faq-a-inner">Não necessariamente. Na maioria dos casos, ajustamos sua rotina para que você continue treinando com segurança enquanto se recupera.</div></div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-q" type="button" aria-expanded="false">
+        Quantas sessões vou precisar?
+        <svg class="faq-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+      </button>
+      <div class="faq-a"><div class="faq-a-inner">Depende do seu caso, mas trabalhamos com plano estruturado focado em evolução real — não em prolongar o tratamento.</div></div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-q" type="button" aria-expanded="false">
+        Já tentei outros tratamentos sem resultado.
+        <svg class="faq-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+      </button>
+      <div class="faq-a"><div class="faq-a-inner">Nosso foco é entender a causa e devolver segurança para treinar — não apenas aliviar o sintoma temporariamente.</div></div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-q" type="button" aria-expanded="false">
+        Atende convênio?
+        <svg class="faq-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+      </button>
+      <div class="faq-a"><div class="faq-a-inner">O atendimento é particular, mas fornecemos toda a documentação para reembolso e orientamos o processo junto com você.</div></div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-q" type="button" aria-expanded="false">
+        Qual a duração das sessões?
+        <svg class="faq-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+      </button>
+      <div class="faq-a"><div class="faq-a-inner">As sessões têm aproximadamente 1 hora. A avaliação inicial é de 1h30 para um mapeamento completo.</div></div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-q" type="button" aria-expanded="false">
+        Atende online ou domiciliar?
+        <svg class="faq-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+      </button>
+      <div class="faq-a"><div class="faq-a-inner"><strong>Sim!</strong> Além do atendimento presencial, também atendemos online e domiciliar, entre em contato para mais informações.</div></div>
+    </div>
+
   </div>
 </section>
 
@@ -767,7 +810,25 @@ document.querySelectorAll('.mobile-menu a').forEach(link => {
     mobileMenu.classList.remove('active');
     document.body.classList.remove('menu-open');
   });
-});
+813   });
+814
+815   document.querySelectorAll('.faq-item').forEach(item => {
+816     const btn = item.querySelector('.faq-q');
+817     btn.addEventListener('click', () => {
+818       const isOpen = item.classList.contains('active');
+819       document.querySelectorAll('.faq-item').forEach(i => {
+820         i.classList.remove('active');
+821         i.querySelector('.faq-q').setAttribute('aria-expanded', 'false');
+822       });
+823       if (!isOpen) {
+824         item.classList.add('active');
+825         btn.setAttribute('aria-expanded', 'true');
+826       }
+827     });
+828   });
+829
+830   </script>
+  
   
 </script>
 
