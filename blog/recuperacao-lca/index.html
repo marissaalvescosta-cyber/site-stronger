@@ -31,8 +31,8 @@
       "description": "Quanto tempo leva a recuperação do LCA? Entenda as fases da fisioterapia, quando voltar a treinar e por que o tempo sozinho não deve ser o critério de alta.",
       "url": "https://strongerfisioterapia.com.br/blog/recuperacao-lca/",
       "image": "https://strongerfisioterapia.com.br/assets/capa-lca.jpg",
-      "datePublished": "2025-06-01",
-      "dateModified": "2025-06-01",
+      "datePublished": "2026-06-01",
+      "dateModified": "2026-06-01",
       "author": {
         "@type": "Person",
         "name": "Marissa Alves",
@@ -95,6 +95,25 @@
 }
 </script>
 
+<!-- ✅ CORRIGIDO: Google tag (gtag.js) — estava ausente neste arquivo -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-11198302157"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'AW-11198302157');
+  gtag('config', 'G-BWRE59JCYG');
+</script>
+
+<!-- ✅ CORRIGIDO: Microsoft Clarity — estava ausente neste arquivo -->
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "x80p74s6pf");
+</script>
+
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
 <style>
 *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
@@ -116,17 +135,14 @@ body { background: var(--black); color: var(--white); font-family: 'DM Sans', sa
 a { color: inherit; text-decoration: none; }
 img { max-width: 100%; display: block; }
 
-/* PROGRESSO */
 .reading-progress { position: fixed; top: 0; left: 0; width: 0%; height: 2px; background: var(--accent); z-index: 200; transition: width 0.1s linear; }
 
-/* WA FLUTUANTE */
 .wa-float { position: fixed; bottom: 28px; right: 28px; z-index: 999; display: flex; align-items: center; gap: 10px; }
 .wa-label { background: #1a1a1a; border: 1px solid #2a2a2a; color: var(--white); font-size: 12px; padding: 6px 14px; border-radius: 100px; white-space: nowrap; opacity: 0; transform: translateX(8px); transition: all 0.25s; pointer-events: none; }
 .wa-float:hover .wa-label { opacity: 1; transform: translateX(0); }
 .wa-btn { width: 52px; height: 52px; background: #25D366; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 20px rgba(37,211,102,0.3); transition: transform 0.2s; }
 .wa-btn:hover { transform: scale(1.08); }
 
-/* NAV */
 nav.main-nav { display: flex; justify-content: space-between; align-items: center; padding: 18px 40px; border-bottom: 1px solid #1a1a1a; position: sticky; top: 0; background: rgba(13,13,13,0.97); backdrop-filter: blur(10px); z-index: 100; }
 .nav-logo { display: flex; align-items: center; }
 .nav-logo img { height: 32px; width: auto; }
@@ -136,7 +152,6 @@ nav.main-nav { display: flex; justify-content: space-between; align-items: cente
 .nav-cta { background: var(--accent); color: var(--white); padding: 9px 22px; border-radius: var(--radius); font-size: 13px; font-weight: 500; transition: background 0.2s; }
 .nav-cta:hover { background: var(--accent-dim); }
 
-/* MENU MOBILE */
 .menu-toggle { width: 48px; height: 48px; display: none; flex-direction: column; justify-content: center; align-items: center; gap: 6px; background: none; border: none; cursor: pointer; z-index: 1001; }
 .menu-toggle span { width: 22px; height: 1.5px; background: var(--white); transition: 0.3s; }
 .menu-toggle.active span:nth-child(1) { transform: rotate(45deg) translateY(5px); }
@@ -148,7 +163,6 @@ nav.main-nav { display: flex; justify-content: space-between; align-items: cente
 .mobile-menu-cta { margin-top: 20px; font-family: 'DM Sans', sans-serif !important; font-size: 14px !important; letter-spacing: 0 !important; background: var(--accent); padding: 14px 26px; border-radius: 4px; }
 body.menu-open { overflow: hidden; }
 
-/* HERO */
 .article-hero { background: var(--gray); padding: 56px 40px 0; border-bottom: 1px solid var(--gray-border); }
 .article-hero-inner { max-width: var(--content-width); margin: 0 auto; }
 .breadcrumb { display: flex; align-items: center; gap: 8px; font-size: 12px; color: var(--text-muted); margin-bottom: 24px; flex-wrap: wrap; }
@@ -165,15 +179,12 @@ h1 { font-family: 'Bebas Neue', sans-serif; font-size: clamp(36px, 6vw, 52px); l
 .meta-divider { width: 1px; height: 24px; background: #2a2a2a; }
 .meta-item { font-size: 12px; color: #3a3a3a; }
 
-/* CAPA */
 .article-cover { background: #111; height: 480px; border-bottom: 1px solid #1a1a1a; position: relative; overflow: hidden; max-width: 960px; margin: 0 auto; border-radius: var(--radius); }
 .article-cover::before { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse at 50% 60%, var(--accent-glow), transparent 70%); pointer-events: none; z-index: 2; }
 .article-cover img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center 30%; display: block; z-index: 1; }
 
-/* LAYOUT */
 .article-layout { display: grid; grid-template-columns: 1fr 280px; gap: 48px; max-width: 1100px; margin: 0 auto; padding: 60px 40px 80px; align-items: start; }
 
-/* CONTEÚDO */
 .article-content { min-width: 0; }
 .article-intro { font-size: 17px; color: var(--text-body); line-height: 1.8; margin-bottom: 40px; font-weight: 300; border-left: 3px solid var(--accent); padding-left: 20px; }
 .article-content h2 { font-family: 'Bebas Neue', sans-serif; font-size: clamp(26px, 4vw, 32px); color: var(--white); margin: 48px 0 16px; line-height: 1; }
@@ -185,7 +196,6 @@ h1 { font-family: 'Bebas Neue', sans-serif; font-size: clamp(36px, 6vw, 52px); l
 .article-content ul li::before { content: '—'; color: var(--accent); position: absolute; left: 0; font-weight: 700; }
 .article-content a { color: var(--accent); text-decoration: underline; text-underline-offset: 3px; }
 
-/* CALLOUTS */
 .callout { background: #111; border: 1px solid #1e1e1e; border-left: 3px solid var(--accent); border-radius: var(--radius); padding: 20px 24px; margin: 32px 0; }
 .callout-label { font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase; color: var(--accent); margin-bottom: 8px; font-weight: 500; display: block; }
 .callout p { color: var(--text-body); margin-bottom: 0; font-size: 15px; }
@@ -197,7 +207,6 @@ h1 { font-family: 'Bebas Neue', sans-serif; font-size: clamp(36px, 6vw, 52px); l
 .success p { color: var(--text-body); margin-bottom: 0; font-size: 15px; }
 .divider { height: 1px; background: linear-gradient(90deg,transparent,#222,transparent); margin: 40px 0; }
 
-/* TABELA DE FASES */
 .phases-table-wrap { overflow-x: auto; margin: 32px 0; border-radius: 6px; border: 1px solid var(--gray-border); }
 .phases-table { width: 100%; border-collapse: collapse; font-size: 14px; }
 .phases-table thead tr { background: #1e1e1e; }
@@ -208,7 +217,6 @@ h1 { font-family: 'Bebas Neue', sans-serif; font-size: clamp(36px, 6vw, 52px); l
 .phase-period { color: var(--white) !important; font-weight: 500 !important; white-space: nowrap; }
 .phase-tag { display: inline-block; background: rgba(192,17,26,0.12); color: var(--accent); font-size: 10px; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; padding: 3px 8px; border-radius: 3px; margin-bottom: 6px; }
 
-/* FAQ */
 .faq-section { margin: 8px 0 0; }
 .faq-item { border-bottom: 1px solid #1a1a1a; }
 .faq-question { width: 100%; background: none; border: none; cursor: pointer; display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 18px 0; text-align: left; font-family: 'DM Sans', sans-serif; font-size: 15px; font-weight: 500; color: var(--white); transition: color 0.2s; }
@@ -218,7 +226,6 @@ h1 { font-family: 'Bebas Neue', sans-serif; font-size: clamp(36px, 6vw, 52px); l
 .faq-answer { max-height: 0; overflow: hidden; transition: max-height 0.3s ease; }
 .faq-answer-inner { padding-bottom: 18px; color: var(--text-body); font-size: 15px; line-height: 1.75; font-weight: 300; }
 
-/* REFERÊNCIAS */
 .referencias { background: #0d0d0d; border: 1px solid #1a1a1a; border-radius: var(--radius); padding: 28px 32px; margin: 48px 0 0; }
 .referencias h3 { font-size: 11px; letter-spacing: 2px; text-transform: uppercase; color: var(--text-muted); margin-bottom: 16px; font-weight: 500; }
 .referencias ol { list-style: none; counter-reset: ref-counter; padding: 0; }
@@ -226,13 +233,11 @@ h1 { font-family: 'Bebas Neue', sans-serif; font-size: clamp(36px, 6vw, 52px); l
 .referencias ol li:last-child { border-bottom: none; }
 .referencias ol li::before { content: counter(ref-counter); color: var(--accent); font-size: 11px; font-family: 'Bebas Neue', sans-serif; position: absolute; left: 0; top: 9px; }
 
-/* COMPARTILHAR */
 .share-bar { display: flex; align-items: center; gap: 12px; padding: 24px 0; border-top: 1px solid #1a1a1a; border-bottom: 1px solid #1a1a1a; margin: 48px 0; flex-wrap: wrap; }
 .share-label { font-size: 12px; color: var(--text-muted); }
 .share-btn { display: flex; align-items: center; gap: 6px; font-size: 12px; color: var(--text-muted); padding: 7px 14px; border: 1px solid #2a2a2a; border-radius: 100px; transition: all 0.2s; cursor: pointer; background: none; font-family: 'DM Sans', sans-serif; }
 .share-btn:hover { border-color: var(--accent); color: var(--white); }
 
-/* AUTOR */
 .author-box { background: var(--gray); border: 1px solid var(--gray-border); border-radius: var(--radius); padding: 28px; margin: 40px 0; display: flex; gap: 20px; align-items: flex-start; }
 .author-box-avatar { width: 60px; height: 60px; background: #222; border: 1px solid #2e2e2e; border-radius: 50%; flex-shrink: 0; overflow: hidden; display: flex; align-items: center; justify-content: center; font-size: 22px; }
 .author-box-avatar img { width: 100%; height: 100%; object-fit: cover; }
@@ -240,24 +245,20 @@ h1 { font-family: 'Bebas Neue', sans-serif; font-size: clamp(36px, 6vw, 52px); l
 .author-box-title { font-size: 12px; color: var(--accent); margin-bottom: 10px; letter-spacing: 0.5px; }
 .author-box-bio { font-size: 13px; color: var(--text-muted); font-weight: 300; line-height: 1.65; }
 
-/* CTA INLINE */
 .cta-inline { background: var(--accent); border-radius: var(--radius); padding: 32px; margin: 48px 0; text-align: center; }
 .cta-inline h3 { font-family: 'Bebas Neue', sans-serif; font-size: clamp(24px, 4vw, 30px); color: var(--white); margin-bottom: 8px; line-height: 1; }
 .cta-inline p { color: rgba(255,255,255,0.7); font-size: 14px; margin-bottom: 20px; font-weight: 300; }
 .cta-inline a { background: var(--black); color: var(--white); padding: 12px 24px; border-radius: var(--radius); font-size: 13px; font-weight: 500; display: inline-flex; align-items: center; gap: 8px; }
 
-/* RELACIONADOS */
 .related { margin-top: 48px; }
 .related h3 { font-family: 'Bebas Neue', sans-serif; font-size: 24px; color: var(--white); margin-bottom: 20px; letter-spacing: 1px; }
 .related-grid { display: flex; flex-direction: column; gap: 1px; background: #1a1a1a; }
 .related-card { background: #0d0d0d; padding: 20px; display: flex; gap: 14px; align-items: flex-start; transition: background 0.2s; }
 .related-card:hover { background: #111; }
-.related-thumb { width: 48px; height: 48px; background: #141414; border-radius: 4px; display: flex; align-items: center; justify-content: center; font-size: 20px; flex-shrink: 0; }
 .related-tag { font-size: 10px; letter-spacing: 1px; text-transform: uppercase; color: var(--accent); margin-bottom: 4px; }
 .related-title { font-size: 14px; font-weight: 500; color: var(--white); line-height: 1.4; }
 .related-date { font-size: 11px; color: #333; margin-top: 4px; }
 
-/* SIDEBAR */
 .article-sidebar { position: sticky; top: 80px; display: flex; flex-direction: column; gap: 24px; }
 .sidebar-toc { background: var(--gray); border: 1px solid var(--gray-border); border-radius: var(--radius); padding: 24px; }
 .sidebar-toc h4 { font-size: 10px; letter-spacing: 2px; text-transform: uppercase; color: var(--accent); margin-bottom: 16px; font-weight: 500; }
@@ -271,21 +272,18 @@ h1 { font-family: 'Bebas Neue', sans-serif; font-size: clamp(36px, 6vw, 52px); l
 .sidebar-cta a { background: var(--black); color: var(--white); padding: 10px 18px; border-radius: var(--radius); font-size: 13px; font-weight: 500; display: block; transition: opacity 0.2s; }
 .sidebar-cta a:hover { opacity: 0.85; }
 
-/* NAV ARTIGOS */
 .article-footer-nav { background: var(--gray); border-top: 1px solid var(--gray-border); padding: 40px; display: flex; justify-content: space-between; align-items: center; gap: 20px; }
 .footer-nav-btn { display: flex; flex-direction: column; gap: 4px; max-width: 280px; }
 .footer-nav-btn span { font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase; color: var(--text-muted); }
 .footer-nav-btn strong { font-size: 14px; color: var(--white); font-weight: 500; line-height: 1.4; }
 .footer-nav-btn.next { text-align: right; }
 
-/* FOOTER */
 footer.site-footer { background: #080808; border-top: 1px solid #0f0f0f; padding: 28px 40px; display: flex; justify-content: space-between; align-items: center; }
 .footer-logo img { height: 24px; width: auto; opacity: 0.35; }
 .footer-copy { font-size: 12px; color: #222; }
 .footer-links a { font-size: 12px; color: #2e2e2e; margin-left: 20px; transition: color 0.2s; }
 .footer-links a:hover { color: var(--text-muted); }
 
-/* RESPONSIVO */
 @media (max-width: 900px) {
   .article-layout { grid-template-columns: 1fr; }
   .article-sidebar { position: static; }
@@ -326,10 +324,10 @@ footer.site-footer { background: #080808; border-top: 1px solid #0f0f0f; padding
 
 <div class="reading-progress" id="readingProgress"></div>
 
-<!-- WA FLUTUANTE -->
+<!-- WA FLUTUANTE — ✅ onclick adicionado -->
 <div class="wa-float">
   <span class="wa-label">Agendar avaliação</span>
-  <a href="https://wa.me/5511932427523?text=Olá!%20Li%20o%20artigo%20sobre%20recuperação%20do%20LCA%20e%20quero%20agendar%20uma%20avaliação." class="wa-btn" aria-label="WhatsApp">
+  <a href="https://wa.me/5511932427523?text=Olá!%20Li%20o%20artigo%20sobre%20recuperação%20do%20LCA%20e%20quero%20agendar%20uma%20avaliação." class="wa-btn" aria-label="WhatsApp" onclick="gtag_report_conversion()">
     <svg width="26" height="26" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
   </a>
 </div>
@@ -346,7 +344,8 @@ footer.site-footer { background: #080808; border-top: 1px solid #0f0f0f; padding
     <li><a href="/#sobre">Sobre</a></li>
     <li><a href="/#local">Localização</a></li>
   </ul>
-  <a href="https://wa.me/5511932427523" class="nav-cta">Agendar →</a>
+  <!-- ✅ onclick adicionado -->
+  <a href="https://wa.me/5511932427523" class="nav-cta" onclick="gtag_report_conversion()">Agendar →</a>
   <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">
     <span></span><span></span>
   </button>
@@ -358,7 +357,8 @@ footer.site-footer { background: #080808; border-top: 1px solid #0f0f0f; padding
   <a href="/blog/">Blog</a>
   <a href="/#sobre">Sobre</a>
   <a href="/#local">Localização</a>
-  <a href="https://wa.me/5511932427523" class="mobile-menu-cta" target="_blank">Agendar pelo WhatsApp</a>
+  <!-- ✅ onclick adicionado -->
+  <a href="https://wa.me/5511932427523" class="mobile-menu-cta" target="_blank" onclick="gtag_report_conversion()">Agendar pelo WhatsApp</a>
 </div>
 
 <!-- HERO -->
@@ -514,7 +514,7 @@ footer.site-footer { background: #080808; border-top: 1px solid #0f0f0f; padding
     <p>Exercícios mais desafiadores com foco em força, potência e capacidade funcional. Agachamento unilateral, saltos controlados e desacelerações começam a preparar o joelho para demandas esportivas.</p>
 
     <h3>Entre 6 e 9 meses</h3>
-    <p>Muitos pacientes retornam a atividades mais intensas, desde que apresentem critérios adequados de recuperação, não apenas o prazo. </p>
+    <p>Muitos pacientes retornam a atividades mais intensas, desde que apresentem critérios adequados de recuperação, não apenas o prazo.</p>
 
     <h3>Entre 9 e 12 meses ou mais</h3>
     <p>Liberação para esportes com saltos, mudanças rápidas de direção e contato físico como: jiu-jitsu, futebol, basquete, desde que apresentem boa força muscular. 
@@ -541,10 +541,11 @@ footer.site-footer { background: #080808; border-top: 1px solid #0f0f0f; padding
       <p>Com um programa de fisioterapia adequado, é possível recuperar a função completa do joelho, retornar às atividades desejadas e reduzir significativamente o risco de futuras complicações.</p>
     </div>
 
+    <!-- CTA INLINE — ✅ onclick adicionado -->
     <div class="cta-inline">
       <h3>LESÃO DE JOELHO?<br>AVALIAÇÃO NA STRONGER</h3>
       <p>Atendimento presencial em Vila Olímpia, São Paulo. Protocolo individualizado para sua recuperação.</p>
-      <a href="https://wa.me/5511932427523?text=Olá!%20Li%20o%20artigo%20sobre%20recuperação%20do%20LCA%20e%20quero%20agendar%20uma%20avaliação.">
+      <a href="https://wa.me/5511932427523?text=Olá!%20Li%20o%20artigo%20sobre%20recuperação%20do%20LCA%20e%20quero%20agendar%20uma%20avaliação." onclick="gtag_report_conversion()">
         Agendar pelo WhatsApp →
       </a>
     </div>
@@ -600,7 +601,6 @@ footer.site-footer { background: #080808; border-top: 1px solid #0f0f0f; padding
       </div>
     </div>
 
-    <!-- REFERÊNCIAS -->
     <div class="referencias">
       <h3>Referências científicas</h3>
       <ol>
@@ -612,7 +612,6 @@ footer.site-footer { background: #080808; border-top: 1px solid #0f0f0f; padding
       </ol>
     </div>
 
-    <!-- COMPARTILHAR -->
     <div class="share-bar">
       <span class="share-label">Compartilhar:</span>
       <button class="share-btn" onclick="shareWhatsApp()">
@@ -625,7 +624,6 @@ footer.site-footer { background: #080808; border-top: 1px solid #0f0f0f; padding
       </button>
     </div>
 
-    <!-- AUTOR -->
     <div class="author-box">
       <div class="author-box-avatar">
         <img src="/assets/foto-marissa.jpg" alt="Marissa Alves" onerror="this.style.display='none';this.parentElement.innerHTML='👩‍⚕️'">
@@ -637,12 +635,11 @@ footer.site-footer { background: #080808; border-top: 1px solid #0f0f0f; padding
       </div>
     </div>
 
-    <!-- RELACIONADOS -->
     <div class="related">
       <h3>LEIA TAMBÉM</h3>
       <div class="related-grid">
         <a href="/blog/condromalacia-patelar/" class="related-card">
-                    <div>
+          <div>
             <div class="related-tag">Joelho</div>
             <div class="related-title">Condromalácia Patelar: Preciso parar de treinar?</div>
             <div class="related-date">Mai 2026 · 4 min</div>
@@ -680,10 +677,11 @@ footer.site-footer { background: #080808; border-top: 1px solid #0f0f0f; padding
         <li><a href="#faq">Perguntas frequentes</a></li>
       </ul>
     </div>
+    <!-- SIDEBAR CTA — ✅ onclick adicionado -->
     <div class="sidebar-cta">
       <h4>LESÃO DE JOELHO?</h4>
       <p>Avaliação presencial na Stronger Fisioterapia, Vila Olímpia.</p>
-      <a href="https://wa.me/5511932427523?text=Olá!%20Li%20o%20artigo%20sobre%20recuperação%20do%20LCA%20e%20quero%20agendar%20uma%20avaliação.">Agendar pelo WhatsApp →</a>
+      <a href="https://wa.me/5511932427523?text=Olá!%20Li%20o%20artigo%20sobre%20recuperação%20do%20LCA%20e%20quero%20agendar%20uma%20avaliação." onclick="gtag_report_conversion()">Agendar pelo WhatsApp →</a>
     </div>
   </aside>
 
@@ -714,6 +712,18 @@ footer.site-footer { background: #080808; border-top: 1px solid #0f0f0f; padding
 </footer>
 
 <script>
+// ✅ CORRIGIDO: função gtag_report_conversion adicionada
+function gtag_report_conversion() {
+  gtag('event', 'conversion', {
+    'send_to': 'AW-11198302157/Eza_CLbh0LEcEM2T4tsp'
+  });
+  gtag('event', 'whatsapp_click', {
+    'event_category': 'Lead',
+    'event_label': 'WhatsApp'
+  });
+  return true;
+}
+
 window.addEventListener('scroll', () => {
   const article = document.getElementById('articleContent');
   const bar = document.getElementById('readingProgress');
