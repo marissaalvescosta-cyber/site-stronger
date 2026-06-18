@@ -596,14 +596,6 @@ h1 em { color: var(--accent); font-style: normal; }
 .reimb-check::before { content: '✓'; font-weight: 700; color: rgba(255,255,255,0.65); }
 
 /* =====================
-   FAQ
-   ===================== */
-.faq-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1px; background: var(--gray-border); margin-top: 48px; }
-.faq-item { background: var(--gray); padding: 32px; }
-.faq-q { font-size: 15px; font-weight: 500; color: var(--white); margin-bottom: 10px; }
-.faq-a { font-size: 14px; color: var(--text-muted); line-height: 1.65; font-weight: 300; }
-
-/* =====================
    BLOG
    ===================== */
 .blog-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 1px; margin-top: 48px; background: #1a1a1a; }
@@ -768,15 +760,25 @@ body.menu-open { overflow: hidden; }
 /* =====================
    FAQ
    ===================== */
-
-   .faq-item {
+.faq-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 1px;
+  background: var(--gray-border);
+  margin-top: 48px;
+}
+.faq-item {
+  background: var(--gray);
+  padding: 32px;
   border-bottom: 1px solid rgba(255,255,255,0.1);
+  min-width: 0;
 }
 .faq-item:first-child {
   border-top: 1px solid rgba(255,255,255,0.1);
 }
 .faq-q {
   all: unset;
+  box-sizing: border-box;
   display: flex;
   width: 100%;
   justify-content: space-between;
@@ -792,6 +794,10 @@ body.menu-open { overflow: hidden; }
 }
 .faq-q:hover {
   color: var(--red, #E8161F);
+}
+.faq-q-text {
+  min-width: 0;
+  flex: 1;
 }
 .faq-arrow {
   flex-shrink: 0;
@@ -819,4 +825,9 @@ body.menu-open { overflow: hidden; }
   line-height: 1.6;
   color: var(--text-muted, #999);
 }
+
+/* FAQ no mobile: 1 coluna pra evitar overflow */
+@media (max-width: 768px) {
+  .faq-grid { grid-template-columns: 1fr; }
+  .faq-item { padding: 24px 20px; }
 }
