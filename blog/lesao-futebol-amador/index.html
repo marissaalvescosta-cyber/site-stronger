@@ -742,6 +742,18 @@ document.querySelectorAll('.mobile-menu a').forEach(link => {
     document.body.classList.remove('menu-open');
   });
 });
+// ✅ Função de conversão Google Ads — Clique WhatsApp
+function gtag_report_conversion() {
+  gtag('event', 'conversion', {
+    'send_to': 'AW-11198302157/Eza_CLbh0LEcEM2T4tsp'
+  });
+  gtag('event', 'whatsapp_click', {
+    'event_category': 'Lead',
+    'event_label': 'WhatsApp'
+  });
+  return true;
+}
+  
 </script>
 
 </body>
