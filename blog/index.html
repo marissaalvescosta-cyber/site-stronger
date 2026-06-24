@@ -28,7 +28,19 @@
 }
 </script>
 
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-11198302157"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'AW-11198302157');
+  gtag('config', 'G-BWRE59JCYG');
+</script>
+
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+
 <style>
 *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 :root {
@@ -63,6 +75,18 @@ nav { display: flex; justify-content: space-between; align-items: center; paddin
 .nav-cta { background: var(--accent); color: var(--white); padding: 9px 22px; border-radius: var(--radius); font-size: 13px; font-weight: 500; transition: background 0.2s; }
 .nav-cta:hover { background: var(--accent-dim); }
 
+/* MENU MOBILE */
+.menu-toggle { width: 48px; height: 48px; display: none; flex-direction: column; justify-content: center; align-items: center; gap: 6px; background: none; border: none; cursor: pointer; z-index: 1001; }
+.menu-toggle span { width: 22px; height: 1.5px; background: var(--white); transition: 0.3s; }
+.menu-toggle.active span:nth-child(1) { transform: rotate(45deg) translateY(5px); }
+.menu-toggle.active span:nth-child(2) { transform: rotate(-45deg) translateY(-5px); }
+.mobile-menu { position: fixed; inset: 0; background: rgba(13,13,13,0.98); backdrop-filter: blur(14px); display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 28px; z-index: 1000; opacity: 0; pointer-events: none; transition: 0.35s ease; }
+.mobile-menu.active { opacity: 1; pointer-events: auto; }
+.mobile-menu a { font-family: 'Bebas Neue', sans-serif; font-size: 34px; letter-spacing: 1px; color: var(--white); transition: 0.2s; }
+.mobile-menu a:hover { color: var(--accent); }
+.mobile-menu-cta { margin-top: 20px; font-family: 'DM Sans', sans-serif !important; font-size: 14px !important; letter-spacing: 0 !important; background: var(--accent); padding: 14px 26px; border-radius: 4px; }
+body.menu-open { overflow: hidden; }
+
 /* HERO DO BLOG */
 .blog-hero { background: var(--gray); padding: 72px 40px 60px; border-bottom: 1px solid var(--gray-border); }
 .blog-hero-inner { max-width: 860px; }
@@ -75,10 +99,15 @@ h1 { font-family: 'Bebas Neue', sans-serif; font-size: 64px; line-height: 0.92; 
 .blog-hero-sub { color: var(--text-muted); font-size: 16px; font-weight: 300; max-width: 520px; line-height: 1.7; }
 
 /* FILTROS */
-.filtros { background: var(--gray); border-bottom: 1px solid var(--gray-border); padding: 0 40px; display: flex; gap: 0; overflow-x: auto; }
+.filtros { background: var(--gray); border-bottom: 1px solid var(--gray-border); padding: 0 40px; display: flex; gap: 0; overflow-x: auto; scrollbar-width: none; }
+.filtros::-webkit-scrollbar { display: none; }
 .filtro-btn { font-size: 12px; letter-spacing: 1px; text-transform: uppercase; color: var(--text-muted); padding: 16px 20px; border-bottom: 2px solid transparent; white-space: nowrap; cursor: pointer; transition: color 0.2s, border-color 0.2s; background: none; border-top: none; border-left: none; border-right: none; font-family: 'DM Sans', sans-serif; }
 .filtro-btn:hover { color: var(--white); }
 .filtro-btn.active { color: var(--white); border-bottom-color: var(--accent); }
+
+/* CONTAGEM DINÂMICA */
+.filtro-count { font-size: 10px; background: #222; color: var(--text-muted); padding: 1px 6px; border-radius: 100px; margin-left: 5px; vertical-align: middle; }
+.filtro-btn.active .filtro-count { background: var(--accent); color: #fff; }
 
 /* DESTAQUE */
 .post-destaque { background: var(--black); padding: 60px 40px; border-bottom: 1px solid #1a1a1a; }
@@ -86,8 +115,7 @@ h1 { font-family: 'Bebas Neue', sans-serif; font-size: 64px; line-height: 0.92; 
 .destaque-card { display: grid; grid-template-columns: 1fr 1fr; gap: 1px; background: #1a1a1a; }
 .destaque-img { background: #141414; min-height: 320px; display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden; }
 .destaque-img::before { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse at 50% 100%, var(--accent-glow), transparent 70%); }
-.destaque-img span { font-size: 64px; position: relative; z-index: 1; }
-/* Para imagem real: <img src="..." alt="..." style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0"> */
+.destaque-img img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; z-index: 1; }
 .destaque-content { background: #0d0d0d; padding: 48px 40px; display: flex; flex-direction: column; justify-content: center; }
 .post-tag { display: inline-block; font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase; color: var(--accent); border: 1px solid var(--accent); border-radius: 100px; padding: 4px 12px; margin-bottom: 16px; width: fit-content; }
 .destaque-content h2 { font-family: 'Bebas Neue', sans-serif; font-size: 40px; line-height: 1; color: var(--white); margin-bottom: 16px; }
@@ -103,12 +131,19 @@ h1 { font-family: 'Bebas Neue', sans-serif; font-size: 64px; line-height: 0.92; 
 .posts-header h3 { font-family: 'Bebas Neue', sans-serif; font-size: 28px; color: var(--white); letter-spacing: 1px; }
 .posts-count { font-size: 12px; color: var(--text-muted); }
 .posts-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: #1a1a1a; }
+
+/* Estado vazio ao filtrar */
+.empty-state { background: var(--black); grid-column: 1 / -1; padding: 60px 20px; text-align: center; display: none; }
+.empty-state p { color: var(--text-muted); font-size: 14px; font-weight: 300; }
+
+/* POST CARD */
 .post-card { background: #0d0d0d; overflow: hidden; transition: background 0.2s; display: flex; flex-direction: column; text-decoration: none; color: inherit; }
 .post-card:hover { background: #111; }
 .post-card:hover .post-card-link { color: var(--accent); }
+.post-card.hidden { display: none; }
 .post-thumb { height: 160px; background: #141414; display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden; border-bottom: 1px solid #1a1a1a; }
 .post-thumb::before { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse at 50% 100%, var(--accent-glow), transparent 70%); }
-.post-thumb span { font-size: 36px; position: relative; z-index: 1; }
+.post-thumb img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
 .post-body { padding: 24px; flex: 1; display: flex; flex-direction: column; }
 .post-tag-small { font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase; color: var(--accent); margin-bottom: 10px; }
 .post-title { font-size: 16px; font-weight: 500; color: var(--white); line-height: 1.4; margin-bottom: 10px; flex: 1; }
@@ -116,7 +151,6 @@ h1 { font-family: 'Bebas Neue', sans-serif; font-size: 64px; line-height: 0.92; 
 .post-footer { display: flex; justify-content: space-between; align-items: center; padding-top: 16px; border-top: 1px solid #1a1a1a; margin-top: auto; }
 .post-date { font-size: 11px; color: #333; }
 .post-card-link { font-size: 12px; color: var(--text-muted); display: flex; align-items: center; gap: 4px; transition: color 0.2s; }
-.post-read-time { font-size: 11px; color: #2e2e2e; }
 
 /* NEWSLETTER */
 .newsletter { background: var(--gray); padding: 64px 40px; border-top: 1px solid var(--gray-border); }
@@ -139,16 +173,19 @@ h1 { font-family: 'Bebas Neue', sans-serif; font-size: 64px; line-height: 0.92; 
 
 /* FOOTER */
 footer { background: #080808; border-top: 1px solid #0f0f0f; padding: 28px 40px; display: flex; justify-content: space-between; align-items: center; }
-.footer-logo { font-family: 'Bebas Neue', sans-serif; font-size: 18px; letter-spacing: 3px; color: #2a2a2a; }
-.footer-logo span { color: var(--accent); }
+.footer-logo img { height: 24px; width: auto; opacity: 0.35; }
 .footer-copy { font-size: 12px; color: #222; }
 .footer-links a { font-size: 12px; color: #2e2e2e; margin-left: 20px; transition: color 0.2s; }
 .footer-links a:hover { color: var(--text-muted); }
 
 /* RESPONSIVO */
+@media (max-width: 900px) {
+  .posts-grid { grid-template-columns: repeat(2, 1fr); }
+}
 @media (max-width: 768px) {
   nav { padding: 16px 20px; }
-  .nav-links { display: none; }
+  .nav-links, .nav-cta { display: none; }
+  .menu-toggle { display: flex; }
   .blog-hero { padding: 48px 20px 40px; }
   h1 { font-size: 44px; }
   .filtros { padding: 0 20px; }
@@ -162,23 +199,9 @@ footer { background: #080808; border-top: 1px solid #0f0f0f; padding: 28px 40px;
   .cta-blog { flex-direction: column; align-items: flex-start; padding: 48px 20px; }
   footer { flex-direction: column; gap: 16px; text-align: center; padding: 28px 20px; }
   .footer-links a { margin: 0 10px; }
+  .wa-float { bottom: 20px; right: 20px; }
 }
 </style>
-
-   <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-11198302157"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'AW-11198302157');
-  gtag('config', 'G-BWRE59JCYG');
-</script>
-
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css">
-
 </head>
 <body>
 
@@ -203,7 +226,20 @@ footer { background: #080808; border-top: 1px solid #0f0f0f; padding: 28px 40px;
     <li><a href="/#local">Localização</a></li>
   </ul>
   <a href="https://wa.me/5511932427523" class="nav-cta">Agendar →</a>
+  <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">
+    <span></span><span></span>
+  </button>
 </nav>
+
+<!-- MENU MOBILE -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="/#servicos">Serviços</a>
+  <a href="/#avaliacao">Avaliação</a>
+  <a href="/blog/">Blog</a>
+  <a href="/#sobre">Sobre</a>
+  <a href="/#local">Localização</a>
+  <a href="https://wa.me/5511932427523" class="mobile-menu-cta" target="_blank">Agendar pelo WhatsApp</a>
+</div>
 
 <!-- HERO DO BLOG -->
 <section class="blog-hero">
@@ -220,14 +256,13 @@ footer { background: #080808; border-top: 1px solid #0f0f0f; padding: 28px 40px;
 </section>
 
 <!-- FILTROS DE CATEGORIA -->
-<div class="filtros" role="tablist">
-  <button class="filtro-btn active" role="tab">Todos</button>
-  <button class="filtro-btn" role="tab">Reabilitação</button>
-  <button class="filtro-btn" role="tab">Prevenção</button>
-  <button class="filtro-btn" role="tab">Jiu-Jitsu</button>
-  <button class="filtro-btn" role="tab">Musculação</button>
-  <button class="filtro-btn" role="tab">Pós-Cirúrgico</button>
-  <button class="filtro-btn" role="tab">Dores Crônicas</button>
+<div class="filtros" role="tablist" id="filtros">
+  <button class="filtro-btn active" role="tab" data-categoria="todos">Todos <span class="filtro-count" id="count-todos">6</span></button>
+  <button class="filtro-btn" role="tab" data-categoria="joelho">Joelho <span class="filtro-count" id="count-joelho"></span></button>
+  <button class="filtro-btn" role="tab" data-categoria="ombro">Ombro <span class="filtro-count" id="count-ombro"></span></button>
+  <button class="filtro-btn" role="tab" data-categoria="coluna">Coluna <span class="filtro-count" id="count-coluna"></span></button>
+  <button class="filtro-btn" role="tab" data-categoria="esporte">Esportes <span class="filtro-count" id="count-futebol"></span></button>
+ 
 </div>
 
 <!-- POST DESTAQUE -->
@@ -237,20 +272,18 @@ footer { background: #080808; border-top: 1px solid #0f0f0f; padding: 28px 40px;
     <a href="/blog/dor-no-frio/" class="destaque-img">
       <img src="/assets/capa-dor-no-frio.png"
            alt="Pessoa sentindo dor no joelho durante atividade física em dia frio de inverno"
-           style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0;"
            onerror="this.style.display='none'">
-          </a>
+    </a>
     <div class="destaque-content">
-      <span class="post-tag">Joelho, Musculação e Esporte</span>
+      <span class="post-tag">Joelho · Musculação · Inverno</span>
       <a href="/blog/dor-no-frio/" style="text-decoration:none;">
-        <h2 style="transition:color 0.2s;">POR QUE SINTO MAIS DOR NO FRIO?</h2>
+        <h2>POR QUE SINTO MAIS DOR NO FRIO?</h2>
       </a>
       <div class="post-meta">
-        <span class="post-meta-item">📅 Jun 2026</span>
-        <span class="post-meta-item">⏱ 6 min de leitura</span>
+        <span class="post-meta-item">📅 Jul 2026</span>
+        <span class="post-meta-item">⏱ 5 min de leitura</span>
       </div>
-      <p>Com a chegada do inverno, é comum ouvir: "meu joelho dói quando esfria" ou "minha articulação trava nos dias frios". 
-        A percepção é real, mas o que está acontecendo no corpo é diferente do que muita gente imagina.</p>
+      <p>Com a chegada do inverno, é comum ouvir: "meu joelho dói quando esfria" ou "minha articulação trava nos dias frios". A percepção é real, mas o que está acontecendo no corpo é diferente do que muita gente imagina.</p>
       <a href="/blog/dor-no-frio/" class="btn-ler">
         Ler artigo completo
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
@@ -262,147 +295,111 @@ footer { background: #080808; border-top: 1px solid #0f0f0f; padding: 28px 40px;
 <!-- GRID DE POSTS -->
 <section class="posts-section">
   <div class="posts-header">
-    <h3>TODOS OS ARTIGOS</h3>
-    <span class="posts-count">6 artigos publicados</span>
+    <h3 id="posts-titulo">TODOS OS ARTIGOS</h3>
+    <span class="posts-count" id="posts-count-label">6 artigos</span>
   </div>
-  <div class="posts-grid">
+  <div class="posts-grid" id="postsGrid">
 
-    <!-- POST 6 - Dor no Frio-->
-   <a class="post-card" href="/blog/dor-no-frio/">
-      <div class="post-thumb" style="position:relative;overflow:hidden;">
-        <img src="/assets/capa-dor-no-frio.png"
-             alt="Pessoa sentindo dor no joelho durante atividade física em dia frio de inverno"
-             style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;"
-             onerror="this.style.display='none'">
-              </div>
+    <!-- POST6: Dor no Frio -->
+    <a class="post-card" href="/blog/dor-no-frio/" data-categorias="joelho">
+      <div class="post-thumb">
+        <img src="/assets/capa-dor-no-frio.png" alt="Por que sinto mais dor no frio — fisioterapia" onerror="this.style.display='none'">
+      </div>
       <div class="post-body">
-        <div class="post-tag-small">Joelho, Musculação e Esporte</div>
+        <div class="post-tag-small">Joelho · Inverno</div>
         <h2 class="post-title">Por que sinto mais dor no frio?</h2>
-         <div class="post-footer">
-          <span class="post-date">Jun 2026 · 5 min</span>
-          <span class="post-card-link">
-            Ler
-            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-          </span>
+        <p class="post-desc">O frio causa lesões? Entenda os mecanismos reais por trás da rigidez muscular e articular no inverno.</p>
+        <div class="post-footer">
+          <span class="post-date">Jul 2026 · 5 min</span>
+          <span class="post-card-link">Ler <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
         </div>
       </div>
     </a>
 
-<!-- POST 5 - Lesão Futebol Amador-->
-   <a class="post-card" href="/blog/lesao-futebol-amador/">
-      <div class="post-thumb" style="position:relative;overflow:hidden;">
-        <img src="/assets/capa-futebol-amador.png"
-             alt="Jogador amador sentindo dor no joelho durante partida de futebol"
-             style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;"
-             onerror="this.style.display='none'">
-              </div>
+    <!-- POST5: Futebol Amador -->
+    <a class="post-card" href="/blog/lesao-futebol-amador/" data-categorias="joelho,esporte">
+      <div class="post-thumb">
+        <img src="/assets/capa-futebol-amador.png" alt="Lesões mais comuns no futebol amador" onerror="this.style.display='none'">
+      </div>
       <div class="post-body">
-        <div class="post-tag-small">Joelho, Virilha e Tornozelo</div>
+        <div class="post-tag-small">Joelho · Esporte</div>
         <h2 class="post-title">As 5 Lesões Mais Comuns no Futebol Amador</h2>
-         <div class="post-footer">
-          <span class="post-date">Jun 2026 · 4 min</span>
-          <span class="post-card-link">
-            Ler
-            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-          </span>
-        </div>
-      </div>
-    </a>
-
-    
-      <!-- POST 4 - Lesão LCA-->
-   <a class="post-card" href="/blog/recuperacao-lca/">
-      <div class="post-thumb" style="position:relative;overflow:hidden;">
-        <img src="/assets/capa-lca.png"
-             alt="recuperação LCA, fisioterapia para o joelho, ligamento cruzado anterior Vila Olímpia São Paulo"
-             style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;"
-             onerror="this.style.display='none'">
-              </div>
-      <div class="post-body">
-        <div class="post-tag-small">Joelho</div>
-        <h2 class="post-title">Ruptura do LCA</h2>
-        <p class="post-desc">Tempo, fases e fisioterapia</p>
+        <p class="post-desc">Tornozelo, joelho e virilha: saiba quais lesões mais afetam jogadores amadores e como preveni-las.</p>
         <div class="post-footer">
           <span class="post-date">Jun 2026 · 4 min</span>
-          <span class="post-card-link">
-            Ler
-            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-          </span>
+          <span class="post-card-link">Ler <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
         </div>
       </div>
     </a>
 
-    <!-- POST 3 - Dor no Ombro-->
-   <a class="post-card" href="/blog/dor-no-ombro/">
-      <div class="post-thumb" style="position:relative;overflow:hidden;">
-        <img src="/assets/capa-dor-ombro.png"
-             alt="Dor no ombro e como a fisioterapia tratar"
-             style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;"
-             onerror="this.style.display='none'">
-              </div>
+    <!-- POST4: LCA -->
+    <a class="post-card" href="/blog/recuperacao-lca/" data-categorias="joelho">
+      <div class="post-thumb">
+        <img src="/assets/capa-lca.png" alt="Recuperação do LCA fisioterapia joelho" onerror="this.style.display='none'">
+      </div>
+      <div class="post-body">
+        <div class="post-tag-small">Joelho</div>
+        <h2 class="post-title">Ruptura do LCA: Tempo, Fases e Fisioterapia</h2>
+        <p class="post-desc">Quanto tempo leva a recuperação do LCA e quando você pode voltar ao esporte?</p>
+        <div class="post-footer">
+          <span class="post-date">Jun 2026 · 6 min</span>
+          <span class="post-card-link">Ler <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+        </div>
+      </div>
+    </a>
+
+    <!-- POST3: Dor no Ombro -->
+    <a class="post-card" href="/blog/dor-no-ombro/" data-categorias="ombro">
+      <div class="post-thumb">
+        <img src="/assets/capa-dor-ombro.png" alt="Dor no ombro fisioterapia" onerror="this.style.display='none'">
+      </div>
       <div class="post-body">
         <div class="post-tag-small">Ombro</div>
         <h2 class="post-title">Dor no Ombro: O que você precisa saber</h2>
-        <p class="post-desc">Uma dor no ombro pode te limitar no seu dia a dia, entenda a causa e como trata-la.</p>
+        <p class="post-desc">Uma dor no ombro pode te limitar no seu dia a dia. Entenda a causa e como tratar.</p>
         <div class="post-footer">
           <span class="post-date">Jun 2026 · 4 min</span>
-          <span class="post-card-link">
-            Ler
-            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-          </span>
+          <span class="post-card-link">Ler <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
         </div>
       </div>
     </a>
 
-<!-- POST 2 - Condromalácia Patelar -->
- <a class="post-card" href="/blog/condromalacia-patelar/">
-      <div class="post-thumb" style="position:relative;overflow:hidden;">
-        <img src="/assets/capa-condromalacia.png"
-             alt="Dor no joelho em quem treina"
-             style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;"
-             onerror="this.style.display='none'">
-              </div>
+    <!-- POST2: Condromalácia -->
+    <a class="post-card" href="/blog/condromalacia-patelar/" data-categorias="joelho">
+      <div class="post-thumb">
+        <img src="/assets/capa-condromalacia.png" alt="Condromalácia patelar fisioterapia joelho" onerror="this.style.display='none'">
+      </div>
       <div class="post-body">
         <div class="post-tag-small">Joelho</div>
         <h2 class="post-title">Condromalácia Patelar: Preciso parar de treinar?</h2>
-        <p class="post-desc">Entenda sobre a condromalácia e suas implicações no dia a dia e como a fisioterapia pode te ajudar.</p>
+        <p class="post-desc">Entenda a condromalácia e suas implicações no treino e como a fisioterapia pode te ajudar.</p>
         <div class="post-footer">
           <span class="post-date">Mai 2026 · 4 min</span>
-          <span class="post-card-link">
-            Ler
-            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-          </span>
-        </div>
-      </div>
-    </a>    
-
-    
-    <!-- POST 1 — DOR LOMBAR -->
-    <a class="post-card" href="/blog/dor-lombar-em-quem-treina/">
-      <div class="post-thumb" style="position:relative;overflow:hidden;">
-        <img src="/assets/capa-dor-lombar.png"
-             alt="Dor lombar em quem treina"
-             style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;"
-             onerror="this.style.display='none'">
-              </div>
-      <div class="post-body">
-        <div class="post-tag-small">Coluna</div>
-        <h2 class="post-title">Dor lombar em quem treina: sobrecarga ou sinal de alerta?</h2>
-        <p class="post-desc">Entenda quando a dor lombar é apenas sobrecarga e quando merece atenção — e como a fisioterapia te ajuda.</p>
-        <div class="post-footer">
-          <span class="post-date">Mai 2026 · 4 min</span>
-          <span class="post-card-link">
-            Ler
-            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-          </span>
+          <span class="post-card-link">Ler <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
         </div>
       </div>
     </a>
 
-    
-    
-    <!-- POST 3 -->
-  
+    <!-- POST1: Dor Lombar -->
+    <a class="post-card" href="/blog/dor-lombar-em-quem-treina/" data-categorias="coluna">
+      <div class="post-thumb">
+        <img src="/assets/capa-dor-lombar.png" alt="Dor lombar em quem treina fisioterapia" onerror="this.style.display='none'">
+      </div>
+      <div class="post-body">
+        <div class="post-tag-small">Coluna</div>
+        <h2 class="post-title">Dor lombar em quem treina: sobrecarga ou sinal de alerta?</h2>
+        <p class="post-desc">Entenda quando a dor lombar é apenas sobrecarga e quando merece atenção.</p>
+        <div class="post-footer">
+          <span class="post-date">Mai 2026 · 4 min</span>
+          <span class="post-card-link">Ler <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+        </div>
+      </div>
+    </a>
+
+    <!-- Estado vazio -->
+    <div class="empty-state" id="emptyState">
+      <p>Nenhum artigo nessa categoria ainda. Em breve!</p>
+    </div>
 
   </div>
 </section>
@@ -413,33 +410,18 @@ footer { background: #080808; border-top: 1px solid #0f0f0f; padding: 28px 40px;
     <span class="section-label">Fique por dentro</span>
     <h2>NOVOS ARTIGOS<br>NO SEU EMAIL</h2>
     <p>Conteúdo novo toda semana. Sem spam, só o que realmente importa para quem treina.</p>
-    <form 
-  action="https://strongerfisioterapia.us13.list-manage.com/subscribe/post?u=d593e567a1530d5eb7394d610&amp;id=aabdf6d886&amp;f_id=0099f6e7f0"
-  method="post"
-  target="_blank"
-  class="newsletter-form"
->
-  <input 
-    type="email"
-    name="EMAIL"
-    class="newsletter-input"
-    placeholder="seu@email.com"
-    aria-label="Email"
-    required
-  >
-  <!-- anti-bot -->
-  <div style="position:absolute;left:-5000px;" aria-hidden="true">
-    <input 
-      type="text"
-      name="b_d593e567a1530d5eb7394d610_aabdf6d886"
-      tabindex="-1"
-      value=""
+    <form
+      action="https://strongerfisioterapia.us13.list-manage.com/subscribe/post?u=d593e567a1530d5eb7394d610&amp;id=aabdf6d886&amp;f_id=0099f6e7f0"
+      method="post"
+      target="_blank"
+      class="newsletter-form"
     >
-  </div>
-  <button type="submit" class="newsletter-btn">
-    Quero receber
-  </button>
-</form>
+      <input type="email" name="EMAIL" class="newsletter-input" placeholder="seu@email.com" aria-label="Email" required>
+      <div style="position:absolute;left:-5000px;" aria-hidden="true">
+        <input type="text" name="b_d593e567a1530d5eb7394d610_aabdf6d886" tabindex="-1" value="">
+      </div>
+      <button type="submit" class="newsletter-btn">Quero receber</button>
+    </form>
     <p class="newsletter-note">Sem spam. Cancele quando quiser.</p>
   </div>
 </section>
@@ -457,34 +439,100 @@ footer { background: #080808; border-top: 1px solid #0f0f0f; padding: 28px 40px;
 
 <!-- FOOTER -->
 <footer>
-  <a href="/" class="footer-logo" aria-label="Stronger Fisioterapia">
+  <a href="/" aria-label="Stronger Fisioterapia">
     <img src="/assets/logo-stronger.png" alt="Stronger Fisioterapia" style="height:24px;width:auto;opacity:0.35;">
   </a>
   <div class="footer-copy">© 2026 Stronger Fisioterapia · Vila Olímpia, São Paulo</div>
   <div class="footer-links">
-    <a href="https://instagram.com/strongerfisioterapia" target="_blank" rel="noopener">Instagram</a>
+    <a href="https://instagram.com/marissaalves_" target="_blank" rel="noopener">Instagram</a>
     <a href="https://wa.me/5511932427523">WhatsApp</a>
-    </div>
+  </div>
 </footer>
 
 <script>
-// Filtros de categoria (visual apenas — para filtro real, implementar com JS ou CMS)
-document.querySelectorAll('.filtro-btn').forEach(btn => {
-  btn.addEventListener('click', () => {
-    document.querySelectorAll('.filtro-btn').forEach(b => b.classList.remove('active'));
-    btn.classList.add('active');
+// ── FILTRO POR CATEGORIA ──────────────────────────────────────────
+const cards = document.querySelectorAll('.post-card');
+const btnsFiltro = document.querySelectorAll('.filtro-btn');
+const emptyState = document.getElementById('emptyState');
+const postsGrid = document.getElementById('postsGrid');
+const tituloEl = document.getElementById('posts-titulo');
+const countLabel = document.getElementById('posts-count-label');
+
+// Monta contagem por categoria ao carregar
+const categoriasMap = {};
+cards.forEach(card => {
+  const cats = card.dataset.categorias.split(',');
+  cats.forEach(cat => {
+    categoriasMap[cat] = (categoriasMap[cat] || 0) + 1;
   });
 });
 
-  // ✅ Função de conversão Google Ads — Clique WhatsApp
+// Preenche os badges de contagem
+btnsFiltro.forEach(btn => {
+  const cat = btn.dataset.categoria;
+  if (cat === 'todos') {
+    document.getElementById('count-todos').textContent = cards.length;
+    return;
+  }
+  const el = document.getElementById('count-' + cat);
+  if (el) el.textContent = categoriasMap[cat] || 0;
+});
+
+// Filtra ao clicar
+btnsFiltro.forEach(btn => {
+  btn.addEventListener('click', () => {
+    const cat = btn.dataset.categoria;
+
+    // Atualiza botão ativo
+    btnsFiltro.forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+
+    // Filtra cards
+    let visiveis = 0;
+    cards.forEach(card => {
+      const cats = card.dataset.categorias.split(',');
+      const mostrar = cat === 'todos' || cats.includes(cat);
+      card.classList.toggle('hidden', !mostrar);
+      if (mostrar) visiveis++;
+    });
+
+    // Estado vazio
+    emptyState.style.display = visiveis === 0 ? 'block' : 'none';
+
+    // Atualiza título e contagem
+    const nomes = {
+      todos: 'TODOS OS ARTIGOS',
+      joelho: 'JOELHO',
+      ombro: 'OMBRO',
+      coluna: 'COLUNA',
+      esporte: 'ESPORTE',
+      
+    };
+    tituloEl.textContent = nomes[cat] || 'ARTIGOS';
+    countLabel.textContent = visiveis + (visiveis === 1 ? ' artigo' : ' artigos');
+  });
+});
+
+// ── MENU MOBILE ───────────────────────────────────────────────────
+const menuToggle = document.getElementById('menuToggle');
+const mobileMenu = document.getElementById('mobileMenu');
+menuToggle.addEventListener('click', () => {
+  menuToggle.classList.toggle('active');
+  mobileMenu.classList.toggle('active');
+  document.body.classList.toggle('menu-open');
+});
+document.querySelectorAll('.mobile-menu a').forEach(link => {
+  link.addEventListener('click', () => {
+    menuToggle.classList.remove('active');
+    mobileMenu.classList.remove('active');
+    document.body.classList.remove('menu-open');
+  });
+});
+
+// ── GOOGLE ADS ────────────────────────────────────────────────────
 function gtag_report_conversion() {
-  gtag('event', 'conversion', {
-    'send_to': 'AW-11198302157/Eza_CLbh0LEcEM2T4tsp'
-  });
-  gtag('event', 'whatsapp_click', {
-    'event_category': 'Lead',
-    'event_label': 'WhatsApp'
-  });
+  gtag('event', 'conversion', { 'send_to': 'AW-11198302157/Eza_CLbh0LEcEM2T4tsp' });
+  gtag('event', 'whatsapp_click', { 'event_category': 'Lead', 'event_label': 'WhatsApp' });
   return true;
 }
 </script>
