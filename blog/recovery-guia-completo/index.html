@@ -162,10 +162,45 @@ h1 { font-family: 'Bebas Neue', sans-serif; font-size: clamp(36px, 6vw, 52px); l
 .meta-divider { width: 1px; height: 24px; background: #2a2a2a; }
 .meta-item { font-size: 12px; color: #3a3a3a; }
 
-.article-cover { background: #111; height: 480px; border-bottom: 1px solid #1a1a1a; position: relative; overflow: hidden; max-width: 960px; margin: 0 auto; border-radius: var(--radius); }
-.article-cover::before { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse at 50% 60%, var(--accent-glow), transparent 70%); pointer-events: none; z-index: 2; }
-.article-cover img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center 30%; display: block; z-index: 1; }
+/* =========================
+   CAPA DO ARTIGO
+========================= */
 
+.article-cover {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    aspect-ratio: 16 / 9;
+    background: #111;
+    border-radius: var(--radius);
+    overflow: hidden;
+    position: relative;
+    border-bottom: 1px solid #1a1a1a;
+}
+
+.article-cover::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(
+        ellipse at center,
+        rgba(192,17,26,0.08),
+        transparent 75%
+    );
+    z-index: 1;
+    pointer-events: none;
+}
+
+.article-cover img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center center;
+    background: #111;
+    display: block;
+    position: relative;
+    z-index: 0;
+}
 .article-layout { display: grid; grid-template-columns: 1fr 280px; gap: 48px; max-width: 1100px; margin: 0 auto; padding: 60px 40px 80px; align-items: start; }
 
 .article-content { min-width: 0; }
@@ -281,7 +316,7 @@ footer.site-footer { background: #080808; border-top: 1px solid #0f0f0f; padding
   .article-meta { gap: 10px; }
   .meta-divider { display: none; }
   .meta-item { font-size: 11px; }
-  .article-cover { height: 220px; }
+  .article-cover {aspect-ratio: 16 / 9;height: auto; }
   .article-layout { padding: 32px 20px 52px; gap: 24px; }
   .article-intro { font-size: 15px; }
   .article-content h2 { margin: 36px 0 12px; }
