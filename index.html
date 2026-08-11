@@ -163,8 +163,20 @@
 </head>
 <body>
 
-<!-- WHATSAPP FLUTUANTE -->
+<!-- WHATSAPP FLUTUANTE + BALÃO PROATIVO -->
 <div class="wa-float">
+  <div class="wa-bubble" id="waBubble">
+    <button class="wa-bubble-close" id="waBubbleClose" aria-label="Fechar">×</button>
+    <div class="wa-bubble-header">
+      <img src="assets/foto-marissa.jpg" alt="Marissa Alves" class="wa-bubble-avatar">
+      <div>
+        <div class="wa-bubble-name">Marissa Alves</div>
+        <div class="wa-bubble-status">● Online agora</div>
+      </div>
+    </div>
+    <div class="wa-bubble-msg">Oi! 👋 Posso te ajudar a agendar sua avaliação ou tirar alguma dúvida?</div>
+    <a href="https://wa.me/5511932427523?text=Oi%2C%20vim%20pelo%20site%20e%20gostaria%20de%20saber%20mais." class="wa-bubble-btn" onclick="gtag_report_conversion()">Falar no WhatsApp</a>
+  </div>
   <span class="wa-label">Agendar pelo WhatsApp</span>
 <a href="https://wa.me/5511932427523?text=Oi%2C%20quero%20agendar%20uma%20avalia%C3%A7%C3%A3o." class="wa-btn" aria-label="Falar no WhatsApp" onclick="gtag_report_conversion()">
     <svg width="26" height="26" viewBox="0 0 24 24" fill="white">
@@ -370,84 +382,80 @@
   <!-- CARROSSEL -->
   <div class="clinica-carousel-col">
 
-    <div class="carousel-wrap">
+    <div class="carousel-track" id="carouselTrack">
 
-      <div class="carousel-track" id="carouselTrack">
-
-        <div class="carousel-slide">
-          <img src="assets/foto-clinica1.JPEG"
-               alt="Equipamentos da Stronger Fisioterapia">
-          <div class="carousel-caption">
-            Espaço de atendimento · Vila Olímpia
-          </div>
+      <div class="carousel-slide">
+        <img src="assets/foto-clinica1.JPEG"
+             alt="Equipamentos da Stronger Fisioterapia">
+        <div class="carousel-caption">
+          Espaço de atendimento · Vila Olímpia
         </div>
-
-        <div class="carousel-slide">
-          <img src="assets/foto-clinica2.JPEG"
-               alt="Ambiente da Stronger Fisioterapia">
-          <div class="carousel-caption">
-            Ambiente individualizado
-          </div>
-        </div>
-
-        <div class="carousel-slide">
-          <img src="assets/foto-clinica3.JPEG"
-               alt="Ambiente da Stronger Fisioterapia">
-          <div class="carousel-caption">
-            Pensado na sua recuperação
-          </div>
-        </div>
-
-        <div class="carousel-slide">
-          <img src="assets/foto-clinica4.JPEG"
-               alt="Ambiente da Stronger Fisioterapia">
-          <div class="carousel-caption">
-            Sua recuperação é nossa prioridade
-          </div>
-        </div>
-
       </div>
 
-      <!-- BOTÕES -->
-      <button class="carousel-btn prev"
-              onclick="moveCarousel(-1)"
-              aria-label="Foto anterior">
-
-        <svg width="18" height="18"
-             viewBox="0 0 24 24"
-             fill="none"
-             stroke="currentColor"
-             stroke-width="2">
-
-          <path d="M15 18l-6-6 6-6"/>
-
-        </svg>
-
-      </button>
-
-      <button class="carousel-btn next"
-              onclick="moveCarousel(1)"
-              aria-label="Próxima foto">
-
-        <svg width="18" height="18"
-             viewBox="0 0 24 24"
-             fill="none"
-             stroke="currentColor"
-             stroke-width="2">
-
-          <path d="M9 18l6-6-6-6"/>
-
-        </svg>
-
-      </button>
-
-      <!-- DOTS -->
-      <div class="carousel-dots" id="carouselDots">
-        <div class="carousel-dot active" onclick="goToSlide(0)"></div>
-        <div class="carousel-dot" onclick="goToSlide(1)"></div>
-        <div class="carousel-dot" onclick="goToSlide(2)"></div>
+      <div class="carousel-slide">
+        <img src="assets/foto-clinica2.JPEG"
+             alt="Ambiente da Stronger Fisioterapia">
+        <div class="carousel-caption">
+          Ambiente individualizado
+        </div>
       </div>
 
+      <div class="carousel-slide">
+        <img src="assets/foto-clinica3.JPEG"
+             alt="Ambiente da Stronger Fisioterapia">
+        <div class="carousel-caption">
+          Pensado na sua recuperação
+        </div>
+      </div>
+
+      <div class="carousel-slide">
+        <img src="assets/foto-clinica4.JPEG"
+             alt="Ambiente da Stronger Fisioterapia">
+        <div class="carousel-caption">
+          Sua recuperação é nossa prioridade
+        </div>
+      </div>
+
+    </div>
+
+    <!-- BOTÕES -->
+    <button class="carousel-btn prev"
+            onclick="moveCarousel(-1)"
+            aria-label="Foto anterior">
+
+      <svg width="18" height="18"
+           viewBox="0 0 24 24"
+           fill="none"
+           stroke="currentColor"
+           stroke-width="2">
+
+        <path d="M15 18l-6-6 6-6"/>
+
+      </svg>
+
+    </button>
+
+    <button class="carousel-btn next"
+            onclick="moveCarousel(1)"
+            aria-label="Próxima foto">
+
+      <svg width="18" height="18"
+           viewBox="0 0 24 24"
+           fill="none"
+           stroke="currentColor"
+           stroke-width="2">
+
+        <path d="M9 18l6-6-6-6"/>
+
+      </svg>
+
+    </button>
+
+    <!-- DOTS -->
+    <div class="carousel-dots" id="carouselDots">
+      <div class="carousel-dot active" onclick="goToSlide(0)"></div>
+      <div class="carousel-dot" onclick="goToSlide(1)"></div>
+      <div class="carousel-dot" onclick="goToSlide(2)"></div>
     </div>
 
   </div>
@@ -461,6 +469,7 @@
   <div class="sobre-content">
     <span class="section-label">Quem sou eu</span>
     <h2 style="font-size:46px;margin-bottom:22px;color:var(--white)">MARISSA<br>ALVES</h2>
+    <p class="sobre-story">Há mais de <strong>7 anos</strong> tratando dor pra quem não quer parar de treinar — foi assim que a Stronger nasceu: da vontade de unir ciência e esporte de um jeito que faz sentido pra quem vive de treino.</p>
     <p><strong>Fisioterapeuta ortopédica e esportiva</strong> formada pela Universidade Federal de Alfenas (UNIFAL-MG), com pós-graduação em Fisiologia do Exercício pela Universidade Federal de São Paulo (UNIFESP).</p>
     <p>Atendo desde atletas amadores e profissionais que buscam prevenção, a pessoas que acabaram de operar e querem retorno rápido — sempre com plano individualizado.</p>
     <p>Também vivo o que ensino: pratico musculação e sou <strong>faixa roxa de jiu-jitsu</strong>. Sei o que significa querer voltar ao tatame.</p>
@@ -470,6 +479,8 @@
       <span class="etag">Faixa Roxa BJJ</span>
       <span class="etag">Fisio Esportiva</span>
       <span class="etag">Ortopedia</span>
+      <span class="etag">+7 anos de Stronger</span>
+      <span class="etag">CREFITO3 295472-F</span>
     </div>
   </div>
 </section>
@@ -553,7 +564,23 @@
   <p class="section-sub">Dicas, orientações e tudo que você precisa saber para viver e treinar sem dor.</p>
   <div class="blog-grid">
 
+<a href="/blog/cotovelo-de-tenista/" class="blog-card">
+      <div class="blog-img">
+        <img src="/assets/capa-cotovelo-tenista.png"
+             alt="Pessoa com dor no cotovelo fazendo musculação"
+             style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;"
+             onerror="this.style.display='none'">
+      </div>
+      <div class="blog-body">
+        <div class="blog-tag">Cotovelo, Esporte</div>
+        <div class="blog-title"> Cotovelo de tenista: Por que ele aparece mesmo em quem nunca jogou tênis</div>
+        <div class="blog-desc"> Se você sente dor na parte de fora do cotovelo ao segurar uma xícara, abrir uma porta, carregar sacolas ou treinar musculação, 
+          pode estar com uma condição conhecida como epicondilite lateral </div>
+      </div>
+      <div class="blog-footer"><span class="blog-date">Julho 2026</span><span class="blog-link">Ler artigo →</span></div>
+    </a>
 
+    
 <a href="/blog/entorse-tornozelo/" class="blog-card">
       <div class="blog-img">
         <img src="/assets/capa-entorse-tornozelo.png"
@@ -586,22 +613,7 @@
       </div>
       <div class="blog-footer"><span class="blog-date">Julho 2026</span><span class="blog-link">Ler artigo →</span></div>
     </a>
-    
-<a href="/blog/lesao-futebol-amador/" class="blog-card">
-      <div class="blog-img">
-        <img src="/assets/capa-futebol-amador.png"
-             alt="Pessoa com dor jogando futebol e segurando o tornozelo"
-             style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;"
-             onerror="this.style.display='none'">
-      </div>
-      <div class="blog-body">
-        <div class="blog-tag">Virilha, joelho e tornozelo</div>
-        <div class="blog-title">As 5 Lesões Mais Comuns no Futebol Amador</div>
-        <div class="blog-desc">O futebol está sempre presente na nossa vida, principalmente nos fins de semana, vem conhecer as principais lesões que podem acontecer.</div>
-      </div>
-      <div class="blog-footer"><span class="blog-date">Jun 2026</span><span class="blog-link">Ler artigo →</span></div>
-    </a>
-      
+ 
     
       </div>
   <div style="text-align:center;margin-top:32px">
@@ -738,7 +750,7 @@
   <a href="/" class="footer-logo" aria-label="Stronger Fisioterapia">
     <img src="assets/logo-stronger.png" alt="Stronger Fisioterapia">
   </a>
-  <div class="footer-copy">© 2026 Stronger Fisioterapia · Vila Olímpia, São Paulo</div>
+  <div class="footer-copy">© 2026 Stronger Fisioterapia · Vila Olímpia, São Paulo · CNPJ: 45.968.619/0001-22 · CREFITO 15691</div>
   <div class="footer-links">
     <a href="https://instagram.com/strongerfisioterapia" target="_blank" rel="noopener">Instagram</a>
     <a href="https://wa.me/5511932427523">WhatsApp</a>
@@ -831,6 +843,32 @@ document.querySelectorAll('.faq-item').forEach(item => {
     }
   });
 });
+
+// =====================
+// WHATSAPP — BALÃO PROATIVO
+// =====================
+(function () {
+  const bubble = document.getElementById('waBubble');
+  const closeBtn = document.getElementById('waBubbleClose');
+  const STORAGE_KEY = 'stronger_wa_bubble_dismissed';
+
+  if (!bubble) return;
+
+  // Não mostra de novo se o usuário já fechou nesta sessão
+  if (sessionStorage.getItem(STORAGE_KEY)) return;
+
+  // Aparece automaticamente depois de 6s na página
+  const showTimer = setTimeout(() => {
+    bubble.classList.add('active');
+  }, 6000);
+
+  closeBtn.addEventListener('click', (e) => {
+    e.stopPropagation();
+    bubble.classList.remove('active');
+    sessionStorage.setItem(STORAGE_KEY, '1');
+    clearTimeout(showTimer);
+  });
+})();
 
 </script>
 
