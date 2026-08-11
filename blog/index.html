@@ -41,6 +41,15 @@
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 
+<!-- Microsoft Clarity -->
+<script type="text/javascript">
+  (function(c,l,a,r,i,t,y){
+      c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+      t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+      y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+  })(window, document, "clarity", "script", "x80p74s6pf");
+</script>
+
 <style>
 *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 :root {
@@ -64,6 +73,33 @@ a { color: inherit; text-decoration: none; }
 .wa-float:hover .wa-label { opacity: 1; transform: translateX(0); }
 .wa-btn { width: 52px; height: 52px; background: #25D366; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 20px rgba(37,211,102,0.3); transition: transform 0.2s; }
 .wa-btn:hover { transform: scale(1.08); }
+
+/* Balão proativo de WhatsApp (mesmo padrão da home) */
+.wa-bubble {
+  position: absolute;
+  bottom: 64px;
+  right: 0;
+  width: 280px;
+  background: #161616;
+  border: 1px solid #2a2a2a;
+  border-radius: 14px;
+  padding: 16px;
+  box-shadow: 0 12px 40px rgba(0,0,0,0.5);
+  opacity: 0;
+  transform: translateY(12px) scale(0.96);
+  pointer-events: none;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+.wa-bubble.active { opacity: 1; transform: translateY(0) scale(1); pointer-events: auto; }
+.wa-bubble-close { position: absolute; top: 8px; right: 10px; background: none; border: none; color: #666; font-size: 18px; line-height: 1; cursor: pointer; padding: 4px; }
+.wa-bubble-close:hover { color: var(--white); }
+.wa-bubble-header { display: flex; align-items: center; gap: 10px; margin-bottom: 12px; }
+.wa-bubble-avatar { width: 38px; height: 38px; border-radius: 50%; object-fit: cover; flex-shrink: 0; }
+.wa-bubble-name { font-size: 13px; font-weight: 500; color: var(--white); }
+.wa-bubble-status { font-size: 11px; color: #4ade80; }
+.wa-bubble-msg { background: #202020; border-radius: 10px; padding: 10px 12px; font-size: 13px; color: #ddd; line-height: 1.5; margin-bottom: 12px; }
+.wa-bubble-btn { display: flex; align-items: center; justify-content: center; background: #25D366; color: #fff; font-size: 13px; font-weight: 500; padding: 10px; border-radius: 8px; transition: background 0.2s; }
+.wa-bubble-btn:hover { background: #1eb857; }
 
 /* NAV */
 nav { display: flex; justify-content: space-between; align-items: center; padding: 18px 40px; border-bottom: 1px solid #1a1a1a; position: sticky; top: 0; background: rgba(13,13,13,0.97); backdrop-filter: blur(10px); z-index: 100; }
@@ -110,7 +146,8 @@ h1 { font-family: 'Bebas Neue', sans-serif; font-size: 64px; line-height: 0.92; 
 .filtro-btn.active .filtro-count { background: var(--accent); color: #fff; }
 
 /* DESTAQUE */
-.post-destaque { background: var(--black); padding: 60px 40px; border-bottom: 1px solid #1a1a1a; }
+.post-destaque { background: var(--black); padding: 60px 40px; border-bottom: 1px solid #1a1a1a; transition: opacity 0.25s ease, max-height 0.35s ease; overflow: hidden; }
+.post-destaque.is-hidden { display: none; }
 .destaque-label { font-size: 10px; letter-spacing: 2px; text-transform: uppercase; color: var(--accent); margin-bottom: 24px; font-weight: 500; }
 .destaque-card { display: grid; grid-template-columns: 1fr 1fr; gap: 1px; background: #1a1a1a; }
 .destaque-img { background: #141414; min-height: 320px; display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden; }
@@ -172,9 +209,9 @@ h1 { font-family: 'Bebas Neue', sans-serif; font-size: 64px; line-height: 0.92; 
 .btn-dark { background: var(--black); color: var(--white); padding: 14px 28px; border-radius: 4px; font-size: 14px; font-weight: 500; display: inline-flex; align-items: center; gap: 8px; white-space: nowrap; }
 
 /* FOOTER */
-footer { background: #080808; border-top: 1px solid #0f0f0f; padding: 28px 40px; display: flex; justify-content: space-between; align-items: center; }
+footer { background: #080808; border-top: 1px solid #0f0f0f; padding: 28px 40px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px; }
 .footer-logo img { height: 24px; width: auto; opacity: 0.35; }
-.footer-copy { font-size: 12px; color: #222; }
+.footer-copy { font-size: 12px; color: #444; }
 .footer-links a { font-size: 12px; color: #2e2e2e; margin-left: 20px; transition: color 0.2s; }
 .footer-links a:hover { color: var(--text-muted); }
 
@@ -200,6 +237,7 @@ footer { background: #080808; border-top: 1px solid #0f0f0f; padding: 28px 40px;
   footer { flex-direction: column; gap: 16px; text-align: center; padding: 28px 20px; }
   .footer-links a { margin: 0 10px; }
   .wa-float { bottom: 20px; right: 20px; }
+  .wa-bubble { width: calc(100vw - 40px); right: -8px; }
 }
 </style>
 </head>
@@ -207,6 +245,18 @@ footer { background: #080808; border-top: 1px solid #0f0f0f; padding: 28px 40px;
 
 <!-- WA FLUTUANTE -->
 <div class="wa-float">
+  <div class="wa-bubble" id="waBubble">
+    <button class="wa-bubble-close" id="waBubbleClose" aria-label="Fechar">×</button>
+    <div class="wa-bubble-header">
+      <img src="/assets/foto-marissa.jpg" alt="Marissa Alves" class="wa-bubble-avatar">
+      <div>
+        <div class="wa-bubble-name">Marissa Alves</div>
+        <div class="wa-bubble-status">● Online agora</div>
+      </div>
+    </div>
+    <div class="wa-bubble-msg">Oi! 👋 Leu algum artigo do blog? Posso te ajudar a agendar uma avaliação.</div>
+    <a href="https://wa.me/5511932427523?text=Oi%2C%20li%20o%20blog%20e%20gostaria%20de%20saber%20mais." class="wa-bubble-btn" onclick="gtag_report_conversion()">Falar no WhatsApp</a>
+  </div>
   <span class="wa-label">Agendar avaliação</span>
   <a href="https://wa.me/5511932427523?text=Olá!%20Gostaria%20de%20agendar%20uma%20avaliação." class="wa-btn" aria-label="WhatsApp" onclick="gtag_report_conversion()">
     <svg width="26" height="26" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
@@ -257,18 +307,18 @@ footer { background: #080808; border-top: 1px solid #0f0f0f; padding: 28px 40px;
 
 <!-- FILTROS DE CATEGORIA -->
 <div class="filtros" role="tablist" id="filtros">
-  <button class="filtro-btn active" role="tab" data-categoria="todos">Todos <span class="filtro-count" id="count-todos">6</span></button>
+  <button class="filtro-btn active" role="tab" data-categoria="todos">Todos <span class="filtro-count" id="count-todos">9</span></button>
   <button class="filtro-btn" role="tab" data-categoria="joelho">Joelho <span class="filtro-count" id="count-joelho"></span></button>
   <button class="filtro-btn" role="tab" data-categoria="ombro">Ombro <span class="filtro-count" id="count-ombro"></span></button>
   <button class="filtro-btn" role="tab" data-categoria="coluna">Coluna <span class="filtro-count" id="count-coluna"></span></button>
-  <button class="filtro-btn" role="tab" data-categoria="esporte">Tornozelo <span class="filtro-count" id="count-futebol"></span></button>
-  <button class="filtro-btn" role="tab" data-categoria="esporte">Recovery <span class="filtro-count" id="count-futebol"></span></button>
-  <button class="filtro-btn" role="tab" data-categoria="esporte">Esportes <span class="filtro-count" id="count-futebol"></span></button>
- 
+  <button class="filtro-btn" role="tab" data-categoria="tornozelo">Tornozelo <span class="filtro-count" id="count-tornozelo"></span></button>
+  <button class="filtro-btn" role="tab" data-categoria="cotovelo">Cotovelo <span class="filtro-count" id="count-cotovelo"></span></button>
+  <button class="filtro-btn" role="tab" data-categoria="recovery">Recovery <span class="filtro-count" id="count-recovery"></span></button>
+  <button class="filtro-btn" role="tab" data-categoria="esporte">Esportes <span class="filtro-count" id="count-esporte"></span></button>
 </div>
 
 <!-- POST DESTAQUE -->
-<section class="post-destaque">
+<section class="post-destaque" id="postDestaque">
   <div class="destaque-label">Artigo em destaque</div>
   <div class="destaque-card">
     <a href="/blog/cotovelo-de-tenista/" class="destaque-img">
@@ -277,8 +327,8 @@ footer { background: #080808; border-top: 1px solid #0f0f0f; padding: 28px 40px;
            onerror="this.style.display='none'">
     </a>
     <div class="destaque-content">
-      <span class="post-tag">Tornozelo · Esporte</span>
-      <a href="/blog/dor-no-frio/" style="text-decoration:none;">
+      <span class="post-tag">Cotovelo · Esporte</span>
+      <a href="/blog/cotovelo-de-tenista/" style="text-decoration:none;">
         <h2>COTOVELO DE TENISTA: POR QUE ELE APARECE MESMO EM QUEM NUNCA JOGOU TÊNIS</h2>
       </a>
       <div class="post-meta">
@@ -304,24 +354,24 @@ footer { background: #080808; border-top: 1px solid #0f0f0f; padding: 28px 40px;
   <div class="posts-grid" id="postsGrid">
 
     <!-- POST9: Cotovelo de Tenista -->
-    <a class="post-card" href="/blog/entorse-tornozelo/" data-categorias="joelho">
+    <a class="post-card" href="/blog/cotovelo-de-tenista/" data-categorias="cotovelo,esporte">
       <div class="post-thumb">
-        <img src="/assets/capa-cotovelo-tenista.png" alt="Torção de tornozelo" onerror="this.style.display='none'">
+        <img src="/assets/capa-cotovelo-tenista.png" alt="Cotovelo de tenista — dor no cotovelo" onerror="this.style.display='none'">
       </div>
       <div class="post-body">
-        <div class="post-tag-small"> Cotovelo· Esporte</div>
+        <div class="post-tag-small">Cotovelo · Esporte</div>
         <h2 class="post-title">Cotovelo de Tenista: Por que ele aparece mesmo em quem nunca jogou tênis</h2>
-        <p class="post-desc"> O cotovelo de tenista é uma tendinopatia que acomete os tendões dos músculos extensores do punho. e você sente dor na parte de fora do cotovelo ao segurar uma xícara, abrir uma porta, carregar sacolas ou treinar musculação, 
+        <p class="post-desc"> O cotovelo de tenista é uma tendinopatia que acomete os tendões dos músculos extensores do punho. Se você sente dor na parte de fora do cotovelo ao segurar uma xícara, abrir uma porta, carregar sacolas ou treinar musculação, 
         pode estar com uma condição conhecida como epicondilalgia lateral.</p>
         <div class="post-footer">
-          <span class="post-date">Jul 2026 · 7 min</span>
+          <span class="post-date">Ago 2026 · 8 min</span>
           <span class="post-card-link">Ler <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
         </div>
       </div>
     </a>
 
-<!-- POST8: Entorse de Tornozelo -->
-    <a class="post-card" href="/blog/entorse-tornozelo/" data-categorias="joelho">
+    <!-- POST8: Entorse de Tornozelo -->
+    <a class="post-card" href="/blog/entorse-tornozelo/" data-categorias="tornozelo,esporte">
       <div class="post-thumb">
         <img src="/assets/capa-entorse-tornozelo.png" alt="Torção de tornozelo" onerror="this.style.display='none'">
       </div>
@@ -337,10 +387,10 @@ footer { background: #080808; border-top: 1px solid #0f0f0f; padding: 28px 40px;
       </div>
     </a>
     
-<!-- POST7: Recovery: Guia Completo -->
-    <a class="post-card" href="/blog/recovery-guia-completo/" data-categorias="joelho">
+    <!-- POST7: Recovery: Guia Completo -->
+    <a class="post-card" href="/blog/recovery-guia-completo/" data-categorias="recovery,esporte">
       <div class="post-thumb">
-        <img src="/assets/capa-recovery.png" alt="Por que sinto mais dor no frio — fisioterapia" onerror="this.style.display='none'">
+        <img src="/assets/capa-recovery.png" alt="Recovery — fisioterapia esportiva" onerror="this.style.display='none'">
       </div>
       <div class="post-body">
         <div class="post-tag-small">Recovery · Esportes</div>
@@ -354,7 +404,6 @@ footer { background: #080808; border-top: 1px solid #0f0f0f; padding: 28px 40px;
       </div>
     </a>
 
-    
     <!-- POST6: Dor no Frio -->
     <a class="post-card" href="/blog/dor-no-frio/" data-categorias="joelho">
       <div class="post-thumb">
@@ -372,7 +421,7 @@ footer { background: #080808; border-top: 1px solid #0f0f0f; padding: 28px 40px;
     </a>
 
     <!-- POST5: Futebol Amador -->
-    <a class="post-card" href="/blog/lesao-futebol-amador/" data-categorias="joelho,esporte">
+    <a class="post-card" href="/blog/lesao-futebol-amador/" data-categorias="joelho,tornozelo,esporte">
       <div class="post-thumb">
         <img src="/assets/capa-futebol-amador.png" alt="Lesões mais comuns no futebol amador" onerror="this.style.display='none'">
       </div>
@@ -388,7 +437,7 @@ footer { background: #080808; border-top: 1px solid #0f0f0f; padding: 28px 40px;
     </a>
 
     <!-- POST4: LCA -->
-    <a class="post-card" href="/blog/recuperacao-lca/" data-categorias="joelho">
+    <a class="post-card" href="/blog/recuperacao-lca/" data-categorias="joelho,esporte">
       <div class="post-thumb">
         <img src="/assets/capa-lca.png" alt="Recuperação do LCA fisioterapia joelho" onerror="this.style.display='none'">
       </div>
@@ -404,7 +453,7 @@ footer { background: #080808; border-top: 1px solid #0f0f0f; padding: 28px 40px;
     </a>
 
     <!-- POST3: Dor no Ombro -->
-    <a class="post-card" href="/blog/dor-no-ombro/" data-categorias="ombro">
+    <a class="post-card" href="/blog/dor-no-ombro/" data-categorias="ombro,esporte">
       <div class="post-thumb">
         <img src="/assets/capa-dor-ombro.png" alt="Dor no ombro fisioterapia" onerror="this.style.display='none'">
       </div>
@@ -420,7 +469,7 @@ footer { background: #080808; border-top: 1px solid #0f0f0f; padding: 28px 40px;
     </a>
 
     <!-- POST2: Condromalácia -->
-    <a class="post-card" href="/blog/condromalacia-patelar/" data-categorias="joelho">
+    <a class="post-card" href="/blog/condromalacia-patelar/" data-categorias="joelho,esporte">
       <div class="post-thumb">
         <img src="/assets/capa-condromalacia.png" alt="Condromalácia patelar fisioterapia joelho" onerror="this.style.display='none'">
       </div>
@@ -436,7 +485,7 @@ footer { background: #080808; border-top: 1px solid #0f0f0f; padding: 28px 40px;
     </a>
 
     <!-- POST1: Dor Lombar -->
-    <a class="post-card" href="/blog/dor-lombar-em-quem-treina/" data-categorias="coluna">
+    <a class="post-card" href="/blog/dor-lombar-em-quem-treina/" data-categorias="coluna,esporte">
       <div class="post-thumb">
         <img src="/assets/capa-dor-lombar.png" alt="Dor lombar em quem treina fisioterapia" onerror="this.style.display='none'">
       </div>
@@ -497,7 +546,7 @@ footer { background: #080808; border-top: 1px solid #0f0f0f; padding: 28px 40px;
   <a href="/" aria-label="Stronger Fisioterapia">
     <img src="/assets/logo-stronger.png" alt="Stronger Fisioterapia" style="height:24px;width:auto;opacity:0.35;">
   </a>
-  <div class="footer-copy">© 2026 Stronger Fisioterapia · Vila Olímpia, São Paulo</div>
+  <div class="footer-copy">© 2026 Stronger Fisioterapia · Vila Olímpia, São Paulo · CNPJ: 45.968.619/0001-22 · CREFITO 15691</div>
   <div class="footer-links">
     <a href="https://instagram.com/marissaalves_" target="_blank" rel="noopener">Instagram</a>
     <a href="https://wa.me/5511932427523">WhatsApp</a>
@@ -512,6 +561,8 @@ const emptyState = document.getElementById('emptyState');
 const postsGrid = document.getElementById('postsGrid');
 const tituloEl = document.getElementById('posts-titulo');
 const countLabel = document.getElementById('posts-count-label');
+const postDestaque = document.getElementById('postDestaque');
+const DESTAQUE_CATEGORIAS = ['cotovelo', 'esporte']; // categorias do artigo em destaque
 
 // Monta contagem por categoria ao carregar
 const categoriasMap = {};
@@ -542,6 +593,14 @@ btnsFiltro.forEach(btn => {
     btnsFiltro.forEach(b => b.classList.remove('active'));
     btn.classList.add('active');
 
+    // Mostra o destaque só na aba "Todos" (evita ele "grudar" em cima de
+    // qualquer categoria filtrada, já que ele é fixo no HTML)
+    if (cat === 'todos') {
+      postDestaque.classList.remove('is-hidden');
+    } else {
+      postDestaque.classList.add('is-hidden');
+    }
+
     // Filtra cards
     let visiveis = 0;
     cards.forEach(card => {
@@ -560,8 +619,10 @@ btnsFiltro.forEach(btn => {
       joelho: 'JOELHO',
       ombro: 'OMBRO',
       coluna: 'COLUNA',
+      tornozelo: 'TORNOZELO',
+      cotovelo: 'COTOVELO',
+      recovery: 'RECOVERY',
       esporte: 'ESPORTE',
-      
     };
     tituloEl.textContent = nomes[cat] || 'ARTIGOS';
     countLabel.textContent = visiveis + (visiveis === 1 ? ' artigo' : ' artigos');
@@ -590,6 +651,22 @@ function gtag_report_conversion() {
   gtag('event', 'whatsapp_click', { 'event_category': 'Lead', 'event_label': 'WhatsApp' });
   return true;
 }
+
+// ── WHATSAPP — BALÃO PROATIVO ────────────────────────────────────
+(function () {
+  const bubble = document.getElementById('waBubble');
+  const closeBtn = document.getElementById('waBubbleClose');
+  const STORAGE_KEY = 'stronger_wa_bubble_dismissed';
+  if (!bubble) return;
+  if (sessionStorage.getItem(STORAGE_KEY)) return;
+  const showTimer = setTimeout(() => { bubble.classList.add('active'); }, 6000);
+  closeBtn.addEventListener('click', (e) => {
+    e.stopPropagation();
+    bubble.classList.remove('active');
+    sessionStorage.setItem(STORAGE_KEY, '1');
+    clearTimeout(showTimer);
+  });
+})();
 </script>
 </body>
 </html>
