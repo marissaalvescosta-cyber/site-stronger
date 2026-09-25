@@ -6,13 +6,26 @@
   <title>Recovery Esportivo na Vila Olímpia | Stronger Fisioterapia</title>
   <meta name="description" content="Recovery esportivo individual na Vila Olímpia, em São Paulo. Sessões de 30, 45 ou 60 minutos com bota de compressão e recursos escolhidos para sua rotina de treino.">
   <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#0d0d0d">
+  <link rel="icon" type="image/png" href="/assets/favicon.png">
+
+  <!-- Open Graph -->
   <meta property="og:type" content="website">
   <meta property="og:title" content="Recovery Esportivo na Vila Olímpia | Stronger Fisioterapia">
   <meta property="og:description" content="Sessões individuais de recovery esportivo para quem treina. Conheça as opções presenciais na Vila Olímpia.">
   <meta property="og:url" content="https://strongerfisioterapia.com.br/recovery/">
+  <meta property="og:locale" content="pt_BR">
   <meta property="og:image" content="https://strongerfisioterapia.com.br/assets/foto-clinica1.JPEG">
-  <meta name="theme-color" content="#0d0d0d">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Recovery Esportivo na Vila Olímpia | Stronger Fisioterapia">
+  <meta name="twitter:description" content="Sessões individuais de recovery esportivo para quem treina, na Vila Olímpia.">
+  <meta name="twitter:image" content="https://strongerfisioterapia.com.br/assets/foto-clinica1.JPEG">
+
   <link rel="canonical" href="https://strongerfisioterapia.com.br/recovery/">
+
+  <!-- ===== SCHEMA: Breadcrumb ===== -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -23,9 +36,117 @@
     ]
   }
   </script>
+
+  <!-- ===== SCHEMA: Service + Offers (planos e preços) ===== -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Recovery Esportivo",
+    "serviceType": "Recovery esportivo / terapia de recuperação física",
+    "description": "Sessões individuais de recovery esportivo com bota de compressão pneumática, terapia manual e mobilidade, para praticantes de atividade física na Vila Olímpia, São Paulo.",
+    "url": "https://strongerfisioterapia.com.br/recovery/",
+    "areaServed": { "@type": "City", "name": "São Paulo" },
+    "provider": {
+      "@type": "MedicalClinic",
+      "@id": "https://strongerfisioterapia.com.br/#clinic",
+      "name": "Stronger Fisioterapia",
+      "url": "https://strongerfisioterapia.com.br",
+      "telephone": "+5511932427523",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Rua Helena, 309, conj 112",
+        "addressLocality": "São Paulo",
+        "addressRegion": "SP",
+        "postalCode": "04552-050",
+        "addressCountry": "BR"
+      }
+    },
+    "offers": [
+      {
+        "@type": "Offer",
+        "name": "Recovery Express (30 minutos)",
+        "price": "150",
+        "priceCurrency": "BRL",
+        "url": "https://strongerfisioterapia.com.br/recovery/"
+      },
+      {
+        "@type": "Offer",
+        "name": "Recovery Performance (45 minutos)",
+        "price": "200",
+        "priceCurrency": "BRL",
+        "url": "https://strongerfisioterapia.com.br/recovery/"
+      },
+      {
+        "@type": "Offer",
+        "name": "Recovery Individual (60 minutos)",
+        "price": "240",
+        "priceCurrency": "BRL",
+        "url": "https://strongerfisioterapia.com.br/recovery/"
+      }
+    ]
+  }
+  </script>
+
+  <!-- ===== SCHEMA: FAQPage — sincronizado 1:1 com os <details> visíveis ===== -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Para quem são as sessões de recovery?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Para pessoas fisicamente ativas que desejam evoluir nos treinos." }
+      },
+      {
+        "@type": "Question",
+        "name": "A bota de compressão é usada em toda sessão?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Ela pode fazer parte da sessão quando for adequada. Conversamos sobre seu objetivo e verificamos se o recurso é apropriado antes do uso." }
+      },
+      {
+        "@type": "Question",
+        "name": "Qual pacote devo escolher?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Se estiver em dúvida, fale com a gente pelo WhatsApp. Podemos explicar as diferenças de duração e ajudar você a escolher a opção que faz sentido para o que procura." }
+      },
+      {
+        "@type": "Question",
+        "name": "Tenho dor ou uma lesão. Posso agendar recovery?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Se você está com dor, teve uma lesão ou passou por cirurgia, entre em contato antes de agendar. Pode ser mais indicado começar por uma avaliação fisioterapêutica." }
+      },
+      {
+        "@type": "Question",
+        "name": "Onde acontece o atendimento?",
+        "acceptedAnswer": { "@type": "Answer", "text": "As sessões desta página são presenciais na Stronger Fisioterapia: Rua Helena, 309, conjunto 112, Vila Olímpia, São Paulo (para atendimentos domiciliares, entre em contato para mais informações)." }
+      }
+    ]
+  }
+  </script>
+
+  <!-- Google tag (gtag.js) — mesma configuração da home -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11198302157"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'AW-11198302157');
+    gtag('config', 'G-BWRE59JCYG');
+  </script>
+
+  <!-- Fonte unificada com a home (mesma URL = navegador reaproveita o cache entre páginas) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300&display=swap" rel="stylesheet">
+
+  <!-- Microsoft Clarity — mesma da home -->
+  <script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "x80p74s6pf");
+  </script>
+
   <style>
     :root {
       --black: #0d0d0d;
@@ -43,7 +164,7 @@
     body { margin: 0; background: var(--black); color: var(--white); font: 15px/1.65 'DM Sans', sans-serif; }
     a { color: inherit; text-decoration: none; }
     .wrap { width: min(1160px, calc(100% - 48px)); margin: 0 auto; }
-    .crumbs { padding-top: 16px; color: #777; font-size: 12px; }
+    .crumbs { padding-top: 16px; color: #8a8a8a; font-size: 12px; }
     .crumbs a { color: #aaa; }
     .crumbs a:hover { color: var(--white); }
     .crumbs span { color: var(--accent); }
@@ -64,14 +185,14 @@
     h1 em { color: var(--accent); font-style: normal; }
     .hero-copy p { max-width: 540px; color: #b0b0b0; font-size: 16px; font-weight: 300; line-height: 1.8; margin-bottom: 26px; }
     .hero-actions { display: flex; align-items: center; flex-wrap: wrap; gap: 12px; }
-    .hero-note { margin-top: 28px; color: #777; font-size: 12px; }
+    .hero-note { margin-top: 28px; color: #8a8a8a; font-size: 12px; }
     .hero-art { min-height: 460px; display: grid; place-items: center; overflow: hidden; position: relative; background: radial-gradient(ellipse at 52% 48%, rgba(232,22,31,.15), transparent 58%), #101010; border-left: 1px solid #1a1a1a; }
     .hero-art::before,.hero-art::after { content: ''; position: absolute; width: min(32vw, 380px); aspect-ratio: 1; border: 1px solid rgba(232,22,31,.42); border-radius: 50%; }
     .hero-art::after { width: min(24vw, 280px); border-color: rgba(245,242,237,.16); }
     .art-mark { position: relative; z-index: 1; width: min(60%, 260px); aspect-ratio: .78; display: grid; place-items: center; border: 1px solid #383838; border-radius: 44% 44% 18px 18px; background: linear-gradient(145deg, #202020, #101010 68%); box-shadow: 0 30px 100px rgba(0,0,0,.5); }
     .art-mark::before { content: ''; position: absolute; inset: 18% 12%; border: 2px solid var(--accent); border-radius: 45% 45% 18px 18px; opacity: .82; }
-    .art-mark span { z-index: 1; font: 76px 'Bebas Neue', sans-serif; color: var(--white); letter-spacing: 4px; }
-    .art-caption { position: absolute; bottom: 28px; left: 30px; color: #777; font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase; }
+    .art-mark-logo { position: relative; z-index: 1; width: 62%; height: auto; object-fit: contain; filter: drop-shadow(0 0 22px rgba(232,22,31,.3)); }
+    .art-caption { position: absolute; bottom: 28px; left: 30px; color: #8a8a8a; font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase; }
     .ticker { overflow: hidden; border-bottom: 1px solid #1a1a1a; background: #101010; }
     .ticker-inner { display: flex; justify-content: space-between; gap: 24px; padding: 17px 0; color: #b4b4b4; font-size: 11px; letter-spacing: 1.2px; text-transform: uppercase; }
     .ticker span::before { content: '✳'; margin-right: 10px; color: var(--accent); }
@@ -84,7 +205,7 @@
     .plan.featured { background: #171313; box-shadow: inset 0 3px 0 var(--accent); }
     .plan-tag { color: var(--accent); font-size: 10px; letter-spacing: 1.8px; text-transform: uppercase; font-weight: 600; }
     .plan h3 { font: 27px 'Bebas Neue', sans-serif; text-transform: uppercase; margin: 12px 0 6px; }
-    .duration { color: #777; font-size: 12px; letter-spacing: .6px; }
+    .duration { color: #8a8a8a; font-size: 12px; letter-spacing: .6px; }
     .plan-desc { min-height: 74px; color: #aaa; font-size: 13px; font-weight: 300; margin: 18px 0; }
     .price { margin-top: auto; font: 44px/1 'Bebas Neue', sans-serif; }
     .price small { color: #888; font: 12px 'DM Sans', sans-serif; }
@@ -117,7 +238,7 @@
     .final-cta .wrap { position: relative; z-index: 1; }
     .final-cta h2 { max-width: 720px; margin: 12px auto 16px; }
     .final-cta p { color: var(--text-muted); font-weight: 300; margin-bottom: 26px; }
-    footer { border-top: 1px solid #1a1a1a; padding: 24px 0; color: #666; font-size: 12px; }
+    footer { border-top: 1px solid #1a1a1a; padding: 24px 0; color: #8a8a8a; font-size: 12px; }
     .footer-inner { display: flex; justify-content: space-between; align-items: center; gap: 20px; }
     .footer-inner a:hover { color: var(--white); }
     .wa-float { position: fixed; right: 24px; bottom: 24px; z-index: 20; width: 54px; height: 54px; display: grid; place-items: center; border-radius: 50%; background: #25d366; color: #fff; box-shadow: 0 8px 28px rgba(0,0,0,.4); }
@@ -146,7 +267,6 @@
       .hero-art::before { width: 250px; }
       .hero-art::after { width: 190px; }
       .art-mark { width: 158px; }
-      .art-mark span { font-size: 60px; }
       .art-caption { left: 20px; bottom: 18px; }
       .ticker-inner { width: max-content; min-width: 100%; justify-content: flex-start; gap: 28px; padding: 14px 18px; }
       section { padding: 62px 0; }
@@ -165,13 +285,13 @@
 </head>
 <body>
   <header class="wrap topbar">
-    <a class="brand" href="/" aria-label="Stronger Fisioterapia — início"><img src="/assets/escrito.png" alt="Stronger Fisioterapia"></a>
+    <a class="brand" href="/" aria-label="Stronger Fisioterapia — início"><img src="/assets/escrito.png" alt="Stronger Fisioterapia" width="190" height="64"></a>
     <nav class="nav" aria-label="Navegação principal">
       <a href="/#servicos">Serviços</a>
       <a href="/#sobre">Sobre</a>
       <a href="/#local">Localização</a>
     </nav>
-    <a class="button" href="https://wa.me/5511932427523?text=Ol%C3%A1!%20Quero%20saber%20mais%20sobre%20as%20sess%C3%B5es%20de%20recovery." target="_blank" rel="noopener">Agendar pelo WhatsApp <span aria-hidden="true">↗</span></a>
+    <a class="button" href="https://wa.me/5511932427523?text=Ol%C3%A1!%20Quero%20saber%20mais%20sobre%20as%20sess%C3%B5es%20de%20recovery." target="_blank" rel="noopener" onclick="gtag_report_conversion()">Agendar pelo WhatsApp <span aria-hidden="true">↗</span></a>
   </header>
 
   <nav class="wrap crumbs" aria-label="Breadcrumb"><a href="/">Início</a> <span aria-hidden="true">/</span> Recovery esportivo</nav>
@@ -183,12 +303,14 @@
         <p>Atendimento presencial individual na Vila Olímpia, São Paulo para evoluir nos seus treinos</p>
         <div class="hero-actions">
           <a class="button" href="#sessoes">Conheça as sessões <span aria-hidden="true">↓</span></a>
-          <a class="button button-outline" href="https://wa.me/5511932427523?text=Ol%C3%A1!%20Quero%20agendar%20uma%20sess%C3%A3o%20de%20recovery." target="_blank" rel="noopener">Tirar dúvidas</a>
+          <a class="button button-outline" href="https://wa.me/5511932427523?text=Ol%C3%A1!%20Quero%20agendar%20uma%20sess%C3%A3o%20de%20recovery." target="_blank" rel="noopener" onclick="gtag_report_conversion()">Tirar dúvidas</a>
         </div>
         <div class="hero-note">Atendimento presencial individual · Agendamento pelo WhatsApp</div>
       </div>
-      <div class="hero-art" role="img" aria-label="Ilustração gráfica abstrata inspirada em movimento e recuperação">
-        <div class="art-mark"><span>R</span></div>
+      <div class="hero-art">
+        <div class="art-mark">
+          <img src="/assets/logo-stronger.png" alt="Stronger Fisioterapia" class="art-mark-logo">
+        </div>
         <div class="art-caption">Recovery esportivo · Stronger</div>
       </div>
     </section>
@@ -212,7 +334,7 @@
             <p class="plan-desc">Check-in breve e bota de compressão pneumática, conforme adequação ao seu caso.</p>
             <div class="price">R$ 150 <small>/ sessão</small></div>
             <p class="pack">Pacote com 4 sessões: <strong>R$ 570</strong></p>
-            <a class="button button-outline" href="https://wa.me/5511932427523?text=Ol%C3%A1!%20Tenho%20interesse%20no%20Recovery%20Express%20de%2030%20minutos." target="_blank" rel="noopener">Consultar horários</a>
+            <a class="button button-outline" href="https://wa.me/5511932427523?text=Ol%C3%A1!%20Tenho%20interesse%20no%20Recovery%20Express%20de%2030%20minutos." target="_blank" rel="noopener" onclick="gtag_report_conversion()">Consultar horários</a>
           </article>
           <article class="plan featured">
             <span class="plan-tag">Mais tempo para combinar recursos</span>
@@ -221,7 +343,7 @@
             <p class="plan-desc">Pode combinar bota, terapia manual focada e mobilidade, conforme seu objetivo.</p>
             <div class="price">R$ 200 <small>/ sessão</small></div>
             <p class="pack">Pacote com 4 sessões: <strong>R$ 760</strong></p>
-            <a class="button" href="https://wa.me/5511932427523?text=Ol%C3%A1!%20Tenho%20interesse%20no%20Recovery%20Performance%20de%2045%20minutos." target="_blank" rel="noopener">Consultar horários</a>
+            <a class="button" href="https://wa.me/5511932427523?text=Ol%C3%A1!%20Tenho%20interesse%20no%20Recovery%20Performance%20de%2045%20minutos." target="_blank" rel="noopener" onclick="gtag_report_conversion()">Consultar horários</a>
           </article>
           <article class="plan">
             <span class="plan-tag">Sessão estendida</span>
@@ -230,7 +352,7 @@
             <p class="plan-desc">Mais tempo para um atendimento individual, com recursos selecionados para aquele dia.</p>
             <div class="price">R$ 240 <small>/ sessão</small></div>
             <p class="pack">Pacote com 4 sessões: <strong>R$ 912</strong></p>
-            <a class="button button-outline" href="https://wa.me/5511932427523?text=Ol%C3%A1!%20Tenho%20interesse%20no%20Recovery%20Individual%20de%2060%20minutos." target="_blank" rel="noopener">Consultar horários</a>
+            <a class="button button-outline" href="https://wa.me/5511932427523?text=Ol%C3%A1!%20Tenho%20interesse%20no%20Recovery%20Individual%20de%2060%20minutos." target="_blank" rel="noopener" onclick="gtag_report_conversion()">Consultar horários</a>
           </article>
         </div>
       </div>
@@ -269,7 +391,7 @@
           <p>O recovery é uma sessão complementar para quem pratica atividade física e busca um atendimento individual com recursos selecionados para aquele dia.</p>
           <p>Se você está com dor, sofreu uma lesão ou precisa de acompanhamento pré ou pós-operatório, o caminho é agendar uma avaliação fisioterapêutica.
             Assim, definimos o cuidado adequado para o seu caso.</p>
-          <a class="button button-outline" href="https://wa.me/5511932427523?text=Ol%C3%A1!%20Estou%20com%20dor%20ou%20les%C3%A3o%20e%20gostaria%20de%20saber%20se%20preciso%20de%20uma%20avalia%C3%A7%C3%A3o." target="_blank" rel="noopener">Conversar com a Stronger</a>
+          <a class="button button-outline" href="https://wa.me/5511932427523?text=Ol%C3%A1!%20Estou%20com%20dor%20ou%20les%C3%A3o%20e%20gostaria%20de%20saber%20se%20preciso%20de%20uma%20avalia%C3%A7%C3%A3o." target="_blank" rel="noopener" onclick="gtag_report_conversion()">Conversar com a Stronger</a>
         </div>
       </div>
     </section>
@@ -296,7 +418,7 @@
         <span class="eyebrow">Stronger Fisioterapia · Vila Olímpia</span>
         <h2>VAMOS EVOLUIR<br>SEU <span style="color:var(--accent)">TREINO</span></h2>
         <p>Chame no WhatsApp para consultar horários ou tirar dúvidas sobre as opções.</p>
-        <a class="button" href="https://wa.me/5511932427523?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20quero%20agendar%20uma%20sess%C3%A3o%20de%20recovery." target="_blank" rel="noopener">Agendar pelo WhatsApp <span aria-hidden="true">↗</span></a>
+        <a class="button" href="https://wa.me/5511932427523?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20quero%20agendar%20uma%20sess%C3%A3o%20de%20recovery." target="_blank" rel="noopener" onclick="gtag_report_conversion()">Agendar pelo WhatsApp <span aria-hidden="true">↗</span></a>
       </div>
     </section>
   </main>
@@ -307,12 +429,22 @@
       <span><a href="/">Voltar para a página principal</a> · <a href="https://instagram.com/strongerfisioterapia" target="_blank" rel="noopener">Instagram</a></span>
     </div>
   </footer>
-  <a class="wa-float" href="https://wa.me/5511932427523?text=Ol%C3%A1!%20Quero%20saber%20mais%20sobre%20recovery." target="_blank" rel="noopener" aria-label="Falar com a Stronger pelo WhatsApp">
+  <a class="wa-float" href="https://wa.me/5511932427523?text=Ol%C3%A1!%20Quero%20saber%20mais%20sobre%20recovery." target="_blank" rel="noopener" aria-label="Falar com a Stronger pelo WhatsApp" onclick="gtag_report_conversion()">
     <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.52 3.48A11.86 11.86 0 0 0 12.08 0C5.5 0 .15 5.35.15 11.93c0 2.1.55 4.16 1.6 5.97L0 24l6.27-1.64a11.9 11.9 0 0 0 5.8 1.48h.01c6.58 0 11.93-5.35 11.93-11.93 0-3.19-1.24-6.19-3.49-8.43ZM12.08 21.8h-.01a9.9 9.9 0 0 1-5.04-1.38l-.36-.21-3.72.97.99-3.63-.24-.37a9.88 9.88 0 0 1-1.52-5.25c0-5.46 4.45-9.9 9.91-9.9 2.65 0 5.14 1.03 7.01 2.9a9.85 9.85 0 0 1 2.9 7.01c0 5.46-4.45 9.9-9.92 9.9Zm5.44-7.42c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.64.07-.3-.15-1.25-.46-2.39-1.47-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.61-.91-2.21-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.08-.79.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.22 3.08c.15.2 2.1 3.2 5.08 4.49.71.31 1.27.49 1.7.63.71.23 1.36.2 1.87.12.57-.08 1.76-.72 2.01-1.41.25-.7.25-1.29.17-1.42-.07-.12-.27-.2-.57-.35Z"/></svg>
   </a>
+
+  <script>
+    // Conversão Google Ads — Clique WhatsApp (mesmo evento e label da home)
+    function gtag_report_conversion() {
+      gtag('event', 'conversion', {
+        'send_to': 'AW-11198302157/Eza_CLbh0LEcEM2T4tsp'
+      });
+      gtag('event', 'whatsapp_click', {
+        'event_category': 'Lead',
+        'event_label': 'WhatsApp'
+      });
+      return true;
+    }
+  </script>
 </body>
 </html>
-
-
-
-
