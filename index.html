@@ -1,451 +1,1229 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Recovery Esportivo na Vila Olímpia | Stronger Fisioterapia</title>
-  <meta name="description" content="Recovery esportivo individual na Vila Olímpia, em São Paulo. Sessões de 30, 45 ou 60 minutos com bota de compressão e recursos escolhidos para sua rotina de treino.">
-  <meta name="robots" content="index, follow">
-  <meta name="theme-color" content="#0d0d0d">
-  <link rel="icon" type="image/png" href="/assets/favicon.png">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Stronger Fisioterapia | Fisioterapia Ortopédica e Esportiva na Vila Olímpia, São Paulo</title>
+<meta name="description" content="Fisioterapia ortopédica e esportiva em Vila Olímpia, São Paulo. Especialista em reabilitação para atletas, pós-cirúrgico e prevenção de lesões. Agende sua avaliação.">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#0d0d0d">
 
-  <!-- Open Graph -->
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="Recovery Esportivo na Vila Olímpia | Stronger Fisioterapia">
-  <meta property="og:description" content="Sessões individuais de recovery esportivo para quem treina. Conheça as opções presenciais na Vila Olímpia.">
-  <meta property="og:url" content="https://strongerfisioterapia.com.br/recovery/">
-  <meta property="og:locale" content="pt_BR">
-  <meta property="og:image" content="https://strongerfisioterapia.com.br/assets/foto-clinica1.JPEG">
+<!-- Open Graph -->
+<meta property="og:title" content="Stronger Fisioterapia | Vila Olímpia, São Paulo">
+<meta property="og:description" content="Fisioterapia esportiva e ortopédica para quem não aceita se limitar. Agende sua avaliação na Vila Olímpia.">
+<meta property="og:url" content="https://strongerfisioterapia.com.br/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:image" content="https://strongerfisioterapia.com.br/assets/foto-clinica1.JPEG">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
 
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Recovery Esportivo na Vila Olímpia | Stronger Fisioterapia">
-  <meta name="twitter:description" content="Sessões individuais de recovery esportivo para quem treina, na Vila Olímpia.">
-  <meta name="twitter:image" content="https://strongerfisioterapia.com.br/assets/foto-clinica1.JPEG">
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Stronger Fisioterapia | Vila Olímpia, São Paulo">
+<meta name="twitter:description" content="Fisioterapia esportiva e ortopédica para quem não aceita se limitar.">
+<meta name="twitter:image" content="https://strongerfisioterapia.com.br/assets/foto-clinica1.JPEG">
 
-  <link rel="canonical" href="https://strongerfisioterapia.com.br/recovery/">
+<link rel="canonical" href="https://strongerfisioterapia.com.br/">
+<link rel="icon" type="image/png" href="assets/favicon.png">
 
-  <!-- ===== SCHEMA: Breadcrumb ===== -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      { "@type": "ListItem", "position": 1, "name": "Início", "item": "https://strongerfisioterapia.com.br/" },
-      { "@type": "ListItem", "position": 2, "name": "Recovery esportivo", "item": "https://strongerfisioterapia.com.br/recovery/" }
-    ]
+<!-- ===== SCHEMA: MedicalClinic (mais específico que MedicalBusiness) ===== -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MedicalClinic",
+  "@id": "https://strongerfisioterapia.com.br/#clinic",
+  "name": "Stronger Fisioterapia",
+  "description": "Fisioterapia ortopédica e esportiva em Vila Olímpia, São Paulo.",
+  "medicalSpecialty": "Physiotherapy",
+  "url": "https://strongerfisioterapia.com.br",
+  "logo": "https://strongerfisioterapia.com.br/assets/logo-stronger.png",
+  "image": "https://strongerfisioterapia.com.br/assets/foto-clinica1.JPEG",
+  "telephone": "+5511932427523",
+  "priceRange": "$$",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Rua Helena, 309, conj 112",
+    "addressLocality": "São Paulo",
+    "addressRegion": "SP",
+    "postalCode": "04552-050",
+    "addressCountry": "BR"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": -23.5989,
+    "longitude": -46.6858
+  },
+  "openingHoursSpecification": [
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "07:00", "closes": "20:00" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "08:00", "closes": "13:00" }
+  ],
+  "sameAs": [
+    "https://instagram.com/strongerfisioterapia",
+    "https://instagram.com/marissaalves_"
+  ],
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5",
+    "bestRating": "5",
+    "reviewCount": "16"
   }
-  </script>
+}
+</script>
 
-  <!-- ===== SCHEMA: Service + Offers (planos e preços) ===== -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Service",
-    "name": "Recovery Esportivo",
-    "serviceType": "Recovery esportivo / terapia de recuperação física",
-    "description": "Sessões individuais de recovery esportivo com bota de compressão pneumática, terapia manual e mobilidade, para praticantes de atividade física na Vila Olímpia, São Paulo.",
-    "url": "https://strongerfisioterapia.com.br/recovery/",
-    "areaServed": { "@type": "City", "name": "São Paulo" },
-    "provider": {
-      "@type": "MedicalClinic",
-      "@id": "https://strongerfisioterapia.com.br/#clinic",
-      "name": "Stronger Fisioterapia",
-      "url": "https://strongerfisioterapia.com.br",
-      "telephone": "+5511932427523",
-      "priceRange": "$$",
-      "image": "https://strongerfisioterapia.com.br/assets/foto-clinica1.JPEG",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "Rua Helena, 309, conj 112",
-        "addressLocality": "São Paulo",
-        "addressRegion": "SP",
-        "postalCode": "04552-050",
-        "addressCountry": "BR"
+<!-- ===== SCHEMA: Physician (vinculado à clínica via @id) ===== -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Physician",
+  "@id": "https://strongerfisioterapia.com.br/#marissa-alves",
+  "name": "Marissa Alves",
+  "jobTitle": "Fisioterapeuta Ortopédica e Esportiva",
+  "medicalSpecialty": "Physiotherapy",
+  "description": "Fisioterapeuta formada pela UNIFAL-MG, pós-graduada em Fisiologia do Exercício pela UNIFESP. Especialista em reabilitação esportiva, faixa roxa de jiu-jitsu.",
+  "url": "https://strongerfisioterapia.com.br",
+  "image": "https://strongerfisioterapia.com.br/assets/foto-marissa.jpg",
+  "worksFor": { "@id": "https://strongerfisioterapia.com.br/#clinic" },
+  "alumniOf": [
+    { "@type": "CollegeOrUniversity", "name": "Universidade Federal de Alfenas (UNIFAL-MG)" },
+    { "@type": "CollegeOrUniversity", "name": "Universidade Federal de São Paulo (UNIFESP)" }
+  ],
+  "sameAs": [
+    "https://instagram.com/marissaalves_",
+    "https://www.doctoralia.com.br/marissa-alves/fisioterapeuta/sao-paulo"
+  ]
+}
+</script>
+
+<!-- ===== SCHEMA: FAQPage — sincronizado 1:1 com o texto visível da seção FAQ ===== -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Preciso parar de treinar?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Não necessariamente. Na maioria dos casos, ajustamos sua rotina para que você continue treinando com segurança enquanto se recupera."
       }
     },
-    "offers": [
-      {
-        "@type": "Offer",
-        "name": "Recovery Express (30 minutos)",
-        "price": "150",
-        "priceCurrency": "BRL",
-        "url": "https://strongerfisioterapia.com.br/recovery/"
-      },
-      {
-        "@type": "Offer",
-        "name": "Recovery Performance (45 minutos)",
-        "price": "200",
-        "priceCurrency": "BRL",
-        "url": "https://strongerfisioterapia.com.br/recovery/"
-      },
-      {
-        "@type": "Offer",
-        "name": "Recovery Individual (60 minutos)",
-        "price": "240",
-        "priceCurrency": "BRL",
-        "url": "https://strongerfisioterapia.com.br/recovery/"
+    {
+      "@type": "Question",
+      "name": "Quantas sessões vou precisar?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Depende do seu caso, mas trabalhamos com plano estruturado focado em evolução real — não em prolongar o tratamento."
       }
-    ]
-  }
-  </script>
-
-  <!-- ===== SCHEMA: FAQPage — sincronizado 1:1 com os <details> visíveis ===== -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "Para quem são as sessões de recovery?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Para pessoas fisicamente ativas que desejam evoluir nos treinos." }
-      },
-      {
-        "@type": "Question",
-        "name": "A bota de compressão é usada em toda sessão?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Ela pode fazer parte da sessão quando for adequada. Conversamos sobre seu objetivo e verificamos se o recurso é apropriado antes do uso." }
-      },
-      {
-        "@type": "Question",
-        "name": "Qual pacote devo escolher?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Se estiver em dúvida, fale com a gente pelo WhatsApp. Podemos explicar as diferenças de duração e ajudar você a escolher a opção que faz sentido para o que procura." }
-      },
-      {
-        "@type": "Question",
-        "name": "Tenho dor ou uma lesão. Posso agendar recovery?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Se você está com dor, teve uma lesão ou passou por cirurgia, entre em contato antes de agendar. Pode ser mais indicado começar por uma avaliação fisioterapêutica." }
-      },
-      {
-        "@type": "Question",
-        "name": "Onde acontece o atendimento?",
-        "acceptedAnswer": { "@type": "Answer", "text": "As sessões desta página são presenciais na Stronger Fisioterapia: Rua Helena, 309, conjunto 112, Vila Olímpia, São Paulo (para atendimentos domiciliares, entre em contato para mais informações)." }
+    },
+    {
+      "@type": "Question",
+      "name": "Já tentei outros tratamentos sem resultado.",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nosso foco é entender a causa e devolver segurança para treinar — não apenas aliviar o sintoma temporariamente."
       }
-    ]
-  }
-  </script>
-
-  <!-- Google tag (gtag.js) — mesma configuração da home -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11198302157"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'AW-11198302157');
-    gtag('config', 'G-BWRE59JCYG');
-  </script>
-
-  <!-- Fonte unificada com a home (mesma URL = navegador reaproveita o cache entre páginas) -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300&display=swap" rel="stylesheet">
-
-  <!-- Microsoft Clarity — mesma da home -->
-  <script type="text/javascript">
-    (function(c,l,a,r,i,t,y){
-        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-    })(window, document, "clarity", "script", "x80p74s6pf");
-  </script>
-
-  <style>
-    :root {
-      --black: #0d0d0d;
-      --white: #f5f2ed;
-      --accent: #E8161F;
-      --accent-dim: #c0111a;
-      --accent-glow: rgba(232, 22, 31, .14);
-      --gray: #1a1a1a;
-      --gray-border: #262626;
-      --text-muted: #a0a0a0;
-      --radius: 4px;
+    },
+    {
+      "@type": "Question",
+      "name": "Atende convênio?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "O atendimento é particular, mas fornecemos toda a documentação para reembolso e orientamos o processo junto com você."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Qual a duração das sessões?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "As sessões têm aproximadamente 1 hora. A avaliação inicial é de 1h30 para um mapeamento completo."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Atende online ou domiciliar?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sim! Além do atendimento presencial na Vila Olímpia, também atendemos online e domiciliar. Entre em contato pelo WhatsApp para mais informações."
+      }
     }
-    * { box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
-    body { margin: 0; background: var(--black); color: var(--white); font: 15px/1.65 'DM Sans', sans-serif; }
-    a { color: inherit; text-decoration: none; }
-    .wrap { width: min(1160px, calc(100% - 48px)); margin: 0 auto; }
-    .crumbs { padding-top: 16px; color: #8a8a8a; font-size: 12px; }
-    .crumbs a { color: #aaa; }
-    .crumbs a:hover { color: var(--white); }
-    .crumbs span { color: var(--accent); }
-    .topbar { min-height: 82px; padding: 10px 0; border-bottom: 1px solid #1a1a1a; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
-    .brand img { display: block; width: 190px; max-height: 64px; object-fit: contain; object-position: left center; }
-    .nav { display: flex; align-items: center; gap: 28px; color: #b0b0b0; font-size: 13px; }
-    .nav a:hover { color: var(--white); }
-    .button { display: inline-flex; align-items: center; justify-content: center; gap: 10px; padding: 13px 22px; background: var(--accent); color: var(--white); border: 1px solid var(--accent); border-radius: var(--radius); font: 500 14px 'DM Sans', sans-serif; transition: .2s ease; }
-    .button:hover { background: var(--accent-dim); border-color: var(--accent-dim); transform: translateY(-1px); }
-    .button-outline { background: transparent; border-color: #555; }
-    .button-outline:hover { border-color: var(--accent); background: transparent; }
-    .hero { min-height: 570px; display: grid; grid-template-columns: 1.05fr .95fr; border-bottom: 1px solid #1a1a1a; }
-    .hero-copy { padding: 82px max(36px, calc((100vw - 1160px)/2)) 82px max(24px, calc((100vw - 1160px)/2)); display: flex; flex-direction: column; align-items: flex-start; justify-content: center; }
-    .eyebrow { color: var(--accent); font-size: 10px; font-weight: 600; letter-spacing: 2.5px; text-transform: uppercase; }
-    h1,h2,h3,p { margin-top: 0; }
-    h1,h2,.display { font-family: 'Bebas Neue', sans-serif; font-weight: 400; text-transform: uppercase; }
-    h1 { margin: 18px 0 16px; max-width: 660px; font-size: clamp(54px, 6.4vw, 88px); line-height: .91; letter-spacing: .3px; }
-    h1 em { color: var(--accent); font-style: normal; }
-    .hero-copy p { max-width: 540px; color: #b0b0b0; font-size: 16px; font-weight: 300; line-height: 1.8; margin-bottom: 26px; }
-    .hero-actions { display: flex; align-items: center; flex-wrap: wrap; gap: 12px; }
-    .hero-note { margin-top: 28px; color: #8a8a8a; font-size: 12px; }
-    .hero-art { min-height: 460px; display: grid; place-items: center; overflow: hidden; position: relative; background: radial-gradient(ellipse at 52% 48%, rgba(232,22,31,.15), transparent 58%), #101010; border-left: 1px solid #1a1a1a; }
-    .hero-art::before,.hero-art::after { content: ''; position: absolute; width: min(32vw, 380px); aspect-ratio: 1; border: 1px solid rgba(232,22,31,.42); border-radius: 50%; }
-    .hero-art::after { width: min(24vw, 280px); border-color: rgba(245,242,237,.16); }
-    .art-mark { position: relative; z-index: 1; width: min(60%, 260px); aspect-ratio: .78; display: grid; place-items: center; border: 1px solid #383838; border-radius: 44% 44% 18px 18px; background: linear-gradient(145deg, #202020, #101010 68%); box-shadow: 0 30px 100px rgba(0,0,0,.5); }
-    .art-mark::before { content: ''; position: absolute; inset: 18% 12%; border: 2px solid var(--accent); border-radius: 45% 45% 18px 18px; opacity: .82; }
-    .art-mark-logo { position: relative; z-index: 1; width: 62%; height: auto; object-fit: contain; filter: drop-shadow(0 0 22px rgba(232,22,31,.3)); }
-    .art-caption { position: absolute; bottom: 28px; left: 30px; color: #8a8a8a; font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase; }
-    .ticker { overflow: hidden; border-bottom: 1px solid #1a1a1a; background: #101010; }
-    .ticker-inner { display: flex; justify-content: space-between; gap: 24px; padding: 17px 0; color: #b4b4b4; font-size: 11px; letter-spacing: 1.2px; text-transform: uppercase; }
-    .ticker span::before { content: '✳'; margin-right: 10px; color: var(--accent); }
-    section { padding: 82px 0; }
-    .section-heading { max-width: 660px; margin-bottom: 38px; }
-    h2 { margin: 10px 0 12px; font-size: clamp(42px, 5vw, 64px); line-height: .95; }
-    .section-heading p { color: var(--text-muted); font-weight: 300; max-width: 600px; margin-bottom: 0; }
-    .plans { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: var(--gray-border); border: 1px solid var(--gray-border); }
-    .plan { min-height: 390px; padding: 32px 30px; background: #101010; display: flex; flex-direction: column; position: relative; }
-    .plan.featured { background: #171313; box-shadow: inset 0 3px 0 var(--accent); }
-    .plan-tag { color: var(--accent); font-size: 10px; letter-spacing: 1.8px; text-transform: uppercase; font-weight: 600; }
-    .plan h3 { font: 27px 'Bebas Neue', sans-serif; text-transform: uppercase; margin: 12px 0 6px; }
-    .duration { color: #8a8a8a; font-size: 12px; letter-spacing: .6px; }
-    .plan-desc { min-height: 74px; color: #aaa; font-size: 13px; font-weight: 300; margin: 18px 0; }
-    .price { margin-top: auto; font: 44px/1 'Bebas Neue', sans-serif; }
-    .price small { color: #888; font: 12px 'DM Sans', sans-serif; }
-    .pack { margin: 8px 0 18px; color: #aaa; font-size: 12px; }
-    .pack strong { color: var(--white); font-weight: 500; }
-    .plan .button { width: 100%; }
-    .how { background: var(--gray); }
-    .how-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: #303030; border: 1px solid #303030; }
-    .how-card { background: var(--gray); padding: 30px; }
-    .number { display: block; color: var(--accent); font: 34px/1 'Bebas Neue', sans-serif; margin-bottom: 24px; }
-    .how-card h3 { font-size: 16px; font-weight: 500; margin-bottom: 8px; }
-    .how-card p { color: var(--text-muted); font-size: 13px; font-weight: 300; margin-bottom: 0; }
-    .split { display: grid; grid-template-columns: .9fr 1.1fr; border: 1px solid #242424; }
-    .split-title { padding: 44px; background: var(--accent); display: flex; flex-direction: column; justify-content: center; }
-    .split-title .eyebrow { color: rgba(255,255,255,.75); }
-    .split-title h2 { margin-bottom: 0; font-size: clamp(42px, 5vw, 58px); }
-    .split-body { padding: 40px 44px; background: #141414; }
-    .split-body p { color: #b0b0b0; font-size: 14px; font-weight: 300; }
-    .split-body p:last-child { margin-bottom: 0; }
-    .faq { background: var(--gray); }
-    .faq-list { border-top: 1px solid #333; }
-    details { padding: 20px 4px; border-bottom: 1px solid #333; }
-    summary { cursor: pointer; color: var(--white); font-weight: 500; list-style: none; display: flex; justify-content: space-between; gap: 18px; }
-    summary::-webkit-details-marker { display: none; }
-    summary::after { content: '+'; color: var(--accent); font-size: 21px; line-height: 1; }
-    details[open] summary::after { content: '−'; }
-    details p { max-width: 760px; color: var(--text-muted); font-size: 14px; font-weight: 300; margin: 12px 28px 2px 0; }
-    .final-cta { text-align: center; position: relative; overflow: hidden; background: #0a0a0a; }
-    .final-cta::before { content: ''; position: absolute; width: 620px; height: 320px; left: 50%; top: 50%; transform: translate(-50%,-50%); background: radial-gradient(ellipse, var(--accent-glow), transparent 68%); pointer-events: none; }
-    .final-cta .wrap { position: relative; z-index: 1; }
-    .final-cta h2 { max-width: 720px; margin: 12px auto 16px; }
-    .final-cta p { color: var(--text-muted); font-weight: 300; margin-bottom: 26px; }
-    footer { border-top: 1px solid #1a1a1a; padding: 24px 0; color: #8a8a8a; font-size: 12px; }
-    .footer-inner { display: flex; justify-content: space-between; align-items: center; gap: 20px; }
-    .footer-inner a:hover { color: var(--white); }
-    .wa-float { position: fixed; right: 24px; bottom: 24px; z-index: 20; width: 54px; height: 54px; display: grid; place-items: center; border-radius: 50%; background: #25d366; color: #fff; box-shadow: 0 8px 28px rgba(0,0,0,.4); }
-    .wa-float svg { width: 27px; height: 27px; }
-    :focus-visible { outline: 2px solid var(--white); outline-offset: 4px; }
-    @media (max-width: 900px) {
-      .nav { gap: 15px; }
-      .hero { grid-template-columns: 1fr  .8fr; }
-      .hero-copy { padding: 64px 30px 64px max(24px, calc((100vw - 1160px)/2)); }
-      .hero-art { min-height: 420px; }
-      .plans { grid-template-columns: 1fr; }
-      .plan { min-height: 0; }
-      .plan-desc { min-height: 0; }
-    }
-    @media (max-width: 680px) {
-      .wrap { width: min(100% - 36px, 540px); }
-      .topbar { min-height: 70px; }
-      .brand img { width: 158px; max-height: 52px; }
-      .nav { display: none; }
-      .topbar > .button { padding: 10px 13px; font-size: 12px; }
-      .hero { grid-template-columns: 1fr; }
-      .hero-copy { padding: 62px 22px 48px; }
-      h1 { font-size: clamp(52px, 15vw, 72px); }
-      .hero-copy p { font-size: 15px; }
-      .hero-art { min-height: 300px; border-left: 0; border-top: 1px solid #1a1a1a; }
-      .hero-art::before { width: 250px; }
-      .hero-art::after { width: 190px; }
-      .art-mark { width: 158px; }
-      .art-caption { left: 20px; bottom: 18px; }
-      .ticker-inner { width: max-content; min-width: 100%; justify-content: flex-start; gap: 28px; padding: 14px 18px; }
-      section { padding: 62px 0; }
-      .section-heading { margin-bottom: 28px; }
-      .plan { padding: 28px 24px; }
-      .how-grid { grid-template-columns: 1fr; }
-      .how-card { padding: 24px; }
-      .number { margin-bottom: 14px; }
-      .split { grid-template-columns: 1fr; }
-      .split-title,.split-body { padding: 30px 25px; }
-      .footer-inner { flex-direction: column; align-items: flex-start; }
-      .wa-float { right: 16px; bottom: 16px; }
-    }
-    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } *,*::before,*::after { transition-duration: .01ms !important; animation-duration: .01ms !important; } }
-  </style>
+  ]
+}
+</script>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-11198302157"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'AW-11198302157');
+  gtag('config', 'G-BWRE59JCYG');
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+
+<!-- Microsoft Clarity -->
+<script type="text/javascript">
+  (function(c,l,a,r,i,t,y){
+      c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+      t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+      y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+  })(window, document, "clarity", "script", "x80p74s6pf");
+</script>
+
+<style>
+/* =====================
+   RESET & VARIÁVEIS
+   ===================== */
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+:root {
+  --black: #0d0d0d;
+  --white: #f5f2ed;
+  --accent: #E8161F;
+  --accent-dim: #c0111a;
+  --accent-glow: rgba(232, 22, 31, 0.12);
+  --gray: #1a1a1a;
+  --gray-border: #262626;
+  --text-muted: #a0a0a0;
+  --radius: 4px;
+}
+html { scroll-behavior: smooth; }
+body {
+  background: var(--black);
+  color: var(--white);
+  font-family: 'DM Sans', sans-serif;
+  font-size: 15px;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+a { color: inherit; text-decoration: none; }
+img { max-width: 100%; display: block; }
+
+/* Foco visível para navegação por teclado */
+a:focus-visible, button:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+/* =====================
+   WHATSAPP FLUTUANTE
+   ===================== */
+.wa-float { position: fixed; bottom: 28px; right: 28px; z-index: 999; display: flex; align-items: center; gap: 10px; }
+.wa-label {
+  background: #1a1a1a; border: 1px solid #2a2a2a; color: var(--white);
+  font-size: 12px; padding: 6px 14px; border-radius: 100px; white-space: nowrap;
+  opacity: 0; transform: translateX(8px); transition: all 0.25s ease; pointer-events: none;
+}
+.wa-float:hover .wa-label { opacity: 1; transform: translateX(0); }
+.wa-btn {
+  width: 54px; height: 54px; background: #25D366; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  box-shadow: 0 4px 24px rgba(37, 211, 102, 0.35); transition: transform 0.2s;
+}
+.wa-btn:hover { transform: scale(1.08); }
+
+.wa-bubble {
+  position: absolute; bottom: 68px; right: 0; width: 280px;
+  background: #161616; border: 1px solid #2a2a2a; border-radius: 14px; padding: 16px;
+  box-shadow: 0 12px 40px rgba(0,0,0,0.5);
+  opacity: 0; transform: translateY(12px) scale(0.96); pointer-events: none;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+.wa-bubble.active { opacity: 1; transform: translateY(0) scale(1); pointer-events: auto; }
+.wa-bubble-close {
+  position: absolute; top: 8px; right: 10px; background: none; border: none;
+  color: #666; font-size: 18px; line-height: 1; cursor: pointer; padding: 4px;
+}
+.wa-bubble-close:hover { color: var(--white); }
+.wa-bubble-header { display: flex; align-items: center; gap: 10px; margin-bottom: 12px; }
+.wa-bubble-avatar { width: 38px; height: 38px; border-radius: 50%; object-fit: cover; flex-shrink: 0; }
+.wa-bubble-name { font-size: 13px; font-weight: 500; color: var(--white); }
+.wa-bubble-status { font-size: 11px; color: #4ade80; }
+.wa-bubble-msg { background: #202020; border-radius: 10px; padding: 10px 12px; font-size: 13px; color: #ddd; line-height: 1.5; margin-bottom: 12px; }
+.wa-bubble-btn {
+  display: flex; align-items: center; justify-content: center; background: #25D366; color: #fff;
+  font-size: 13px; font-weight: 500; padding: 10px; border-radius: 8px; transition: background 0.2s;
+}
+.wa-bubble-btn:hover { background: #1eb857; }
+
+/* =====================
+   NAVEGAÇÃO
+   ===================== */
+nav {
+  display: flex; justify-content: space-between; align-items: center; padding: 18px 40px;
+  border-bottom: 1px solid #1a1a1a; position: sticky; top: 0;
+  background: rgba(13, 13, 13, 0.97); backdrop-filter: blur(10px); z-index: 100;
+}
+.nav-logo { display: flex; align-items: center; }
+.nav-logo img { height: 80px; width: auto; }
+.nav-links { display: flex; gap: 28px; list-style: none; }
+.nav-links a { color: #b0b0b0; font-size: 13px; letter-spacing: 0.5px; transition: color 0.2s; }
+.nav-links a:hover { color: var(--white); }
+.nav-cta { background: var(--accent); color: var(--white); padding: 9px 22px; border-radius: var(--radius); font-size: 13px; font-weight: 500; transition: background 0.2s; }
+.nav-cta:hover { background: var(--accent-dim); }
+
+/* =====================
+   BOTÕES GLOBAIS
+   ===================== */
+.btn-primary {
+  background: var(--accent); color: var(--white); padding: 14px 28px; border-radius: var(--radius);
+  font-size: 14px; font-weight: 500; display: inline-flex; align-items: center; gap: 8px; transition: background 0.2s;
+}
+.btn-primary:hover { background: var(--accent-dim); }
+.btn-ghost { color: var(--white); padding: 14px 0; font-size: 14px; border-bottom: 1px solid #444; letter-spacing: 0.3px; }
+.btn-outline {
+  border: 1px solid #3a3a3a; color: #b0b0b0; padding: 10px 18px; border-radius: var(--radius);
+  font-size: 13px; display: inline-flex; align-items: center; gap: 8px; white-space: nowrap;
+  transition: border-color 0.2s, color 0.2s;
+}
+.btn-outline:hover { border-color: var(--accent); color: var(--white); }
+.btn-dark { background: var(--black); color: var(--white); padding: 14px 28px; border-radius: 4px; font-size: 14px; font-weight: 500; display: inline-flex; align-items: center; gap: 8px; }
+
+/* =====================
+   SEÇÃO HELPERS
+   ===================== */
+.sec-dark { background: var(--black); padding: 80px 40px; }
+.sec-gray  { background: var(--gray);  padding: 80px 40px; }
+.section-label { font-size: 10px; letter-spacing: 2.5px; text-transform: uppercase; color: var(--accent); margin-bottom: 14px; font-weight: 500; display: block; }
+h2 { font-family: 'Bebas Neue', sans-serif; font-size: 52px; line-height: 0.95; color: var(--white); }
+.section-sub { color: var(--text-muted); font-size: 15px; max-width: 460px; font-weight: 300; margin-top: 12px; }
+
+/* =====================
+   HERO
+   ===================== */
+.hero { display: grid; grid-template-columns: 1fr 1fr; min-height: 88vh; background: var(--black); }
+.hero-left { display: flex; flex-direction: column; justify-content: center; padding: 60px 48px 60px 40px; }
+.hero-tag {
+  display: inline-flex; align-items: center; gap: 8px; background: #1a1a1a; border: 1px solid #2a2a2a;
+  border-radius: 100px; padding: 6px 14px; font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #b0b0b0; margin-bottom: 28px; width: fit-content;
+}
+.hero-tag span { width: 6px; height: 6px; background: var(--accent); border-radius: 50%; animation: pulse 2s infinite; }
+@keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.3; } }
+h1 { font-family: 'Bebas Neue', sans-serif; font-size: 76px; line-height: 0.92; margin-bottom: 24px; color: var(--white); }
+h1 em { color: var(--accent); font-style: normal; }
+.hero-sub { color: var(--text-muted); font-size: 16px; line-height: 1.75; max-width: 400px; margin-bottom: 36px; font-weight: 300; }
+.hero-btns { display: flex; gap: 16px; align-items: center; flex-wrap: wrap; }
+
+.hero-right {
+  position: relative; background: #0f0f0f; border-left: 1px solid #1a1a1a;
+  display: flex; align-items: center; justify-content: center; overflow: hidden;
+}
+.hero-right::before { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse at 60% 40%, var(--accent-glow), transparent 65%); }
+.hero-logo-wrap { position: relative; z-index: 1; display: flex; flex-direction: column; align-items: center; gap: 20px; }
+.hero-logo-wrap img { width: 220px; height: auto; filter: drop-shadow(0 0 40px rgba(232,22,31,0.25)); }
+.hero-logo-tagline { font-size: 11px; letter-spacing: 3px; text-transform: uppercase; color: #b0b0b0; }
+
+/* =====================
+   STRIP
+   ===================== */
+.strip { background: var(--accent); padding: 11px 40px; display: flex; overflow: hidden; }
+.strip-item {
+  font-size: 11px; font-weight: 500; color: rgba(255,255,255,0.92); letter-spacing: 1.5px; text-transform: uppercase;
+  white-space: nowrap; padding: 0 24px; border-right: 1px solid rgba(255,255,255,0.25); display: flex; align-items: center;
+}
+.strip-item:first-child { padding-left: 0; }
+.strip-item:last-child  { border-right: none; }
+
+/* =====================
+   MÉTRICAS
+   ===================== */
+.metricas { background: var(--gray); padding: 60px 40px; }
+.metricas-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: var(--gray-border); }
+.metrica-card { background: var(--gray); padding: 36px 28px; text-align: center; }
+.metrica-num { font-family: 'Bebas Neue', sans-serif; font-size: 56px; color: var(--accent); line-height: 1; }
+.metrica-label { font-size: 13px; color: var(--text-muted); font-weight: 300; margin-top: 6px; line-height: 1.5; }
+
+/* =====================
+   SERVIÇOS
+   ===================== */
+.servicos-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; margin-top: 48px; background: #1a1a1a; }
+.servico-card { background: #0d0d0d; padding: 36px 30px; position: relative; overflow: hidden; transition: background 0.3s; }
+.servico-card:hover { background: #111; }
+.servico-card::after { content: ''; position: absolute; bottom: 0; left: 0; width: 0; height: 2px; background: var(--accent); transition: width 0.4s; }
+.servico-card:hover::after { width: 100%; }
+.servico-title { font-size: 16px; font-weight: 500; margin-bottom: 8px; color: var(--white); }
+.servico-desc  { font-size: 13px; color: var(--text-muted); font-weight: 300; line-height: 1.65; }
+
+/* =====================
+   PARA QUEM
+   ===================== */
+.para-quem-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1px; margin-top: 48px; background: var(--gray-border); }
+.pq-card { background: var(--gray); padding: 36px 32px; position: relative; overflow: hidden; transition: background 0.3s; }
+.pq-card:hover { background: #222; }
+.pq-card::after { content: ''; position: absolute; bottom: 0; left: 0; width: 0; height: 2px; background: var(--accent); transition: width 0.4s; }
+.pq-card:hover::after { width: 100%; }
+.pq-num { font-family: 'Bebas Neue', sans-serif; font-size: 72px; color: #303030; line-height: 1; position: absolute; top: 12px; right: 20px; user-select: none; }
+.pq-title { font-size: 16px; font-weight: 500; margin-bottom: 10px; color: var(--white); }
+.pq-desc  { font-size: 14px; color: var(--text-muted); font-weight: 300; line-height: 1.65; max-width: 280px; }
+
+/* =====================
+   AVALIAÇÃO
+   ===================== */
+.avaliacao { display: grid; grid-template-columns: 1fr 1fr; }
+.aval-left  { background: var(--black); padding: 80px 48px; display: flex; flex-direction: column; justify-content: center; }
+.aval-right { background: #111; border-left: 1px solid #1e1e1e; padding: 56px 48px; display: flex; flex-direction: column; justify-content: center; }
+.aval-step  { display: flex; gap: 20px; align-items: flex-start; padding: 24px 0; border-bottom: 1px solid #2a2a2a; }
+.aval-step:last-child { border-bottom: none; }
+.step-num   { font-family: 'Bebas Neue', sans-serif; font-size: 30px; color: var(--accent); line-height: 1; min-width: 28px; }
+.step-content h4 { font-size: 14px; font-weight: 500; color: var(--white); margin-bottom: 4px; }
+.step-content p  { font-size: 13px; color: var(--text-muted); font-weight: 300; line-height: 1.6; }
+.aval-duration {
+  display: inline-flex; align-items: center; gap: 10px; background: #1a1a1a; border: 1px solid #2a2a2a;
+  border-radius: 4px; padding: 10px 16px; font-size: 12px; color: var(--text-muted); margin-top: 28px; width: fit-content;
+}
+.aval-duration strong { color: var(--white); }
+
+/* =====================
+   AVALIAÇÕES EXTERNAS
+   ===================== */
+.avaliacoes-ext { background: var(--gray); padding: 60px 40px; }
+.aval-ext-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1px; background: var(--gray-border); margin-top: 36px; }
+.aval-ext-card { background: var(--gray); padding: 36px 32px; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
+.aval-ext-left { display: flex; align-items: center; gap: 20px; }
+.aval-ext-logo {
+  width: 48px; height: 48px; background: #111; border: 1px solid #2a2a2a; border-radius: 8px;
+  display: flex; align-items: center; justify-content: center; font-size: 22px; flex-shrink: 0;
+}
+.aval-ext-score { font-family: 'Bebas Neue', sans-serif; font-size: 52px; color: var(--accent); line-height: 1; }
+.aval-ext-info h4  { font-size: 14px; font-weight: 500; color: var(--white); margin-bottom: 4px; }
+.aval-ext-stars    { color: var(--accent); font-size: 13px; letter-spacing: 2px; }
+.aval-ext-info p   { font-size: 12px; color: var(--text-muted); margin-top: 3px; }
+
+/* =====================
+   DEPOIMENTOS
+   ===================== */
+.dep-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 1px; margin-top: 48px; background: #1a1a1a; }
+.dep-card { background: #0d0d0d; padding: 32px 28px; display: flex; flex-direction: column; }
+.dep-stars { color: var(--accent); font-size: 13px; letter-spacing: 3px; margin-bottom: 18px; }
+.dep-text  { font-size: 14px; color: #999; line-height: 1.75; margin-bottom: 22px; font-weight: 300; font-style: italic; flex: 1; }
+.dep-name  { font-size: 13px; font-weight: 500; color: var(--white); }
+.dep-detail { font-size: 11px; color: #8a8a8a; letter-spacing: 0.5px; margin-top: 2px; text-transform: uppercase; }
+.dep-source { font-size: 11px; color: #777; margin-top: 4px; }
+
+/* =====================
+   NOSSA CLÍNICA — LADO A LADO + CARROSSEL
+   ===================== */
+.clinica { background: var(--black); padding: 0; overflow: hidden; display: grid; grid-template-columns: 1fr 1fr; min-height: 560px; }
+.clinica-header { padding: 80px 56px; display: flex; flex-direction: column; justify-content: center; border-right: 1px solid #1a1a1a; }
+.clinica-sub { color: var(--text-muted); font-size: 15px; font-weight: 300; max-width: 400px; margin-top: 12px; line-height: 1.75; }
+
+/* .carousel-wrap = mesmo elemento que .clinica-carousel-col (classe adicionada no HTML
+   para o JS de pausa-no-hover encontrar o elemento corretamente) */
+.clinica-carousel-col, .carousel-wrap { position: relative; overflow: hidden; height: 560px; }
+.carousel-track { display: flex; height: 100%; transition: transform 0.6s cubic-bezier(0.4,0,0.2,1); }
+.carousel-slide { min-width: 100%; width: 100%; position: relative; height: 100%; overflow: hidden; flex-shrink: 0; }
+.carousel-slide img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.carousel-slide::after { content: ''; position: absolute; inset: 0; background: linear-gradient(to top, rgba(13,13,13,0.55) 0%, transparent 45%); }
+.carousel-caption { position: absolute; bottom: 24px; left: 28px; z-index: 2; font-size: 12px; color: rgba(255,255,255,0.75); letter-spacing: 0.5px; }
+
+.carousel-btn {
+  position: absolute; top: 50%; transform: translateY(-50%); width: 40px; height: 40px;
+  background: rgba(13,13,13,0.85); border: 1px solid #3a3a3a; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center; cursor: pointer; z-index: 3;
+  transition: background 0.2s, border-color 0.2s; color: var(--white);
+}
+.carousel-btn:hover { background: var(--accent); border-color: var(--accent); }
+.carousel-btn.prev { left: 16px; }
+.carousel-btn.next { right: 16px; }
+
+.carousel-dots { position: absolute; bottom: 20px; left: 50%; transform: translateX(-50%); display: flex; gap: 8px; z-index: 4; }
+.carousel-dot { width: 6px; height: 6px; background: rgba(255,255,255,0.4); border-radius: 50%; cursor: pointer; transition: background 0.3s, transform 0.3s; }
+.carousel-dot.active { background: var(--accent); transform: scale(1.3); }
+
+/* =====================
+   SOBRE
+   ===================== */
+.sobre { display: grid; grid-template-columns: 1fr 1fr; min-height: 520px; }
+.sobre-img {
+  background: #0f0f0f; border-right: 1px solid #1a1a1a; display: flex; align-items: center; justify-content: center;
+  min-height: 400px; flex-direction: column; position: relative; overflow: hidden;
+}
+.sobre-img::before { content: ''; position: absolute; bottom: -80px; left: -80px; width: 360px; height: 360px; background: radial-gradient(circle, var(--accent-glow), transparent 70%); }
+.sobre-img img { width: 100%; height: 100%; object-fit: cover; position: absolute; inset: 0; }
+.sobre-content { background: var(--gray); padding: 72px 56px; display: flex; flex-direction: column; justify-content: center; }
+.sobre-content p { color: var(--text-muted); font-size: 15px; line-height: 1.8; font-weight: 300; margin-bottom: 14px; }
+.sobre-content p strong { color: var(--white); font-weight: 500; }
+.sobre-story { border-left: 2px solid var(--accent); padding-left: 16px; font-style: italic; color: #c0c0c0 !important; }
+.sobre-tags { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 24px; }
+.etag { background: #252525; border: 1px solid #333; border-radius: 100px; padding: 6px 14px; font-size: 11px; color: #888; letter-spacing: 0.5px; text-transform: uppercase; }
+
+/* =====================
+   REEMBOLSO
+   ===================== */
+.reembolso { background: var(--accent); padding: 64px 40px; display: grid; grid-template-columns: 1fr auto; gap: 60px; align-items: center; }
+.reimb-left h2 { font-size: 44px; line-height: 0.95; color: var(--white); }
+.reimb-left p  { color: rgba(255,255,255,0.8); font-size: 15px; margin-top: 10px; font-weight: 300; }
+.reimb-checks  { display: flex; flex-direction: column; gap: 10px; margin-top: 22px; }
+.reimb-check   { display: flex; align-items: center; gap: 10px; font-size: 14px; color: var(--white); }
+.reimb-check::before { content: '✓'; font-weight: 700; color: rgba(255,255,255,0.65); }
+
+/* =====================
+   BLOG
+   ===================== */
+.blog-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 1px; margin-top: 48px; background: #1a1a1a; }
+.blog-card { background: #0d0d0d; overflow: hidden; transition: background 0.2s; }
+.blog-card:hover { background: #111; }
+.blog-img { height: 140px; background: #141414; display: flex; align-items: center; justify-content: center; border-bottom: 1px solid #1a1a1a; position: relative; overflow: hidden; }
+.blog-img::before { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse at 50% 100%, var(--accent-glow), transparent 70%); }
+.blog-body  { padding: 24px 24px 0; }
+.blog-tag   { font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase; color: var(--accent); margin-bottom: 10px; }
+.blog-title { font-size: 15px; font-weight: 500; color: var(--white); line-height: 1.4; margin-bottom: 8px; }
+.blog-desc  { font-size: 13px; color: var(--text-muted); font-weight: 300; line-height: 1.6; }
+.blog-footer { padding: 16px 24px 24px; display: flex; justify-content: space-between; align-items: center; }
+.blog-date  { font-size: 11px; color: #666; }
+.blog-link  { font-size: 12px; color: var(--accent); }
+
+/* =====================
+   INSTAGRAM
+   ===================== */
+.insta-header { display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 36px; }
+.insta-handles { display: flex; gap: 16px; margin-top: 10px; flex-wrap: wrap; }
+.insta-handle-link { font-size: 13px; color: var(--text-muted); display: flex; align-items: center; gap: 6px; transition: color 0.2s; }
+.insta-handle-link:hover { color: var(--white); }
+.insta-grid { display: grid; grid-template-columns: repeat(6,1fr); gap: 2px; }
+.insta-post { background: #222; aspect-ratio: 1; display: flex; align-items: center; justify-content: center; overflow: hidden; position: relative; cursor: pointer; }
+.insta-post img { width: 100%; height: 100%; object-fit: cover; }
+.insta-post:hover .insta-overlay { opacity: 1; }
+.insta-overlay { position: absolute; inset: 0; background: rgba(232,22,31,0.80); display: flex; align-items: center; justify-content: center; opacity: 0; transition: opacity 0.2s; }
+.insta-overlay span { font-size: 22px; }
+.insta-last { background: var(--accent); aspect-ratio: 1; display: flex; align-items: center; justify-content: center; flex-direction: column; gap: 6px; cursor: pointer; }
+
+/* =====================
+   LOCALIZAÇÃO
+   ===================== */
+.local-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: center; margin-top: 48px; }
+.local-map { background: #0f0f0f; border: 1px solid #1a1a1a; height: 280px; border-radius: 4px; overflow: hidden; display: flex; align-items: center; justify-content: center; flex-direction: column; gap: 10px; }
+.local-info { display: flex; flex-direction: column; gap: 22px; }
+.local-item { display: flex; gap: 16px; align-items: flex-start; }
+.local-icon { width: 36px; height: 36px; background: #1a1a1a; border: 1px solid #2a2a2a; border-radius: 4px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-size: 15px; }
+.local-item h4 { font-size: 14px; font-weight: 500; color: var(--white); margin-bottom: 2px; }
+.local-item p  { font-size: 13px; color: var(--text-muted); }
+
+/* =====================
+   CTA FINAL
+   ===================== */
+.cta-final { background: var(--black); border-top: 1px solid #141414; padding: 100px 40px; text-align: center; position: relative; overflow: hidden; }
+.cta-final::before { content: ''; position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); width: 700px; height: 350px; background: radial-gradient(ellipse, var(--accent-glow), transparent 65%); pointer-events: none; }
+.cta-final h2 { font-size: 76px; line-height: 0.92; margin-bottom: 20px; position: relative; z-index: 1; }
+.cta-final h2 em { color: var(--accent); font-style: normal; }
+.cta-final p { color: var(--text-muted); font-size: 16px; margin-bottom: 36px; font-weight: 300; position: relative; z-index: 1; }
+.cta-btns { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; position: relative; z-index: 1; }
+
+/* =====================
+   FOOTER
+   ===================== */
+footer { background: #080808; border-top: 1px solid #141414; padding: 28px 40px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px; }
+.footer-logo img { height: 24px; width: auto; opacity: 0.45; transition: opacity 0.2s; }
+.footer-logo img:hover { opacity: 0.7; }
+.footer-copy { font-size: 12px; color: #8a8a8a; }
+.footer-links a { font-size: 12px; color: #8a8a8a; margin-left: 20px; transition: color 0.2s; }
+.footer-links a:hover { color: var(--text-muted); }
+
+/* =====================
+   MENU MOBILE
+   ===================== */
+.menu-toggle { width: 48px; height: 48px; display: none; flex-direction: column; justify-content: center; align-items: center; gap: 6px; background: none; border: none; cursor: pointer; z-index: 1002; }
+.menu-toggle span { width: 22px; height: 2px; background: var(--white); transition: 0.3s; }
+.menu-toggle.active span:nth-child(1) { transform: rotate(45deg) translateY(6px); }
+.menu-toggle.active span:nth-child(2) { transform: rotate(-45deg) translateY(-6px); }
+
+.mobile-menu {
+  position: fixed; inset: 0; background: rgba(10,10,10,0.98); backdrop-filter: blur(14px);
+  display: flex; flex-direction: column; justify-content: center; align-items: center;
+  gap: 28px; z-index: 1001; opacity: 0; pointer-events: none; transition: 0.35s ease;
+}
+.mobile-menu.active { opacity: 1; pointer-events: auto; }
+.mobile-menu a { font-family: 'Bebas Neue', sans-serif; font-size: 34px; letter-spacing: 1px; color: var(--white); }
+.mobile-menu-cta { margin-top: 10px; background: var(--accent); padding: 14px 24px; border-radius: 4px; font-family: 'DM Sans', sans-serif !important; font-size: 14px !important; }
+body.menu-open { overflow: hidden; }
+
+/* =====================
+   RESPONSIVO
+   ===================== */
+@media (max-width: 900px) {
+  .hero { grid-template-columns: 1fr; }
+  .hero-right { min-height: 280px; border-left: none; border-top: 1px solid #1a1a1a; }
+  .hero-logo-wrap img { width: 160px; }
+  .sobre { grid-template-columns: 1fr; }
+  .sobre-img { min-height: 300px; }
+  .avaliacao { grid-template-columns: 1fr; }
+  .aval-left, .aval-right { padding: 48px 20px; }
+  .reembolso { grid-template-columns: 1fr; gap: 28px; }
+}
+@media (max-width: 768px) {
+  nav { padding: 16px 20px; }
+  .nav-links { display: none; }
+  .nav-cta { display: none; }
+  .menu-toggle { display: flex; }
+  h1 { font-size: 52px; }
+  h2 { font-size: 38px; }
+  .sec-dark, .sec-gray { padding: 60px 20px; }
+  .strip { padding: 11px 20px; overflow-x: auto; }
+  .metricas { padding: 48px 20px; }
+  .metricas-grid { grid-template-columns: 1fr; }
+  .servicos-grid { grid-template-columns: 1fr; }
+  .para-quem-grid { grid-template-columns: 1fr; }
+  .avaliacoes-ext { padding: 48px 20px; }
+  .aval-ext-grid { grid-template-columns: 1fr; }
+  .aval-ext-card { flex-direction: column; align-items: flex-start; }
+  .dep-grid { grid-template-columns: 1fr; }
+  .sobre-content { padding: 48px 20px; }
+  .clinica { grid-template-columns: 1fr; }
+  .clinica-header { padding: 48px 20px 36px; border-right: none; border-bottom: 1px solid #1a1a1a; }
+  .clinica-sub { max-width: 100%; }
+  .clinica-carousel-col, .carousel-wrap { height: 300px; }
+  .carousel-dots { position: static; transform: none; display: flex; justify-content: center; padding: 16px 0; background: var(--black); }
+  .blog-grid { grid-template-columns: 1fr; }
+  .insta-grid { grid-template-columns: repeat(3,1fr); }
+  .insta-header { flex-direction: column; align-items: flex-start; gap: 16px; }
+  .local-grid { grid-template-columns: 1fr; }
+  .cta-final { padding: 72px 20px; }
+  .cta-final h2 { font-size: 52px; }
+  .cta-btns { flex-direction: column; align-items: center; }
+  footer { flex-direction: column; gap: 16px; text-align: center; padding: 28px 20px; }
+  .footer-links a { margin: 0 10px; }
+  .wa-float { bottom: 20px; right: 20px; }
+  .sobre { display: flex; flex-direction: column-reverse; }
+  .wa-bubble { width: calc(100vw - 40px); right: -8px; }
+}
+
+/* =====================
+   FAQ
+   ===================== */
+.faq-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 1px; background: var(--gray-border); margin-top: 48px; }
+.faq-item { background: var(--gray); padding: 32px; border-bottom: 1px solid rgba(255,255,255,0.1); min-width: 0; }
+.faq-item:first-child { border-top: 1px solid rgba(255,255,255,0.1); }
+.faq-q {
+  all: unset; box-sizing: border-box; display: flex; width: 100%; justify-content: space-between;
+  align-items: center; gap: 16px; padding: 22px 4px; font-family: 'DM Sans', sans-serif; font-weight: 500;
+  font-size: 17px; color: var(--white); cursor: pointer; text-align: left;
+}
+.faq-q:hover { color: var(--accent); }
+.faq-q:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 2px; }
+.faq-arrow { flex-shrink: 0; color: var(--accent); transition: transform 0.3s ease; }
+.faq-item.active .faq-arrow { transform: rotate(180deg); }
+.faq-a { display: grid; grid-template-rows: 0fr; overflow: hidden; transition: grid-template-rows 0.35s ease; }
+.faq-item.active .faq-a { grid-template-rows: 1fr; }
+.faq-a-inner { min-height: 0; overflow: hidden; padding: 0 4px 22px; font-family: 'DM Sans', sans-serif; font-size: 15px; line-height: 1.6; color: var(--text-muted); }
+
+@media (max-width: 768px) {
+  .faq-grid { grid-template-columns: 1fr; }
+  .faq-item { padding: 24px 20px; }
+}
+</style>
 </head>
 <body>
-  <header class="wrap topbar">
-    <a class="brand" href="/" aria-label="Stronger Fisioterapia — início"><img src="/assets/escrito.png" alt="Stronger Fisioterapia" width="190" height="64"></a>
-    <nav class="nav" aria-label="Navegação principal">
-      <a href="/#servicos">Serviços</a>
-      <a href="/#sobre">Sobre</a>
-      <a href="/#local">Localização</a>
-    </nav>
-    <a class="button" href="https://wa.me/5511932427523?text=Ol%C3%A1!%20Quero%20saber%20mais%20sobre%20as%20sess%C3%B5es%20de%20recovery." target="_blank" rel="noopener" onclick="gtag_report_conversion()">Agendar pelo WhatsApp <span aria-hidden="true">↗</span></a>
-  </header>
 
-  <nav class="wrap crumbs" aria-label="Breadcrumb"><a href="/">Início</a> <span aria-hidden="true">/</span> Recovery esportivo</nav>
-  <main>
-    <section class="hero" aria-labelledby="hero-title">
-      <div class="hero-copy">
-        <span class="eyebrow">Vila Olímpia · São Paulo</span>
-        <h1 id="hero-title">RECOVERY <em>ESPORTIVO</em></h1>
-        <p>Atendimento presencial individual na Vila Olímpia, São Paulo para VOCÊ evoluir nos seus treinos</p>
-        <div class="hero-actions">
-          <a class="button" href="#sessoes">Conheça as sessões <span aria-hidden="true">↓</span></a>
-          <a class="button button-outline" href="https://wa.me/5511932427523?text=Ol%C3%A1!%20Quero%20agendar%20uma%20sess%C3%A3o%20de%20recovery." target="_blank" rel="noopener" onclick="gtag_report_conversion()">Tirar dúvidas</a>
-        </div>
-        <div class="hero-note">Atendimento presencial individual · Agendamento pelo WhatsApp</div>
+<!-- WHATSAPP FLUTUANTE + BALÃO PROATIVO -->
+<div class="wa-float">
+  <div class="wa-bubble" id="waBubble">
+    <button class="wa-bubble-close" id="waBubbleClose" aria-label="Fechar">×</button>
+    <div class="wa-bubble-header">
+      <img src="assets/foto-marissa.jpg" alt="Marissa Alves" class="wa-bubble-avatar" width="38" height="38" loading="lazy">
+      <div>
+        <div class="wa-bubble-name">Marissa Alves</div>
+        <div class="wa-bubble-status">● Online agora</div>
       </div>
-      <div class="hero-art">
-        <div class="art-mark">
-          <img src="/assets/logo-stronger.png" alt="Stronger Fisioterapia" class="art-mark-logo">
-        </div>
-      </div>
-    </section>
-
-    <div class="ticker" aria-label="Modalidades e recursos">
-      <div class="wrap ticker-inner"><span>Jiu-jitsu</span><span>Corrida</span><span>Musculação</span><span>Esportes em geral</span><span>Compressão pneumática</span></div>
     </div>
-
-    <section id="sessoes" aria-labelledby="sessions-title">
-      <div class="wrap">
-        <div class="section-heading">
-          <span class="eyebrow">Escolha a duração</span>
-          <h2 id="sessions-title">UMA SESSÃO<br>DO SEU JEITO</h2>
-          <p>Você escolhe o tempo. A combinação de recursos é definida de acordo com a conversa inicial e com o objetivo daquela sessão.</p>
-        </div>
-        <div class="plans">
-          <article class="plan">
-            <span class="plan-tag">Direto ao ponto</span>
-            <h3>Recovery Express</h3>
-            <span class="duration">30 minutos</span>
-            <p class="plan-desc">Check-in breve e bota de compressão pneumática, conforme adequação ao seu caso.</p>
-            <div class="price">R$ 150 <small>/ sessão</small></div>
-            <p class="pack">Pacote com 4 sessões: <strong>R$ 570</strong></p>
-            <a class="button button-outline" href="https://wa.me/5511932427523?text=Ol%C3%A1!%20Tenho%20interesse%20no%20Recovery%20Express%20de%2030%20minutos." target="_blank" rel="noopener" onclick="gtag_report_conversion()">Consultar horários</a>
-          </article>
-          <article class="plan featured">
-            <span class="plan-tag">Mais tempo para combinar recursos</span>
-            <h3>Recovery Performance</h3>
-            <span class="duration">45 minutos</span>
-            <p class="plan-desc">Pode combinar bota, terapia manual focada e mobilidade, conforme seu objetivo.</p>
-            <div class="price">R$ 200 <small>/ sessão</small></div>
-            <p class="pack">Pacote com 4 sessões: <strong>R$ 760</strong></p>
-            <a class="button" href="https://wa.me/5511932427523?text=Ol%C3%A1!%20Tenho%20interesse%20no%20Recovery%20Performance%20de%2045%20minutos." target="_blank" rel="noopener" onclick="gtag_report_conversion()">Consultar horários</a>
-          </article>
-          <article class="plan">
-            <span class="plan-tag">Sessão estendida</span>
-            <h3>Recovery Individual</h3>
-            <span class="duration">60 minutos</span>
-            <p class="plan-desc">Mais tempo para um atendimento individual, com recursos selecionados para aquele dia.</p>
-            <div class="price">R$ 240 <small>/ sessão</small></div>
-            <p class="pack">Pacote com 4 sessões: <strong>R$ 912</strong></p>
-            <a class="button button-outline" href="https://wa.me/5511932427523?text=Ol%C3%A1!%20Tenho%20interesse%20no%20Recovery%20Individual%20de%2060%20minutos." target="_blank" rel="noopener" onclick="gtag_report_conversion()">Consultar horários</a>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="how" aria-labelledby="how-title">
-      <div class="wrap">
-        <div class="section-heading">
-          <span class="eyebrow">Como funciona</span>
-          <h2 id="how-title">INDIVIDUAL EM<br>CADA ETAPA</h2>
-          <p>Uma experiência clara e sem protocolo automático. A sessão começa entendendo o que você precisa naquele momento.</p>
-        </div>
-        <div class="how-grid">
-          <article class="how-card"><span class="number">01</span><h3>Conte sobre sua rotina</h3><p>Falamos sobre seu esporte, seus treinos recentes e o que você espera da sessão.</p></article>
-          <article class="how-card"><span class="number">02</span><h3>Escolhemos os recursos</h3><p>Bota de compressão, liberação miofascial ou mobilidade podem entrar na sessão quando forem apropriados.</p></article>
-          <article class="how-card"><span class="number">03</span><h3>Saia com orientação</h3><p>Você recebe uma orientação simples relacionada à sessão e à sua rotina esportiva.</p></article>
-        </div>
-      </div>
-    </section>
-
-    <section aria-label="Profissional responsável pelo atendimento">
-      <div class="wrap split">
-        <div class="split-title"><span class="eyebrow">Experiência no esporte</span><h2>ATENDIMENTO COM QUEM TREINA</h2></div>
-        <div class="split-body">
-          <p>As sessões são conduzidas por Marissa Alves, fisioterapeuta ortopédica e esportiva e praticante de jiu-jitsu. 
-            O atendimento considera sua modalidade, sua rotina e o objetivo de cada visita.</p>
-          <a class="button button-outline" href="/#sobre">Conheça a fisioterapeuta</a>
-        </div>
-      </div>
-    </section>
-
-    <section aria-label="Diferença entre recovery e fisioterapia">
-      <div class="wrap split">
-        <div class="split-title"><span class="eyebrow">Qual atendimento escolher?</span><h2>RECOVERY OU FISIOTERAPIA?</h2></div>
-        <div class="split-body">
-          <p>O recovery é uma sessão complementar para quem pratica atividade física e busca um atendimento individual com recursos selecionados para aquele dia.</p>
-          <p>Se você está com dor, sofreu uma lesão ou precisa de acompanhamento pré ou pós-operatório, o caminho é agendar uma avaliação fisioterapêutica.
-            Assim, definimos o cuidado adequado para o seu caso.</p>
-          <a class="button button-outline" href="https://wa.me/5511932427523?text=Ol%C3%A1!%20Estou%20com%20dor%20ou%20les%C3%A3o%20e%20gostaria%20de%20saber%20se%20preciso%20de%20uma%20avalia%C3%A7%C3%A3o." target="_blank" rel="noopener" onclick="gtag_report_conversion()">Conversar com a Stronger</a>
-        </div>
-      </div>
-    </section>
-
-    <section class="faq" aria-labelledby="faq-title">
-      <div class="wrap">
-        <div class="section-heading">
-          <span class="eyebrow">Dúvidas frequentes</span>
-          <h2 id="faq-title">ANTES DE AGENDAR</h2>
-        </div>
-        <div class="faq-list">
-          <details><summary>Para quem são as sessões de recovery?</summary><p>Para pessoas fisicamente ativas que desejam evoluir nos treinos.</p></details>
-          <details><summary>A bota de compressão é usada em toda sessão?</summary><p>Ela pode fazer parte da sessão quando for adequada. Conversamos sobre seu objetivo e verificamos se o recurso é apropriado antes do uso.</p></details>
-          <details><summary>Qual pacote devo escolher?</summary><p>Se estiver em dúvida, fale com a gente pelo WhatsApp. Podemos explicar as diferenças de duração e ajudar você a escolher a opção que faz sentido para o que procura.</p></details>
-          <details><summary>Tenho dor ou uma lesão. Posso agendar recovery?</summary><p>Se você está com dor, teve uma lesão ou passou por cirurgia, entre em contato antes de agendar. Pode ser mais indicado começar por uma avaliação fisioterapêutica.</p></details>
-          <details><summary>Onde acontece o atendimento?</summary><p>As sessões desta página são presenciais na Stronger Fisioterapia: Rua Helena, 309, conjunto 112, Vila Olímpia, São Paulo 
-            (para atendimentos domiciliares, entre em contato para mais informações) <a href="https://maps.google.com/?q=Rua+Helena+309+Vila+Olimpia+Sao+Paulo" target="_blank" rel="noopener">Ver localização no Google Maps</a>.</p></details>
-        </div>
-      </div>
-    </section>
-
-    <section class="final-cta">
-      <div class="wrap">
-        <span class="eyebrow">Stronger Fisioterapia · Vila Olímpia</span>
-        <h2>VAMOS EVOLUIR<br>SEU <span style="color:var(--accent)">TREINO?</span></h2>
-        <p>Chame no WhatsApp para consultar horários ou tirar dúvidas sobre as opções.</p>
-        <a class="button" href="https://wa.me/5511932427523?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20quero%20agendar%20uma%20sess%C3%A3o%20de%20recovery." target="_blank" rel="noopener" onclick="gtag_report_conversion()">Agendar pelo WhatsApp <span aria-hidden="true">↗</span></a>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <div class="wrap footer-inner">
-      <span>© Stronger Fisioterapia · Vila Olímpia, São Paulo</span>
-      <span><a href="/">Voltar para a página principal</a> · <a href="https://instagram.com/strongerfisioterapia" target="_blank" rel="noopener">Instagram</a></span>
-    </div>
-  </footer>
-  <a class="wa-float" href="https://wa.me/5511932427523?text=Ol%C3%A1!%20Quero%20saber%20mais%20sobre%20recovery." target="_blank" rel="noopener" aria-label="Falar com a Stronger pelo WhatsApp" onclick="gtag_report_conversion()">
-    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.52 3.48A11.86 11.86 0 0 0 12.08 0C5.5 0 .15 5.35.15 11.93c0 2.1.55 4.16 1.6 5.97L0 24l6.27-1.64a11.9 11.9 0 0 0 5.8 1.48h.01c6.58 0 11.93-5.35 11.93-11.93 0-3.19-1.24-6.19-3.49-8.43ZM12.08 21.8h-.01a9.9 9.9 0 0 1-5.04-1.38l-.36-.21-3.72.97.99-3.63-.24-.37a9.88 9.88 0 0 1-1.52-5.25c0-5.46 4.45-9.9 9.91-9.9 2.65 0 5.14 1.03 7.01 2.9a9.85 9.85 0 0 1 2.9 7.01c0 5.46-4.45 9.9-9.92 9.9Zm5.44-7.42c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.64.07-.3-.15-1.25-.46-2.39-1.47-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.61-.91-2.21-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.08-.79.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.22 3.08c.15.2 2.1 3.2 5.08 4.49.71.31 1.27.49 1.7.63.71.23 1.36.2 1.87.12.57-.08 1.76-.72 2.01-1.41.25-.7.25-1.29.17-1.42-.07-.12-.27-.2-.57-.35Z"/></svg>
+    <div class="wa-bubble-msg">Oi! 👋 Posso te ajudar a agendar sua avaliação ou tirar alguma dúvida?</div>
+    <a href="https://wa.me/5511932427523?text=Oi%2C%20vim%20pelo%20site%20e%20gostaria%20de%20saber%20mais." class="wa-bubble-btn" target="_blank" rel="noopener" onclick="gtag_report_conversion()">Falar no WhatsApp</a>
+  </div>
+  <span class="wa-label">Agendar pelo WhatsApp</span>
+  <a href="https://wa.me/5511932427523?text=Oi%2C%20quero%20agendar%20uma%20avalia%C3%A7%C3%A3o." class="wa-btn" target="_blank" rel="noopener" aria-label="Falar no WhatsApp" onclick="gtag_report_conversion()">
+    <svg width="26" height="26" viewBox="0 0 24 24" fill="white">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
   </a>
+</div>
 
-  <script>
-    // Conversão Google Ads — Clique WhatsApp (mesmo evento e label da home)
-    function gtag_report_conversion() {
-      gtag('event', 'conversion', {
-        'send_to': 'AW-11198302157/Eza_CLbh0LEcEM2T4tsp'
-      });
-      gtag('event', 'whatsapp_click', {
-        'event_category': 'Lead',
-        'event_label': 'WhatsApp'
-      });
-      return true;
+<!-- NAV -->
+<nav>
+  <a href="/" class="nav-logo" aria-label="Stronger Fisioterapia">
+    <img src="assets/escrito.png" alt="Stronger Fisioterapia" height="80">
+  </a>
+  <ul class="nav-links">
+    <li><a href="#servicos">Serviços</a></li>
+    <li><a href="#avaliacao">Avaliação</a></li>
+    <li><a href="https://avaliacaostrongerbjj.vercel.app/" target="_blank" rel="noopener">Avaliação Biomecânica - BJJ</a></li>
+    <li><a href="#clinica">Nossa Clínica</a></li>
+    <li><a href="#sobre">Sobre</a></li>
+    <li><a href="/blog/">Blog</a></li>
+    <li><a href="#local">Localização</a></li>
+  </ul>
+  <a href="https://wa.me/5511932427523?text=Olá!%20Gostaria%20de%20agendar%20uma%20avaliação." class="nav-cta" target="_blank" rel="noopener" onclick="gtag_report_conversion()">Agendar →</a>
+  <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">
+    <span></span>
+    <span></span>
+  </button>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#servicos">Serviços</a>
+  <a href="#avaliacao">Avaliação</a>
+  <a href="https://avaliacaostrongerbjj.vercel.app/" target="_blank" rel="noopener">Avaliação Biomecânica BJJ</a>
+  <a href="#clinica">Nossa Clínica</a>
+  <a href="#sobre">Sobre</a>
+  <a href="/blog/">Blog</a>
+  <a href="#local">Localização</a>
+  <a href="https://wa.me/5511932427523?text=Olá!%20Gostaria%20de%20agendar%20uma%20avaliação." class="mobile-menu-cta" target="_blank" rel="noopener" onclick="gtag_report_conversion()">
+    Agendar pelo WhatsApp
+  </a>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-left">
+    <div class="hero-tag"><span></span>Vila Olímpia · São Paulo</div>
+    <h1>VIVA E TREINE<br>SEM <em>DOR</em></h1>
+    <p class="hero-sub">Fisioterapia ortopédica e esportiva para quem não aceita se limitar. Do diagnóstico ao retorno ao esporte com plano estruturado e individualizado.</p>
+    <div class="hero-btns">
+      <a href="https://wa.me/5511932427523?text=Olá!%20Gostaria%20de%20agendar%20uma%20avaliação." class="btn-primary" target="_blank" rel="noopener" onclick="gtag_report_conversion()">
+        Agendar avaliação
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+      <a href="#depoimentos" class="btn-ghost">Ver depoimentos</a>
+    </div>
+  </div>
+  <div class="hero-right">
+    <div class="hero-logo-wrap">
+      <img src="assets/logo-stronger.png" alt="Stronger Fisioterapia — Vila Olímpia, São Paulo" width="220" fetchpriority="high">
+      <span class="hero-logo-tagline">Vila Olímpia · São Paulo</span>
+    </div>
+  </div>
+</section>
+
+<!-- STRIP -->
+<div class="strip">
+  <div class="strip-item">Fisioterapia Esportiva</div>
+  <div class="strip-item">Fisioterapia Ortopédica</div>
+  <div class="strip-item">Pré e Pós-Operatório</div>
+  <div class="strip-item">Prevenção de Lesões</div>
+  <div class="strip-item">Avaliação Biomecânica BJJ</div>
+  <div class="strip-item">Recovery</div>
+  <div class="strip-item">Vila Olímpia · SP</div>
+</div>
+
+<!-- MÉTRICAS -->
+<div class="metricas">
+  <div class="metricas-grid">
+    <div class="metrica-card"><div class="metrica-num">+300</div><div class="metrica-label">Pacientes<br>atendidos</div></div>
+    <div class="metrica-card"><div class="metrica-num">5★</div><div class="metrica-label">Avaliação média<br>Google e Doctoralia</div></div>
+    <div class="metrica-card"><div class="metrica-num">+7</div><div class="metrica-label">Anos de<br>experiência com pacientes</div></div>
+  </div>
+</div>
+
+<!-- SERVIÇOS -->
+<section class="sec-dark" id="servicos">
+  <span class="section-label">O que fazemos</span>
+  <h2>ESPECIALIDADES</h2>
+  <p class="section-sub">Tratamentos focados em quem treina e não quer parar.</p>
+  <div class="servicos-grid">
+    <div class="servico-card"><div class="servico-title">Fisioterapia Esportiva</div><div class="servico-desc">Reabilitação e prevenção de lesões para atletas amadores e profissionais — do joelho ao ombro, do tatame à academia.</div></div>
+    <div class="servico-card"><div class="servico-title">Fisioterapia Ortopédica</div><div class="servico-desc">Tratamento de dores e lesões nos ossos, tendões, músculos e articulações. Você entende o problema, sabe o que está sendo feito e por quê.</div></div>
+    <div class="servico-card"><div class="servico-title">Reabilitação Pre e Pós-Cirúrgica</div><div class="servico-desc">Protocolo estruturado após cirurgias ortopédicas. Recuperação segura e progressiva.</div></div>
+    <div class="servico-card"><div class="servico-title">Avaliação BJJ</div><div class="servico-desc">Avaliação biomecânica específica para praticantes de jiu-jitsu. Identifica desequilíbrios que causam lesões no tatame.</div></div>
+    <div class="servico-card"><div class="servico-title">Dry Needling</div><div class="servico-desc">Agulhamento seco para tratamento de pontos de tensão muscular. Alívio rápido e duradouro de dores crônicas.</div></div>
+    <div class="servico-card"><div class="servico-title">Prevenção de Lesões</div><div class="servico-desc">Avaliação preventiva antes de se machucar. Identificamos fraquezas e corrigimos padrões de movimento de risco.</div></div>
+  </div>
+</section>
+
+<!-- PARA QUEM -->
+<section class="sec-gray">
+  <span class="section-label">Para quem é a Stronger</span>
+  <h2>VOCÊ ESTÁ<br>NO LUGAR CERTO</h2>
+  <div class="para-quem-grid">
+    <div class="pq-card"><div class="pq-num">01</div><div class="pq-title">Praticantes de esporte</div><div class="pq-desc">Jiu-jitsu, musculação, corrida, crossfit, escalada, tênis... — se o treino é parte da sua vida, a Stronger entende o que você precisa de volta.</div></div>
+    <div class="pq-card"><div class="pq-num">02</div><div class="pq-title">Pós-cirúrgico</div><div class="pq-desc">Ombro, cotovelo, punho, coluna, quadril, joelho e tornozelo — reabilitação com foco em retorno real e rápido.</div></div>
+    <div class="pq-card"><div class="pq-num">03</div><div class="pq-title">Dores crônicas</div><div class="pq-desc">Tratamos a causa, não só o sintoma. Se você já tentou de tudo sem resultado, começa aqui uma abordagem diferente.</div></div>
+    <div class="pq-card"><div class="pq-num">04</div><div class="pq-title">Prevenção ativa</div><div class="pq-desc">Avaliação antes de lesionar. Identificamos fraquezas e desequilíbrios antes que virem problema no treino.</div></div>
+  </div>
+</section>
+
+<!-- AVALIAÇÃO -->
+<section class="avaliacao" id="avaliacao">
+  <div class="aval-left">
+    <span class="section-label">Como funciona</span>
+    <h2>AVALIAÇÃO<br>COMPLETA</h2>
+    <p class="section-sub">O ponto de partida para tratar certo. Entendemos seu corpo, sua dor e seus objetivos com a fisioterapia para montarmos juntos um plano 100% direcionado.</p>
+    <div class="aval-duration">⏱ <strong>Duração: 1h30</strong></div>
+    <a href="https://wa.me/5511932427523?text=Olá!%20Quero%20agendar%20uma%20avaliação%20completa." class="btn-primary" style="margin-top:32px;align-self:flex-start" target="_blank" rel="noopener" onclick="gtag_report_conversion()">Agendar agora →</a>
+  </div>
+  <div class="aval-right">
+    <div class="aval-step"><div class="step-num">01</div><div class="step-content"><h4>Análise de força e controle</h4><p>Identificamos desequilíbrios musculares e padrões de movimento compensatórios.</p></div></div>
+    <div class="aval-step"><div class="step-num">02</div><div class="step-content"><h4>Avaliação de mobilidade</h4><p>Mapeamos amplitude de movimento e limitações específicas que possam te limitar no seu dia a dia.</p></div></div>
+    <div class="aval-step"><div class="step-num">03</div><div class="step-content"><h4>Testes específicos do esporte</h4><p>Protocolos direcionados para BJJ, musculação e outras modalidades.</p></div></div>
+    <div class="aval-step"><div class="step-num">04</div><div class="step-content"><h4>Plano e Tratamento individualizado</h4><p>Saímos com direcionamento claro e metas reais de tratamento e retorno, <strong>com atendimento individual em cada sessão.</strong></p></div></div>
+  </div>
+</section>
+
+<!-- AVALIAÇÕES EXTERNAS -->
+<div class="avaliacoes-ext">
+  <span class="section-label">Avaliações externas</span>
+  <h2>O QUE DIZEM<br>SOBRE A STRONGER</h2>
+  <div class="aval-ext-grid">
+    <div class="aval-ext-card">
+      <div class="aval-ext-left">
+        <div class="aval-ext-logo">🔍</div>
+        <div>
+          <div class="aval-ext-score">5.0</div>
+          <div class="aval-ext-info"><h4>Google</h4><div class="aval-ext-stars">★★★★★</div><p>Avaliações no Google Maps</p></div>
+        </div>
+      </div>
+      <a href="https://www.google.com/search?q=Stronger+Fisioterapia&stick=H4sIAAAAAAAA_-NgU1I1qLA0SU41NU81T7VItkxJsTC1MqiwSDM3TTQ0SUmyMDdONjUzXsQqGlxSlJ-Xnlqk4JZZnJlfklqUWJCZCABIAJ-qQQAAAA&hl=pt-BR&mat=CXnmreG89YleElcBTVDHnhaVTgOZ6mWPdV8bE6rfJUBFfLJLbY5rligf7iOKVtsov3YbBQ24mKNBPG7UJ9ZQyaIAVWLTyNqve0fjlO-ssnabu7I0R0cbfkQWnIKHIwoMRUc&authuser=0#mpd=~6812246102963512953/customers/reviews" class="btn-outline" target="_blank" rel="noopener">Ver no Google →</a>
+    </div>
+    <div class="aval-ext-card">
+      <div class="aval-ext-left">
+        <div class="aval-ext-logo">🩺</div>
+        <div>
+          <div class="aval-ext-score">5.0</div>
+          <div class="aval-ext-info"><h4>Doctoralia</h4><div class="aval-ext-stars">★★★★★</div><p>Avaliações no Doctoralia</p></div>
+        </div>
+      </div>
+      <a href="https://www.doctoralia.com.br/marissa-alves/fisioterapeuta/sao-paulo" class="btn-outline" target="_blank" rel="noopener">Ver no Doctoralia →</a>
+    </div>
+  </div>
+</div>
+
+<!-- DEPOIMENTOS -->
+<section class="sec-dark" id="depoimentos">
+  <span class="section-label">Resultados reais</span>
+  <h2>QUEM JÁ<br>PASSOU POR AQUI</h2>
+  <div class="dep-grid">
+    <div class="dep-card">
+      <div class="dep-stars">★★★★★</div>
+      <p class="dep-text">"Tenho sessões com a Marissa devido a duas cirurgias no joelho e uma no ombro. Ela é muito atenciosa e me ajudou com as dores e meus treinos. Hoje já consigo escalar e treinar jiu-jitsu novamente."</p>
+      <div class="dep-name">Daniely Lettieri</div>
+      <div class="dep-detail">Pós-cirúrgico · Jiu-jitsu e escalada</div>
+      <div class="dep-source">🔍 Google</div>
+    </div>
+    <div class="dep-card">
+      <div class="dep-stars">★★★★★</div>
+      <p class="dep-text">"Amo as sessões, sempre muito atenciosa, explica tudo com clareza e envia exercícios para casa. Me ajudou muito a aliviar minhas dores."</p>
+      <div class="dep-name">Ana Paula Fernandes</div>
+      <div class="dep-detail">Tratamento de dores</div>
+      <div class="dep-source">🔍 Google</div>
+    </div>
+    <div class="dep-card">
+      <div class="dep-stars">★★★★★</div>
+      <p class="dep-text">"A melhor profissional que já conheci. Sempre respeitou meus limites, com atendimento extremamente cuidadoso e excelente resultado."</p>
+      <div class="dep-name">Julia Terin</div>
+      <div class="dep-detail">Reabilitação</div>
+      <div class="dep-source">🔍 Google</div>
+    </div>
+  </div>
+</section>
+
+<!-- NOSSA CLÍNICA — CARROSSEL -->
+<section class="clinica" id="clinica">
+  <div class="clinica-header">
+    <span class="section-label">Nosso espaço</span>
+    <h2>NOSSA CLÍNICA</h2>
+    <p class="clinica-sub">
+      Um ambiente pensado para você se sentir seguro, acolhido e focado na sua recuperação.
+      Equipamentos de alto padrão, espaço aconchegante e atendimento individualizado do início ao fim.
+    </p>
+  </div>
+
+  <div class="clinica-carousel-col carousel-wrap">
+    <div class="carousel-track" id="carouselTrack">
+      <div class="carousel-slide">
+        <img src="assets/foto-clinica1.JPEG" alt="Equipamentos da Stronger Fisioterapia" loading="lazy">
+        <div class="carousel-caption">Espaço de atendimento · Vila Olímpia</div>
+      </div>
+      <div class="carousel-slide">
+        <img src="assets/foto-clinica2.JPEG" alt="Ambiente da Stronger Fisioterapia" loading="lazy">
+        <div class="carousel-caption">Ambiente individualizado</div>
+      </div>
+      <div class="carousel-slide">
+        <img src="assets/foto-clinica3.JPEG" alt="Ambiente da Stronger Fisioterapia" loading="lazy">
+        <div class="carousel-caption">Pensado na sua recuperação</div>
+      </div>
+      <div class="carousel-slide">
+        <img src="assets/foto-clinica4.JPEG" alt="Ambiente da Stronger Fisioterapia" loading="lazy">
+        <div class="carousel-caption">Sua recuperação é nossa prioridade</div>
+      </div>
+    </div>
+
+    <button class="carousel-btn prev" onclick="moveCarousel(-1)" aria-label="Foto anterior">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
+    </button>
+    <button class="carousel-btn next" onclick="moveCarousel(1)" aria-label="Próxima foto">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+    </button>
+
+    <div class="carousel-dots" id="carouselDots">
+      <div class="carousel-dot active" onclick="goToSlide(0)"></div>
+      <div class="carousel-dot" onclick="goToSlide(1)"></div>
+      <div class="carousel-dot" onclick="goToSlide(2)"></div>
+      <div class="carousel-dot" onclick="goToSlide(3)"></div>
+    </div>
+  </div>
+</section>
+
+<!-- SOBRE -->
+<section class="sobre" id="sobre" style="padding:0">
+  <div class="sobre-img">
+    <img src="assets/foto-marissa.jpg" alt="Marissa Alves, fisioterapeuta esportiva faixa roxa de jiu-jitsu — Stronger Fisioterapia Vila Olímpia" loading="lazy">
+  </div>
+  <div class="sobre-content">
+    <span class="section-label">Quem sou eu</span>
+    <h2 style="font-size:46px;margin-bottom:22px;color:var(--white)">MARISSA<br>ALVES</h2>
+    <p class="sobre-story">Há mais de <strong>7 anos</strong> tratando dor pra quem não quer parar de treinar — foi assim que a Stronger nasceu: da vontade de unir ciência e esporte de um jeito que faz sentido pra quem vive de treino.</p>
+    <p><strong>Fisioterapeuta ortopédica e esportiva</strong> formada pela Universidade Federal de Alfenas (UNIFAL-MG), com pós-graduação em Fisiologia do Exercício pela Universidade Federal de São Paulo (UNIFESP).</p>
+    <p>Atendo desde atletas amadores e profissionais que buscam prevenção, a pessoas que acabaram de operar e querem retorno rápido — sempre com plano individualizado.</p>
+    <p>Também vivo o que ensino: pratico musculação e sou <strong>faixa roxa de jiu-jitsu</strong>. Sei o que significa querer voltar ao tatame.</p>
+    <div class="sobre-tags">
+      <span class="etag">UNIFAL-MG</span>
+      <span class="etag">Pós UNIFESP</span>
+      <span class="etag">Faixa Roxa BJJ</span>
+      <span class="etag">Fisio Esportiva</span>
+      <span class="etag">Ortopedia</span>
+      <span class="etag">+7 anos de Stronger</span>
+      <span class="etag">CREFITO3 295472-F</span>
+    </div>
+  </div>
+</section>
+
+<!-- REEMBOLSO -->
+<div class="reembolso">
+  <div class="reimb-left">
+    <h2>SEM LIMITAÇÕES<br>DE CONVÊNIO</h2>
+    <p>Atendimento particular com toda a liberdade para tratar do jeito certo. Sem abrir mão do seu plano de saúde.</p>
+    <div class="reimb-checks">
+      <div class="reimb-check">Documentação completa para reembolso</div>
+      <div class="reimb-check">Orientação durante todo o processo</div>
+      <div class="reimb-check">Foco 100% na sua recuperação</div>
+    </div>
+  </div>
+  <a href="https://wa.me/5511932427523?text=Olá!%20Tenho%20dúvidas%20sobre%20reembolso%20de%20convênio." class="btn-dark" target="_blank" rel="noopener" onclick="gtag_report_conversion()">Tirar dúvidas no WhatsApp →</a>
+</div>
+
+<!-- FAQ -->
+<section class="sec-gray">
+  <span class="section-label">Dúvidas frequentes</span>
+  <h2>PERGUNTAS</h2>
+  <div class="faq-grid">
+
+    <div class="faq-item">
+      <button class="faq-q" type="button" aria-expanded="false">
+        Preciso parar de treinar?
+        <svg class="faq-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+      </button>
+      <div class="faq-a"><div class="faq-a-inner">Não necessariamente. Na maioria dos casos, ajustamos sua rotina para que você continue treinando com segurança enquanto se recupera.</div></div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-q" type="button" aria-expanded="false">
+        Quantas sessões vou precisar?
+        <svg class="faq-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+      </button>
+      <div class="faq-a"><div class="faq-a-inner">Depende do seu caso, mas trabalhamos com plano estruturado focado em evolução real — não em prolongar o tratamento.</div></div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-q" type="button" aria-expanded="false">
+        Já tentei outros tratamentos sem resultado.
+        <svg class="faq-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+      </button>
+      <div class="faq-a"><div class="faq-a-inner">Nosso foco é entender a causa e devolver segurança para treinar — não apenas aliviar o sintoma temporariamente.</div></div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-q" type="button" aria-expanded="false">
+        Atende convênio?
+        <svg class="faq-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+      </button>
+      <div class="faq-a"><div class="faq-a-inner">O atendimento é particular, mas fornecemos toda a documentação para reembolso e orientamos o processo junto com você.</div></div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-q" type="button" aria-expanded="false">
+        Qual a duração das sessões?
+        <svg class="faq-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+      </button>
+      <div class="faq-a"><div class="faq-a-inner">As sessões têm aproximadamente 1 hora. A avaliação inicial é de 1h30 para um mapeamento completo.</div></div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-q" type="button" aria-expanded="false">
+        Atende online ou domiciliar?
+        <svg class="faq-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+      </button>
+      <div class="faq-a"><div class="faq-a-inner"><strong>Sim!</strong> Além do atendimento presencial, também atendemos online e domiciliar, entre em contato para mais informações.</div></div>
+    </div>
+
+  </div>
+</section>
+
+<!-- BLOG -->
+<section class="sec-dark" id="blog">
+  <span class="section-label">Conteúdo</span>
+  <h2>DO BLOG<br>DA STRONGER</h2>
+  <p class="section-sub">Dicas, orientações e tudo que você precisa saber para viver e treinar sem dor.</p>
+  <div class="blog-grid">
+
+    <a href="/blog/hernia-de-disco-lombar/" class="blog-card">
+      <div class="blog-img">
+        <img src="/assets/capa-hernia-disco.png" alt="dor lombar, hérnia de disco lombar" loading="lazy"
+             style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;"
+             onerror="this.style.display='none'">
+      </div>
+      <div class="blog-body">
+        <div class="blog-tag">Coluna</div>
+        <div class="blog-title">Hérnia de Disco Lombar: Tipos, Sintomas e Tratamento</div>
+        <div class="blog-desc">Na maioria dos casos, a hérnia de disco tem tratamento conservador eficaz e não significa o fim da vida ativa </div>
+      </div>
+      <div class="blog-footer"><span class="blog-date">Julho 2026</span><span class="blog-link">Ler artigo →</span></div>
+    </a>
+
+    <a href="/blog/cotovelo-de-tenista/" class="blog-card">
+      <div class="blog-img">
+        <img src="/assets/capa-cotovelo-tenista.png" alt="Pessoa com dor no cotovelo fazendo musculação" loading="lazy"
+             style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;"
+             onerror="this.style.display='none'">
+      </div>
+      <div class="blog-body">
+        <div class="blog-tag">Cotovelo, Esporte</div>
+        <div class="blog-title"> Cotovelo de tenista: Por que ele aparece mesmo em quem nunca jogou tênis</div>
+        <div class="blog-desc"> Se você sente dor na parte de fora do cotovelo ao segurar uma xícara, abrir uma porta, carregar sacolas ou treinar musculação,
+          pode estar com uma condição conhecida como epicondilite lateral </div>
+      </div>
+      <div class="blog-footer"><span class="blog-date">Julho 2026</span><span class="blog-link">Ler artigo →</span></div>
+    </a>
+
+    <a href="/blog/entorse-tornozelo/" class="blog-card">
+      <div class="blog-img">
+        <img src="/assets/capa-entorse-tornozelo.png" alt="Pessoa com dor no tornozelo após correr" loading="lazy"
+             style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;"
+             onerror="this.style.display='none'">
+      </div>
+      <div class="blog-body">
+        <div class="blog-tag">Tornozelo, Esporte</div>
+        <div class="blog-title">Entorse de Tornozelo: A dor passou, mas você está recuperado?</div>
+        <div class="blog-desc"> A entorse de tornozelo é uma das lesões musculoesqueléticas mais comuns entre praticantes de atividade física.
+          Após melhorar a dor, você está pronto para retornar a sua prática esportiva? </div>
+      </div>
+      <div class="blog-footer"><span class="blog-date">Julho 2026</span><span class="blog-link">Ler artigo →</span></div>
+    </a>
+
+  </div>
+  <div style="text-align:center;margin-top:32px">
+    <a href="/blog/" class="btn-outline" style="display:inline-flex">Ver todos os artigos →</a>
+  </div>
+</section>
+
+<!-- INSTAGRAM -->
+<section class="sec-gray">
+  <div class="insta-header">
+    <div>
+      <span class="section-label">Nas redes sociais</span>
+      <h2>SIGA A<br>STRONGER</h2>
+      <div class="insta-handles">
+        <a href="https://instagram.com/strongerfisioterapia" target="_blank" rel="noopener" class="insta-handle-link">
+          <img src="assets/instagram.png" alt="Instagram" width="14" height="14" loading="lazy"> @strongerfisioterapia
+        </a>
+        <a href="https://instagram.com/marissaalves_" target="_blank" rel="noopener" class="insta-handle-link">
+          <img src="assets/instagram.png" alt="Instagram" width="14" height="14" loading="lazy"> @marissaalves_
+        </a>
+      </div>
+    </div>
+    <a href="https://instagram.com/marissaalves_" target="_blank" rel="noopener" style="font-size:13px;color:var(--text-muted);border-bottom:1px solid #333;padding-bottom:2px">Ver todos os posts →</a>
+  </div>
+
+  <div class="insta-grid">
+    <a href="https://www.instagram.com/reel/DY7PrmWN6Cz/?igsh=MXY3b2k2M2tuYWk1Zw==" target="_blank" rel="noopener" class="insta-post">
+      <img src="assets/grid-condromalacia.png" alt="Conteúdo Stronger Fisioterapia sobre condromalácia" loading="lazy">
+      <div class="insta-overlay"><span>Ver post</span></div>
+    </a>
+    <a href="https://www.instagram.com/reel/DY21oZkxh6k/?igsh=eHoyenlrMm15cnRy" target="_blank" rel="noopener" class="insta-post">
+      <img src="assets/grid-agachamento.png" alt="Conteúdo Stronger Fisioterapia sobre agachamento" loading="lazy">
+      <div class="insta-overlay"><span>Ver post</span></div>
+    </a>
+    <a href="https://www.instagram.com/reel/DYr2akVx7Xy/?igsh=NjFlYmxmeXd1c3p1" target="_blank" rel="noopener" class="insta-post">
+      <img src="assets/grid-dor-lombar.png" alt="Conteúdo Stronger Fisioterapia sobre dor lombar" loading="lazy">
+      <div class="insta-overlay"><span>Ver post</span></div>
+    </a>
+    <a href="https://www.instagram.com/reel/DYml2LGybYm/?igsh=MWRxMjhnd2d5bzR0ZQ==" target="_blank" rel="noopener" class="insta-post">
+      <img src="assets/grid-lombar.png" alt="Conteúdo Stronger Fisioterapia sobre dor lombar" loading="lazy">
+      <div class="insta-overlay"><span>Ver post</span></div>
+    </a>
+    <a href="https://www.instagram.com/reel/C5qlgdhL9O_/?igsh=czJiMTgxZHpoYTNl" target="_blank" rel="noopener" class="insta-post">
+      <img src="assets/Dor.png" alt="Conteúdo Stronger Fisioterapia sobre dor" loading="lazy">
+      <div class="insta-overlay"><span>Ver post</span></div>
+    </a>
+    <div class="insta-last" onclick="window.open('https://instagram.com/marissaalves_','_blank')">
+      <img src="assets/instagram.png" alt="Instagram" width="22" height="22" loading="lazy" style="filter:brightness(10)">
+      <span>Seguir</span>
+    </div>
+  </div>
+</section>
+
+<!-- LOCALIZAÇÃO -->
+<section class="sec-dark" id="local">
+  <span class="section-label">Onde estamos</span>
+  <h2>VILA OLÍMPIA<br>SÃO PAULO</h2>
+  <div class="local-grid">
+    <div class="local-info">
+      <div class="local-item"><div class="local-icon">📍</div><div><h4>Endereço</h4><p>Rua Helena, 309, conj 112 — Vila Olímpia, São Paulo</p></div></div>
+      <div class="local-item"><div class="local-icon">🚇</div><div><h4>Metrô</h4><p>6 minutos caminhando da estação Vila Olímpia</p></div></div>
+      <div class="local-item"><div class="local-icon">🅿️</div><div><h4>Estacionamento</h4><p><strong>Gratuito no prédio</strong></p></div></div>
+      <div class="local-item"><div class="local-icon">🕐</div><div><h4>Horários</h4><p>Seg–Sex: 7h às 20h · Sáb: 8h às 13h</p></div></div>
+    </div>
+    <div class="local-map">
+      <iframe
+        src="https://www.google.com/maps?q=Rua+Helena,+309,+Conj+112,+Vila+Olímpia,+São+Paulo&output=embed"
+        width="100%"
+        height="350"
+        style="border:0;border-radius:20px;"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        title="Mapa da Stronger Fisioterapia — Vila Olímpia, São Paulo">
+      </iframe>
+    </div>
+  </div>
+</section>
+
+<!-- CTA FINAL -->
+<section class="cta-final">
+  <span class="section-label">Próximo passo</span>
+  <h2>PRONTO PARA<br>VOLTAR A <em>VIVER SEM DOR?</em></h2>
+  <p>Agende sua avaliação e comece a tratar do jeito certo.</p>
+  <div class="cta-btns">
+    <a href="https://wa.me/5511932427523?text=Olá!%20Quero%20agendar%20minha%20avaliação%20na%20Stronger." class="btn-primary" target="_blank" rel="noopener" onclick="gtag_report_conversion()">
+      Agendar pelo WhatsApp
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+    </a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <a href="/" class="footer-logo" aria-label="Stronger Fisioterapia">
+    <img src="assets/logo-stronger.png" alt="Stronger Fisioterapia" height="24" loading="lazy">
+  </a>
+  <div class="footer-copy">© 2026 Stronger Fisioterapia · Vila Olímpia, São Paulo · CNPJ: 45.968.619/0001-22 · CREFITO 15691</div>
+  <div class="footer-links">
+    <a href="https://instagram.com/strongerfisioterapia" target="_blank" rel="noopener">Instagram</a>
+    <a href="https://wa.me/5511932427523" target="_blank" rel="noopener">WhatsApp</a>
+    <a href="https://www.doctoralia.com.br/marissa-alves/fisioterapeuta/sao-paulo" target="_blank" rel="noopener">Doctoralia</a>
+  </div>
+</footer>
+
+<script>
+
+// Conversão Google Ads — Clique WhatsApp
+function gtag_report_conversion() {
+  gtag('event', 'conversion', {
+    'send_to': 'AW-11198302157/Eza_CLbh0LEcEM2T4tsp'
+  });
+  gtag('event', 'whatsapp_click', {
+    'event_category': 'Lead',
+    'event_label': 'WhatsApp'
+  });
+  return true;
+}
+
+// =====================
+// CARROSSEL
+// =====================
+let currentSlide = 0;
+const totalSlides = 4;
+let autoTimer;
+
+function updateCarousel() {
+  document.getElementById('carouselTrack').style.transform = `translateX(-${currentSlide * 100}%)`;
+  document.querySelectorAll('.carousel-dot').forEach((dot, i) => {
+    dot.classList.toggle('active', i === currentSlide);
+  });
+}
+function moveCarousel(dir) {
+  currentSlide = (currentSlide + dir + totalSlides) % totalSlides;
+  updateCarousel();
+  resetTimer();
+}
+function goToSlide(index) {
+  currentSlide = index;
+  updateCarousel();
+  resetTimer();
+}
+function resetTimer() {
+  clearInterval(autoTimer);
+  autoTimer = setInterval(() => moveCarousel(1), 4000);
+}
+
+autoTimer = setInterval(() => moveCarousel(1), 4000);
+
+// Fix: o elemento agora tem a classe "carousel-wrap" além de "clinica-carousel-col",
+// então o pause-on-hover funciona corretamente.
+const wrap = document.querySelector('.carousel-wrap');
+if (wrap) {
+  wrap.addEventListener('mouseenter', () => clearInterval(autoTimer));
+  wrap.addEventListener('mouseleave', () => { autoTimer = setInterval(() => moveCarousel(1), 4000); });
+}
+
+const menuToggle = document.getElementById('menuToggle');
+const mobileMenu = document.getElementById('mobileMenu');
+
+menuToggle.addEventListener('click', () => {
+  menuToggle.classList.toggle('active');
+  mobileMenu.classList.toggle('active');
+  document.body.classList.toggle('menu-open');
+});
+
+document.querySelectorAll('.mobile-menu a').forEach(link => {
+  link.addEventListener('click', () => {
+    menuToggle.classList.remove('active');
+    mobileMenu.classList.remove('active');
+    document.body.classList.remove('menu-open');
+  });
+});
+
+document.querySelectorAll('.faq-item').forEach(item => {
+  const btn = item.querySelector('.faq-q');
+  btn.addEventListener('click', () => {
+    const isOpen = item.classList.contains('active');
+    document.querySelectorAll('.faq-item').forEach(i => {
+      i.classList.remove('active');
+      i.querySelector('.faq-q').setAttribute('aria-expanded', 'false');
+    });
+    if (!isOpen) {
+      item.classList.add('active');
+      btn.setAttribute('aria-expanded', 'true');
     }
-  </script>
+  });
+});
+
+// =====================
+// WHATSAPP — BALÃO PROATIVO
+// =====================
+(function () {
+  const bubble = document.getElementById('waBubble');
+  const closeBtn = document.getElementById('waBubbleClose');
+  const STORAGE_KEY = 'stronger_wa_bubble_dismissed';
+
+  if (!bubble) return;
+  if (sessionStorage.getItem(STORAGE_KEY)) return;
+
+  const showTimer = setTimeout(() => {
+    bubble.classList.add('active');
+  }, 6000);
+
+  closeBtn.addEventListener('click', (e) => {
+    e.stopPropagation();
+    bubble.classList.remove('active');
+    sessionStorage.setItem(STORAGE_KEY, '1');
+    clearTimeout(showTimer);
+  });
+})();
+
+</script>
+
 </body>
 </html>
