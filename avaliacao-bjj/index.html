@@ -9,7 +9,7 @@
 <title>Avaliação Biomecânica para Jiu-Jitsu em São Paulo | Stronger BJJ</title>
 <meta name="description" content="Avaliação biomecânica específica para praticantes de jiu-jitsu em São Paulo. Testes objetivos de força e mobilidade, relatório personalizado e plano de exercícios. Presencial na Vila Olímpia.">
 <link rel="canonical" href="https://strongerfisioterapia.com.br/avaliacao-bjj/">
-<link rel="icon" href="assets/favicon.png" type="image/png">
+<link rel="icon" href="/avaliacao-bjj/assets/favicon.png" type="image/png">
 
 <!-- OPEN GRAPH -->
 <meta property="og:type" content="website">
@@ -470,7 +470,7 @@ h3 { font-size: 1.15rem; letter-spacing: 0.04em; }
    ============================================================ */
 .whatsapp-float { position: fixed; right: 22px; bottom: 22px; z-index: 999; transition: transform .2s; }
 .whatsapp-float:hover { transform: scale(1.08); }
-.whatsapp-float img { width: 58px; height: 58px; }
+.whatsapp-float svg { display: block; filter: drop-shadow(0 4px 10px rgba(0,0,0,.35)); }
 
 /* ============================================================
    RESPONSIVE
@@ -510,10 +510,11 @@ h3 { font-size: 1.15rem; letter-spacing: 0.04em; }
         <h1 class="hero__title">
           Descubra o que pode estar<br>
           limitando seu desempenho no jiu-jitsu<br>
-                  </h1>
+          <em>antes que vire lesão.</em>
+        </h1>
 
         <p class="hero__body">
-          Avaliação biomecânica para praticantes de jiu-jitsu, com testes objetivos de força e mobilidade.
+          Avaliação biomecânica desenvolvida para praticantes de jiu-jitsu, com testes objetivos de força e mobilidade.
         </p>
 
         <a href="https://wa.me/5511932427523?text=Quero%20agendar%20minha%20Avalia%C3%A7%C3%A3o%20Biom%C3%A2nica%20Stronger%20BJJ."
@@ -521,8 +522,15 @@ h3 { font-size: 1.15rem; letter-spacing: 0.04em; }
           Quero agendar minha avaliação
         </a>
 
+        <div class="hero__badges">
+          <span class="badge">90 minutos</span>
+          <span class="badge">Presencial na Vila Olímpia</span>
+          <span class="badge">Relatório + plano de exercícios</span>
+        </div>
+      </div>
+
       <div class="hero__photo">
-        <img src="assets/logo-stronger-bjj.png"
+        <img src="/avaliacao-bjj/assets/logo-stronger-bjj.png"
              alt="Stronger BJJ — Fisioterapia preventiva para jiu-jitsu"
              width="420" height="420" loading="eager">
       </div>
@@ -712,7 +720,7 @@ h3 { font-size: 1.15rem; letter-spacing: 0.04em; }
     <div class="quem__grid">
 
       <div class="quem__photo">
-        <img src="assets/faixa-roxa.webp"
+        <img src="/avaliacao-bjj/assets/faixa-roxa.webp"
              alt="Marissa Alves, fisioterapeuta e faixa roxa de jiu-jitsu"
              width="400" height="533" loading="lazy">
       </div>
@@ -953,7 +961,7 @@ h3 { font-size: 1.15rem; letter-spacing: 0.04em; }
 <footer class="footer">
   <div class="container">
     <a href="https://strongerfisioterapia.com.br" aria-label="Ir para o site da Stronger Fisioterapia">
-      <img src="assets/logo-stronger-fisioterapia.png" alt="Stronger Fisioterapia" width="140" height="56" loading="lazy">
+      <img src="/avaliacao-bjj/assets/logo-stronger-fisioterapia.png" alt="Stronger Fisioterapia" width="140" height="56" loading="lazy">
     </a>
     <p>Stronger Fisioterapia &bull; Rua Helena, 309, Conj. 112, Vila Olímpia, São Paulo, SP</p>
     <p>Responsável técnica: Marissa Alves, CREFITO-3 295472-F</p>
@@ -966,7 +974,10 @@ h3 { font-size: 1.15rem; letter-spacing: 0.04em; }
 <!-- WHATSAPP FLOAT -->
 <a href="https://wa.me/5511932427523?text=Quero%20agendar%20minha%20Avalia%C3%A7%C3%A3o%20Biom%C3%A2nica%20Stronger%20BJJ."
    class="whatsapp-float" target="_blank" rel="noopener" aria-label="Falar pelo WhatsApp">
-  <img src="assets/icon-whatsapp.png" alt="" width="58" height="58" loading="eager">
+  <svg width="58" height="58" viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+    <circle cx="32" cy="32" r="32" fill="#25D366"/>
+    <path fill="#fff" d="M32.1 14.5c-9.6 0-17.4 7.8-17.4 17.4 0 3.1.8 6 2.3 8.6l-2.4 8.8 9-2.4c2.5 1.4 5.3 2.1 8.5 2.1 9.6 0 17.4-7.8 17.4-17.4s-7.8-17.1-17.4-17.1zm0 31.8c-2.6 0-5.1-.7-7.2-2l-.5-.3-5.3 1.4 1.4-5.2-.3-.5a14.4 14.4 0 1 1 11.9 6.6zm7.9-10.8c-.4-.2-2.6-1.3-3-1.4-.4-.1-.7-.2-1 .2-.3.4-1.1 1.4-1.4 1.7-.3.3-.5.3-.9.1-2.5-1.2-4.2-2.2-5.8-4.9-.4-.7.4-.7 1.2-2.3.1-.3.1-.5 0-.7l-1.4-3.3c-.4-.9-.7-.8-1-.8h-.8c-.3 0-.7.1-1.1.5-.4.4-1.4 1.4-1.4 3.4s1.5 4 1.7 4.3c.2.3 2.9 4.5 7.1 6.3 2.6 1.1 3.7 1.2 5 1 .8-.1 2.6-1.1 2.9-2.1.4-1 .4-1.9.3-2.1-.1-.2-.4-.3-.8-.5z"/>
+  </svg>
 </a>
 
 <script>
